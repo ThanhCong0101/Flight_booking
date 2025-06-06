@@ -1,0 +1,129 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502280935--32456-1-12409-2502281835",
+            "legs": [
+                {
+                    "id": "12071-2502280935--32456-1-12409-2502281835",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-12191-2502280935-2502281240--32456",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "HKG",
+                                "name": "Hong Kong Intl",
+                                "displayCode": "HKG",
+                                "city": "Hong Kong"
+                            },
+                            "duration": 125,
+                            "dayChange": 0,
+                            "flightNumber": "5541",
+                            "departure": "2025-02-28T09:35:00",
+                            "arrival": "2025-02-28T12:40:00",
+                            "marketingCarrier": {
+                                "id": "-32456",
+                                "name": "Cathay Pacific",
+                                "displayCode": "CX",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#006b6e",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+                                "altId": "CX"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32228",
+                                "name": "HK Express",
+                                "displayCode": "UO",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#cf0072",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
+                                "altId": "UO"
+                            }
+                        },
+                        {
+                            "id": "12191-12409-2502281405-2502281835--32456",
+                            "origin": {
+                                "id": "HKG",
+                                "name": "Hong Kong Intl",
+                                "displayCode": "HKG",
+                                "city": "Hong Kong"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 210,
+                            "dayChange": 0,
+                            "flightNumber": "418",
+                            "departure": "2025-02-28T14:05:00",
+                            "arrival": "2025-02-28T18:35:00",
+                            "marketingCarrier": {
+                                "id": "-32456",
+                                "name": "Cathay Pacific",
+                                "displayCode": "CX",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#006b6e",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+                                "altId": "CX"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32456",
+                                "name": "Cathay Pacific",
+                                "displayCode": "CX",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#006b6e",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CX.png",
+                                "altId": "CX"
+                            }
+                        }
+                    ],
+                    "duration": 420,
+                    "stopCount": 1,
+                    "departure": "2025-02-28T09:35:00",
+                    "arrival": "2025-02-28T18:35:00",
+                    "dayChange": 0
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "Cathay Pacific",
+                            "isCarrier": true,
+                            "price": 267.99,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 267.99,
+                    "id": "OPj7rYg6qXv3"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

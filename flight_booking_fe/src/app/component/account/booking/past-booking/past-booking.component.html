@@ -1,0 +1,137 @@
+<div *ngIf="activeTab() === 'past'" class="overflow-x-auto">
+  <table class="table table-zebra w-full">
+    <thead>
+      <tr>
+        <th>Flight</th>
+        <th>Date & Time</th>
+        <th>Route</th>
+        <th>Status</th>
+        <th>Documents</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (booking of bookings(); track $index; let i = $index) {
+      <tr
+        (click)="toggleFlightDetails(i)"
+        class="cursor-pointer hover:bg-base-200"
+      >
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img
+                  ngSrc="{{
+                    booking?.itinerary?.legs[0]?.segments[0]?.aircraft.logoUrl
+                  }}"
+                  fill
+                  alt="Airline"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.flight_number }}
+              </div>
+              <div class="badge bg-red-300 text-sm opacity-50">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.aircraft.name }}
+              </div>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div>
+            {{ booking?.itinerary?.legs[0]?.departure_time | weekMonthDay }}
+          </div>
+          <div class="text-sm opacity-50">
+            {{ booking?.itinerary?.legs[0]?.departure_time | timeFormat }}
+          </div>
+        </td>
+
+        <td>{{ formatedDepDes()[i] }}</td>
+
+        <td>
+          <div
+            [ngClass]="{
+              'badge-success': booking?.status === 'approved',
+              'badge-warning': booking?.status === 'pending',
+              'badge-error': booking?.status === 'rejected',
+              'badge-info': booking?.status === 'complete'
+            }"
+            class="badge text-white"
+          >
+            {{ booking?.status }}
+          </div>
+        </td>
+
+        <td>
+          <div class="flex space-x-2">
+            <button
+              class="btn btn-sm btn-outline"
+              onclick="ticket_modal.showModal()"
+            >
+              <span class="material-symbols-outlined"> airplane_ticket </span>
+              E-Ticket
+            </button>
+            <button class="btn btn-sm btn-outline">
+              <span class="material-symbols-outlined"> credit_card </span>
+              Invoice
+            </button>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Collapsible detail row -->
+      <tr *ngIf="expandedIndex === i">
+        <td colspan="6">
+          <div class="p-4 bg-base-100">
+            <!-- Flight itinerary details -->
+            <div class="flex flex-col space-y-4">
+              @for (leg of booking?.itinerary?.legs; track $index; let
+              even=$even) {
+              <app-leg-detail
+                [leg]="leg"
+                [headerText]="even ? 'Depart' : 'Return'"
+              ></app-leg-detail>
+              }
+            </div>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  <!-- Add this after your bookings table -->
+  <div class="flex justify-center mt-4">
+    <div class="join">
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="currentPagePastBooking() === 1"
+        (click)="changePage(currentPagePastBooking() - 1)"
+      >
+        «
+      </button>
+
+      <ng-container *ngFor="let page of getPagesArray(); let i = index">
+        <button
+          class="join-item btn btn-sm"
+          [class.btn-active]="currentPagePastBooking() === i + 1"
+          (click)="changePage(i + 1)"
+        >
+          {{ i + 1 }}
+        </button>
+      </ng-container>
+
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="
+          currentPagePastBooking() === totalBookings() || totalBookings() === 0
+        "
+        (click)="changePage(currentPagePastBooking() + 1)"
+      >
+        »
+      </button>
+    </div>
+  </div>
+</div>

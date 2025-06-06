@@ -1,0 +1,337 @@
+{
+    "data": {
+      "itinerary": {
+        "id": "15083-2402151840--30858,-31825-1-14355-2402160020",
+        "legs": [
+          {
+            "id": "15083-2402151840--30858,-31825-1-14355-2402160020",
+            "origin": {
+              "id": "15083",
+              "name": "Paris Orly",
+              "displayCode": "ORY",
+              "city": "Paris"
+            },
+            "destination": {
+              "id": "14355",
+              "name": "New Orleans Louis Armstrong",
+              "displayCode": "MSY",
+              "city": "New Orleans"
+            },
+            "segments": [
+              {
+                "id": "15083-11442-2402151840-2402152100--30858",
+                "origin": {
+                  "id": "15083",
+                  "name": "Paris Orly",
+                  "displayCode": "ORY",
+                  "city": "Paris"
+                },
+                "destination": {
+                  "id": "11442",
+                  "name": "New York Newark",
+                  "displayCode": "EWR",
+                  "city": "New York"
+                },
+                "duration": 500,
+                "dayChange": 0,
+                "flightNumber": "BF720",
+                "departure": "2024-02-15T18:40:00",
+                "arrival": "2024-02-15T21:00:00",
+                "marketingCarrier": {
+                  "id": "-30858",
+                  "name": "French Bee",
+                  "displayCode": "BF",
+                  "displayCodeType": "IATA",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                  "altId": "BF"
+                },
+                "operatingCarrier": {
+                  "id": "-30858",
+                  "name": "French Bee",
+                  "displayCode": "BF",
+                  "displayCodeType": "IATA",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                  "altId": "BF"
+                },
+                "goodToKnowItems": [
+                  {
+                    "icon": "normal",
+                    "body": {
+                      "value": "You may need to check in again for the connecting flight",
+                      "isHighlighted": false,
+                      "position": 1
+                    },
+                    "badge": {
+                      "value": "Self transfer",
+                      "isHighlighted": true,
+                      "position": 0
+                    }
+                  },
+                  {
+                    "icon": "duration",
+                    "body": {
+                      "value": "<style0>1h 10m</style0> connection in airport",
+                      "isHighlighted": false,
+                      "position": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "11442-14355-2402152210-2402160020--31825",
+                "origin": {
+                  "id": "11442",
+                  "name": "New York Newark",
+                  "displayCode": "EWR",
+                  "city": "New York"
+                },
+                "destination": {
+                  "id": "14355",
+                  "name": "New Orleans Louis Armstrong",
+                  "displayCode": "MSY",
+                  "city": "New Orleans"
+                },
+                "duration": 190,
+                "dayChange": 1,
+                "flightNumber": "NK1594",
+                "departure": "2024-02-15T22:10:00",
+                "arrival": "2024-02-16T00:20:00",
+                "marketingCarrier": {
+                  "id": "-31825",
+                  "name": "Spirit Airlines",
+                  "displayCode": "NK",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#fdeb4f",
+                  "logo": "https://content.skyscnr.com/334c2066021a7c48713e09d4130783d5/ai-template-spirit-airlines-thumb-1-xxxhdpi.png",
+                  "altId": "NK"
+                },
+                "operatingCarrier": {
+                  "id": "-31825",
+                  "name": "Spirit Airlines",
+                  "displayCode": "NK",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#fdeb4f",
+                  "logo": "https://content.skyscnr.com/334c2066021a7c48713e09d4130783d5/ai-template-spirit-airlines-thumb-1-xxxhdpi.png",
+                  "altId": "NK"
+                },
+                "goodToKnowItems": [
+                  {
+                    "icon": "normal",
+                    "body": {
+                      "value": "You'll arrive the next day",
+                      "isHighlighted": true,
+                      "position": 0
+                    },
+                    "date": {
+                      "value": "2024-02-16T00:20:00",
+                      "isHighlighted": true,
+                      "position": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "layovers": [
+              {
+                "segmentId": "15083-11442-2402151840-2402152100--30858",
+                "origin": {
+                  "id": "11442",
+                  "name": "New York Newark",
+                  "displayCode": "EWR",
+                  "city": "New York"
+                },
+                "destination": {
+                  "id": "11442",
+                  "name": "New York Newark",
+                  "displayCode": "EWR",
+                  "city": "New York"
+                },
+                "duration": 70
+              }
+            ],
+            "duration": 760,
+            "stopCount": 1,
+            "departure": "2024-02-15T18:40:00",
+            "arrival": "2024-02-16T00:20:00",
+            "dayChange": 1
+          }
+        ],
+        "pricingOptions": [
+          {
+            "agents": [
+              {
+                "id": "skyp",
+                "name": "Kiwi.com",
+                "isCarrier": false,
+                "bookingProposition": "PBOOK",
+                "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/1/15083.14355.2024-02-15/air/trava/flights?itinerary=flight|-30858|720|15083|2024-02-15T18:40|11442|2024-02-15T21:00|500|TBCOWFR|T|-;flight|-31825|1594|11442|2024-02-15T22:10|14355|2024-02-16T00:20|190|KNR|K|-&carriers=-30858,-31825&operators=-30858;-31825&passengers=1&channel=android&cabin_class=economy&fps_session_id=06469a93-75c9-4a2b-b6a2-ccdfec68f309&ticket_price=598.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=c5044258-79b5-40a9-a012-046314a489c9&q_ids=H4sIAAAAAAAA_-OS4mIpzq4sEGLm2KkvxcxxVlOhYcXWdWxGTAqMADLnUXEcAAAA|1836079051488216899|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-02-14T12:15:44&transfer_protection=protected&pqid=true",
+                "price": 598,
+                "rating": {
+                  "value": 3.12,
+                  "count": 5049
+                },
+                "updateStatus": "PENDING",
+                "segments": [
+                  {
+                    "id": "15083-11442-2402151840-2402152100--30858",
+                    "origin": {
+                      "id": "15083",
+                      "name": "Paris Orly",
+                      "displayCode": "ORY",
+                      "city": "Paris"
+                    },
+                    "destination": {
+                      "id": "11442",
+                      "name": "New York Newark",
+                      "displayCode": "EWR",
+                      "city": "New York"
+                    },
+                    "duration": 500,
+                    "dayChange": 0,
+                    "flightNumber": "BF720",
+                    "departure": "2024-02-15T18:40:00",
+                    "arrival": "2024-02-15T21:00:00",
+                    "marketingCarrier": {
+                      "id": "-30858",
+                      "name": "French Bee",
+                      "displayCode": "BF",
+                      "displayCodeType": "IATA",
+                      "logo": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                      "altId": "BF"
+                    },
+                    "operatingCarrier": {
+                      "id": "-30858",
+                      "name": "French Bee",
+                      "displayCode": "BF",
+                      "displayCodeType": "IATA",
+                      "logo": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                      "altId": "BF"
+                    },
+                    "goodToKnowItems": [
+                      {
+                        "icon": "normal",
+                        "body": {
+                          "value": "You may need to check in again for the connecting flight",
+                          "isHighlighted": false,
+                          "position": 1
+                        },
+                        "badge": {
+                          "value": "Self transfer",
+                          "isHighlighted": true,
+                          "position": 0
+                        }
+                      },
+                      {
+                        "icon": "duration",
+                        "body": {
+                          "value": "<style0>1h 10m</style0> connection in airport",
+                          "isHighlighted": false,
+                          "position": 0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "11442-14355-2402152210-2402160020--31825",
+                    "origin": {
+                      "id": "11442",
+                      "name": "New York Newark",
+                      "displayCode": "EWR",
+                      "city": "New York"
+                    },
+                    "destination": {
+                      "id": "14355",
+                      "name": "New Orleans Louis Armstrong",
+                      "displayCode": "MSY",
+                      "city": "New Orleans"
+                    },
+                    "duration": 190,
+                    "dayChange": 1,
+                    "flightNumber": "NK1594",
+                    "departure": "2024-02-15T22:10:00",
+                    "arrival": "2024-02-16T00:20:00",
+                    "marketingCarrier": {
+                      "id": "-31825",
+                      "name": "Spirit Airlines",
+                      "displayCode": "NK",
+                      "displayCodeType": "IATA",
+                      "brandColor": "#fdeb4f",
+                      "logo": "https://content.skyscnr.com/334c2066021a7c48713e09d4130783d5/ai-template-spirit-airlines-thumb-1-xxxhdpi.png",
+                      "altId": "NK"
+                    },
+                    "operatingCarrier": {
+                      "id": "-31825",
+                      "name": "Spirit Airlines",
+                      "displayCode": "NK",
+                      "displayCodeType": "IATA",
+                      "brandColor": "#fdeb4f",
+                      "logo": "https://content.skyscnr.com/334c2066021a7c48713e09d4130783d5/ai-template-spirit-airlines-thumb-1-xxxhdpi.png",
+                      "altId": "NK"
+                    },
+                    "goodToKnowItems": [
+                      {
+                        "icon": "normal",
+                        "body": {
+                          "value": "You'll arrive the next day",
+                          "isHighlighted": true,
+                          "position": 0
+                        },
+                        "date": {
+                          "value": "2024-02-16T00:20:00",
+                          "isHighlighted": true,
+                          "position": 1
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "transferProtection": "PROTECTED",
+                "isDirectDBookUrl": false,
+                "quoteAge": 11
+              }
+            ],
+            "totalPrice": 598,
+            "fare": {
+              "leg_details": []
+            },
+            "id": "8JVdsK6G1XjD"
+          }
+        ],
+        "isTransferRequired": true,
+        "destinationImage": "https://content.skyscnr.com/726b0acdeb8b6912178b2965273c1c2b/GettyImages-56350582.jpg",
+        "operatingCarrierSafetyAttributes": [
+          {
+            "carrierID": "-30858",
+            "carrierName": "French Bee",
+            "faceMasksCompulsory": null,
+            "aircraftDeepCleanedDaily": null,
+            "attendantsWearPPE": null,
+            "cleaningPacksProvided": null,
+            "foodServiceChanges": null,
+            "safetyUrl": null
+          },
+          {
+            "carrierID": "-31825",
+            "carrierName": "Spirit Airlines",
+            "faceMasksCompulsory": null,
+            "aircraftDeepCleanedDaily": null,
+            "attendantsWearPPE": null,
+            "cleaningPacksProvided": null,
+            "foodServiceChanges": null,
+            "safetyUrl": null
+          }
+        ],
+        "flexibleTicketPolicies": [],
+        "transferProtectionDetails": {
+          "title": "Self transfer",
+          "body": "<style1>On this flight, you may need to check in separately for each connecting flight.</style1>\n\nYou must <style0>collect any checked bags</style0>, and <style0>check them in</style0> again for each individual flight.\n\nYou must pass through <style0>security</style0> and <style0>passport control</style0> during each connection and you will need a <style0>visa</style0> if your connection is in a country that requires one.\n\nIn the event of a cancellation or delay, your onward journey is guaranteed by the booking agent, not by the airline.\n\nCheck the agent's policies carefully before booking.",
+          "url": "https://help.skyscanner.net/hc/en/articles/206028971",
+          "urlTitle": "More info"
+        }
+      },
+      "pollingCompleted": false,
+      "bookingSessionId": "06469a93-75c9-4a2b-b6a2-ccdfec68f309"
+    },
+    "status": true,
+    "message": "Successful"
+  }

@@ -1,0 +1,42 @@
+<div class="p-6">
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold">Flight Management</h1>
+  </div>
+
+  <app-flight-search
+    (paramsFlightSearchChange)="paramsFlightSearchChange($event)"
+    (itinerarySearchChange)="itinerarySearchResultChange($event)"
+  ></app-flight-search>
+  <!-- Flights Table -->
+
+  <div
+    class="overflow-x-auto mt-10 flex flex-row w-full gap-10 justify-center items-start mx-auto"
+  >
+    <app-card-filter
+      [filterStats]="filterStats()"
+      (filterChange)="filterStatsChange($event)"
+    ></app-card-filter>
+    <div class="flex flex-col justify-center">
+      <app-flight-table
+        [data]="data()"
+        [isLoading]="isLoading()"
+        (flightPageChange)="flightPageChange($event)"
+        (itineraryPageChange)="itineraryPageChange($event)"
+      ></app-flight-table>
+    </div>
+  </div>
+</div>
+
+<!-- Add/Edit Flight Modal -->
+<dialog id="flight_modal" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Flight Details</h3>
+    <!-- Add flight form here -->
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>

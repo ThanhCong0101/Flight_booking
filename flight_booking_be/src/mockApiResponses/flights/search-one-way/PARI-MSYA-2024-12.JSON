@@ -1,0 +1,373 @@
+{
+	"data": {
+		"flightQuotes": {
+			"buckets": [
+				{
+					"id": "CHEAPEST_FLIGHT_QUOTES",
+					"label": "Cheapest flights",
+					"resultIds": [
+						"{bl}:202411261607*I*CDG*MSY*20241210*gtus*N0",
+						"{bl}:202411261607*I*ORY*MSY*20241211*skyp*BF",
+						"{bl}:202411272007*I*ORY*MSY*20241213*skyp*BF",
+						"{bl}:202411270854*I*ORY*MSY*20241204*skyp*EZY",
+						"{bl}:202411271207*I*CDG*MSY*20241214*skyp*N0",
+						"{bl}:202411251436*I*CDG*MSY*20241205*skyp*OG",
+						"{bl}:202411251723*I*BVA*MSY*20241217*skyp*FR",
+						"{bl}:202411242200*I*ORY*MSY*20241216*arus*VY",
+						"{bl}:202411280116*I*CDG*MSY*20241231*skyp*EZY"
+					]
+				},
+				{
+					"id": "DIRECT_FLIGHT_QUOTES",
+					"label": "Direct flights",
+					"resultIds": []
+				}
+			],
+			"results": [
+				{
+					"id": "{bl}:202411261607*I*ORY*MSY*20241211*skyp*BF",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$333",
+						"rawPrice": 333.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565040",
+								"skyCode": "ORY",
+								"name": "ORY",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-11",
+							"localDepartureDateLabel": "Wed, Dec 11"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411270854*I*ORY*MSY*20241204*skyp*EZY",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$360",
+						"rawPrice": 360.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565040",
+								"skyCode": "ORY",
+								"name": "ORY",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-04",
+							"localDepartureDateLabel": "Wed, Dec 4"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411251723*I*BVA*MSY*20241217*skyp*FR",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$427",
+						"rawPrice": 427.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95566278",
+								"skyCode": "BVA",
+								"name": "BVA",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-17",
+							"localDepartureDateLabel": "Tue, Dec 17"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411272007*I*ORY*MSY*20241213*skyp*BF",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$342",
+						"rawPrice": 342.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565040",
+								"skyCode": "ORY",
+								"name": "ORY",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-13",
+							"localDepartureDateLabel": "Fri, Dec 13"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411251436*I*CDG*MSY*20241205*skyp*OG",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$403",
+						"rawPrice": 403.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565041",
+								"skyCode": "CDG",
+								"name": "CDG",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-05",
+							"localDepartureDateLabel": "Thu, Dec 5"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411242200*I*ORY*MSY*20241216*arus*VY",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$451",
+						"rawPrice": 451.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565040",
+								"skyCode": "ORY",
+								"name": "ORY",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-16",
+							"localDepartureDateLabel": "Mon, Dec 16"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411280116*I*CDG*MSY*20241231*skyp*EZY",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$542",
+						"rawPrice": 542.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565041",
+								"skyCode": "CDG",
+								"name": "CDG",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-31",
+							"localDepartureDateLabel": "Tue, Dec 31"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411261607*I*CDG*MSY*20241210*gtus*N0",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$266",
+						"rawPrice": 266.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565041",
+								"skyCode": "CDG",
+								"name": "CDG",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-10",
+							"localDepartureDateLabel": "Tue, Dec 10"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				},
+				{
+					"id": "{bl}:202411271207*I*CDG*MSY*20241214*skyp*N0",
+					"type": "FLIGHT_QUOTE",
+					"content": {
+						"price": "$365",
+						"rawPrice": 365.0,
+						"direct": false,
+						"outboundLeg": {
+							"originAirport": {
+								"id": "95565041",
+								"skyCode": "CDG",
+								"name": "CDG",
+								"type": "Airport"
+							},
+							"destinationAirport": {
+								"id": "95673750",
+								"skyCode": "MSY",
+								"name": "MSY",
+								"type": "Airport"
+							},
+							"localDepartureDate": "2024-12-14",
+							"localDepartureDateLabel": "Sat, Dec 14"
+						}
+					},
+					"entityId": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwidCI6bnVsbH0=",
+					"skyId": "MSY"
+				}
+			],
+			"months": [
+				{
+					"year": 2024,
+					"month": 11,
+					"monthLabel": "Nov",
+					"selected": false
+				},
+				{
+					"year": 2024,
+					"month": 12,
+					"monthLabel": "Dec",
+					"selected": true
+				},
+				{
+					"year": 2025,
+					"month": 1,
+					"monthLabel": "Jan",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 2,
+					"monthLabel": "Feb",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 3,
+					"monthLabel": "Mar",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 4,
+					"monthLabel": "Apr",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 5,
+					"monthLabel": "May",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 6,
+					"monthLabel": "Jun",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 7,
+					"monthLabel": "Jul",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 8,
+					"monthLabel": "Aug",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 9,
+					"monthLabel": "Sep",
+					"selected": false
+				},
+				{
+					"year": 2025,
+					"month": 10,
+					"monthLabel": "Oct",
+					"selected": false
+				}
+			],
+			"context": {
+				"status": "complete",
+				"sessionId": "UNFOCUSED_SESSION_ID",
+				"totalResults": 9
+			}
+		},
+		"differentDestination": {
+			"location": {
+				"id": "29475437",
+				"skyCode": "US",
+				"name": "United States",
+				"type": "Nation"
+			},
+			"context": {
+				"status": "complete",
+				"sessionId": "UNFOCUSED_SESSION_ID",
+				"totalResults": 0
+			}
+		},
+		"context": {
+			"status": "complete",
+			"sessionId": "UNFOCUSED_SESSION_ID",
+			"totalResults": 0
+		}
+	},
+	"status": true,
+	"message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/search-one-way?fromEntityId=PARI&toEntityId=MSYA&wholeMonthDepart=2024-12"
+}

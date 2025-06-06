@@ -1,0 +1,341 @@
+<div class="p-6">
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold">User Management</h1>
+  </div>
+
+  <!-- Filters and Search -->
+  <form class="flex gap-4 mb-6" [formGroup]="searchUserForm">
+    <div>
+      <div class="form-control">
+        <input
+          type="text"
+          formControlName="search"
+          name="search"
+          placeholder="Search users..."
+          class="input input-bordered w-64"
+        />
+      </div>
+    </div>
+
+    <select class="select select-bordered" formControlName="role" name="role">
+      <option value="">All Roles</option>
+      <option value="admin">Admin</option>
+      <option value="user">User</option>
+    </select>
+
+    <!-- <select class="select select-bordered form-control">
+      <option value="">All Status</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select> -->
+  </form>
+
+  @if (isLoading()) {
+  <!-- Add this before the main table and show it conditionally when loading -->
+  <table class="table w-full">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Role</th>
+        <th>Avatar</th>
+        <th>Timezone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of [1, 2, 3, 4, 5]">
+        <!-- Show 5 skeleton rows -->
+        <td><div class="skeleton h-4 w-16"></div></td>
+        <td><div class="skeleton h-4 w-24"></div></td>
+        <td><div class="skeleton h-4 w-24"></div></td>
+        <td><div class="skeleton h-4 w-40"></div></td>
+        <td><div class="skeleton h-4 w-28"></div></td>
+        <td><div class="skeleton h-4 w-16"></div></td>
+        <td>
+          <div class="skeleton w-8 h-8 rounded-full"></div>
+        </td>
+        <td><div class="skeleton h-4 w-20"></div></td>
+        <td>
+          <div class="flex gap-2">
+            <div class="skeleton h-8 w-16"></div>
+            <div class="skeleton h-8 w-16"></div>
+            <div class="skeleton h-8 w-16"></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  }@else {
+  <!-- Users Table -->
+  <div class="overflow-x-auto">
+    <table class="table w-full drawer-content">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Role</th>
+          <th>Avatar</th>
+          <th>Timezone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userResponse().users">
+          <td>{{ user.user_id }}</td>
+          <td>{{ user.first_name }}</td>
+          <td>{{ user.last_name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone_number }}</td>
+          <td>
+            <div
+              class="badge"
+              [ngClass]="
+                user.role === 'admin' ? 'badge-primary' : 'badge-secondary'
+              "
+            >
+              {{ user.role }}
+            </div>
+          </td>
+
+          <td>
+            <div class="avatar">
+              <div class="w-8 rounded-full">
+                @if(user.profile_picture){
+                <img src="{{ user.profile_picture }}" />
+                }@else {
+                <img src="/assets/images/avatar.png" />
+                }
+              </div>
+            </div>
+          </td>
+          <td>
+            {{ user.timezone }}
+          </td>
+          <td>
+            <div class="flex gap-2">
+              <div class="drawer drawer-end w-fit">
+                <input
+                  #drawerViewBookings
+                  id="view-bookings-drawer"
+                  type="checkbox"
+                  class="drawer-toggle"
+                />
+                <div class="drawer-content">
+                  <label
+                    [attr.user_id]="user?.user_id"
+                    #viewBtn
+                    for="view-bookings-drawer"
+                    class="btn btn-sm btn-info drawer-button text-white"
+                    (click)="viewUserBookings(user.user_id)"
+                  >
+                    View
+                  </label>
+                </div>
+                <ng-container
+                  *ngTemplateOutlet="drawerSideViewBookings"
+                ></ng-container>
+              </div>
+
+              <label
+                for="change-role-drawer"
+                class="change-role-drawer btn btn-sm btn-warning text-white"
+                (click)="editRoleUser(user)"
+              >
+                Edit Role
+              </label>
+
+              <div class="drawer drawer-end w-fit">
+                <input
+                  #drawerResetPassword
+                  id="password-reset-drawer"
+                  type="checkbox"
+                  class="drawer-toggle"
+                />
+
+                <div class="drawer-content">
+                  <label
+                    for="password-reset-drawer"
+                    class="password-reset-drawer btn-error btn btn-sm drawer-button btn-primary text-white"
+                    (click)="resetPassword(user.user_id)"
+                  >
+                    Reset Password
+                  </label>
+                </div>
+
+                <ng-container *ngTemplateOutlet="drawerSideResetPassword">
+                </ng-container>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Add this after your bookings table -->
+    <div class="flex justify-center mt-4">
+      <div class="join">
+        <button
+          class="join-item btn btn-sm"
+          [disabled]="currentPage() === 1"
+          (click)="changePage(currentPage() - 1)"
+        >
+          «
+        </button>
+
+        <ng-container *ngFor="let page of getPagesArray(); let i = index">
+          <button
+            class="join-item btn btn-sm"
+            [class.btn-active]="currentPage() === i + 1"
+            (click)="changePage(i + 1)"
+          >
+            {{ i + 1 }}
+          </button>
+        </ng-container>
+
+        <button
+          class="join-item btn btn-sm"
+          [disabled]="currentPage() === totalBookings()"
+          (click)="changePage(currentPage() + 1)"
+        >
+          »
+        </button>
+      </div>
+    </div>
+  </div>
+  }
+</div>
+
+<div class="toast toast-top toast-end">
+  <div *ngFor="let message of successMessages" class="alert alert-success">
+    <span>{{ message }}</span>
+  </div>
+  <div *ngFor="let message of errorMessages" class="alert alert-error">
+    <span>{{ message }}</span>
+  </div>
+</div>
+
+<!-- User Details Modal -->
+<dialog id="user_details_modal" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">User Details</h3>
+    <!-- Add user details content here -->
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Password Reset Drawer -->
+<ng-template #drawerSideResetPassword>
+  <div class="drawer-side drawer-side-common">
+    <label for="password-reset-drawer" class="drawer-overlay"></label>
+    <div class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+      <h3 class="font-bold text-lg mb-4">Reset Password</h3>
+
+      <form [formGroup]="resetPasswordForm" (ngSubmit)="confirmResetPassword()">
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text">New Password</span>
+          </label>
+          <input
+            type="password"
+            formControlName="password"
+            class="input input-bordered w-full"
+            autocomplete="new-password"
+          />
+        </div>
+
+        <div class="form-control w-full">
+          <label class="label">
+            <span class="label-text">Confirm Password</span>
+          </label>
+          <input
+            type="password"
+            formControlName="confirmPassword"
+            class="input input-bordered w-full"
+            autocomplete="new-password"
+          />
+        </div>
+
+        <div class="mt-6 flex gap-2">
+          <button type="submit" class="btn btn-primary">Confirm</button>
+          <button
+            type="button"
+            class="btn"
+            (click)="closeResetDrawer(); $event.stopPropagation()"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #drawerSideViewBookings>
+  <div class="drawer-side drawer-side-common">
+    <label for="view-bookings-drawer" class="drawer-overlay"></label>
+    <div class="menu p-4 w-[800px] min-h-full bg-base-200 text-base-content">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-lg">User Bookings</h3>
+        <button
+          class="btn btn-sm btn-circle"
+          (click)="closeViewDrawer(); $event.stopPropagation()"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="table table-zebra w-full">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Itinerary</th>
+              <th>Itinerary ID</th>
+              <th>No.Passenger</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let booking of userBookings">
+              <td>{{ booking.booking_id }}</td>
+              <td>{{ booking.itinerary }}</td>
+              <td>{{ booking.itinerary_id }}</td>
+              <th>{{ booking.no_passenger }}</th>
+              <td>{{ booking.date | date }}</td>
+              <td>
+                <div
+                  class="badge text-white"
+                  [ngClass]="{
+                    'badge-success': booking.status === 'complete',
+                    'badge-warning': booking.status === 'pending',
+                    'badge-secondary': booking.status === 'approved'
+                  }"
+                >
+                  {{ booking.status }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div *ngIf="!userBookings?.length" class="text-center py-4">
+        <p>No bookings found for this user</p>
+      </div>
+    </div>
+  </div>
+</ng-template>

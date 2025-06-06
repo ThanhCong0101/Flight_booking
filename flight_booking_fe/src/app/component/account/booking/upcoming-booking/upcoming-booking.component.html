@@ -1,0 +1,184 @@
+<div
+  *ngIf="activeTab() === 'upcoming'"
+  class="overflow-x-auto drawer drawer-end"
+>
+  <input id="booking-detail-drawer" type="checkbox" class="drawer-toggle" />
+
+  <table class="table table-zebra w-full drawer-content">
+    <thead>
+      <tr>
+        <th>Flight</th>
+        <th>Date & Time</th>
+        <th>Route</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (booking of bookings(); track $index; let i = $index) {
+      <tr
+        (click)="toggleFlightDetails(i)"
+        class="cursor-pointer hover:bg-base-200"
+      >
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img
+                  ngSrc="{{
+                    booking?.itinerary?.legs[0]?.segments[0]?.aircraft.logoUrl
+                  }}"
+                  fill
+                  alt="Airline"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.flight_number }}
+              </div>
+              <div class="badge bg-red-300 text-sm opacity-50">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.aircraft.name }}
+              </div>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div>
+            {{ booking?.itinerary?.legs[0]?.departure_time | weekMonthDay }}
+          </div>
+          <div class="text-sm opacity-50">
+            {{ booking?.itinerary?.legs[0]?.departure_time | timeFormat }}
+          </div>
+        </td>
+
+        <td>{{ formatedDepDes()[i] }}</td>
+
+        <td>
+          <div
+            [ngClass]="{
+              'badge-success': booking?.status === 'approved',
+              'badge-warning': booking?.status === 'pending',
+              'badge-error': booking?.status === 'rejected',
+              'badge-info': booking?.status === 'complete'
+            }"
+            class="badge text-white"
+          >
+            {{ booking?.status }}
+          </div>
+        </td>
+
+        <td>
+          <div class="flex space-x-2">
+            <label
+              for="booking-detail-drawer"
+              class="booking-detail-drawer btn btn-sm drawer-button btn-primary"
+              [class.btn-disabled]="booking?.status === 'rejected'"
+              (click)="
+                setSelectedBooking(booking, booking?.booking_id, i);
+                $event.stopPropagation()
+              "
+              >Modify</label
+            >
+            <button
+              [attr.booking-id]="booking?.booking_id"
+              class="cancel-btn btn btn-sm btn-error text-white"
+              #cancelBtn
+              (click)="$event.stopPropagation()"
+              [disabled]="booking?.status === 'rejected'"
+            >
+              Cancel
+            </button>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Collapsible detail row -->
+      <tr *ngIf="expandedIndex === i">
+        <td colspan="6">
+          <div class="p-4 bg-base-100">
+            <!-- Flight itinerary details -->
+            <div class="flex flex-col space-y-4">
+              @for (leg of booking?.itinerary?.legs; track $index; let
+              even=$even) {
+              <app-leg-detail
+                [leg]="leg"
+                [headerText]="even ? 'Depart' : 'Return'"
+              ></app-leg-detail>
+              }
+            </div>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  <!-- Add this after your bookings table -->
+  <div class="flex justify-center mt-4">
+    <div class="join">
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="currentPageUpcomingBooking() === 1"
+        (click)="changePage(currentPageUpcomingBooking() - 1)"
+      >
+        «
+      </button>
+
+      <ng-container *ngFor="let page of getPagesArray(); let i = index">
+        <button
+          class="join-item btn btn-sm"
+          [class.btn-active]="currentPageUpcomingBooking() === i + 1"
+          (click)="changePage(i + 1)"
+        >
+          {{ i + 1 }}
+        </button>
+      </ng-container>
+
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="
+          currentPageUpcomingBooking() === totalBookings() ||
+          totalBookings() === 0
+        "
+        (click)="changePage(currentPageUpcomingBooking() + 1)"
+      >
+        »
+      </button>
+    </div>
+  </div>
+
+  <ng-container *ngTemplateOutlet="drawerSide"> </ng-container>
+</div>
+
+<ng-template #drawerSide>
+  <div class="drawer-side">
+    <label for="booking-detail-drawer" class="drawer-overlay"></label>
+    <div class="menu p-4 w-[800px] min-h-full bg-base-200">
+      <app-booking-detail
+        [bookingData]="selectedBooking"
+        [formatedDepDes]="selectedFormatedDepDes"
+        (bookingDataChange)="bookingDetailChange($event)"
+      ></app-booking-detail>
+    </div>
+  </div>
+</ng-template>
+
+<dialog id="cancel_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Cancel Booking</h3>
+    <p class="py-4">Do you want to cancel this booking?</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn btn-sm btn-ghost">No</button>
+        <button
+          class="btn btn-sm btn-error text-white"
+          (click)="confirmCancel()"
+        >
+          Yes
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>

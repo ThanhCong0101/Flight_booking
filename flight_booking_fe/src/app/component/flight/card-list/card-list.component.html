@@ -1,0 +1,170 @@
+<!-- <div
+  class="flex flex-row max-w-[800px] min-h-[200px] bg-red-300 z-0 flex-wrap justify-center mb-10 max-md:max-w-full"
+  ngClass="{{ isDetailVisible ? 'rounded-t-xl' : 'rounded-xl' }}"
+>
+  <section
+    class="flex flex-col grow shrink text-base font-bold min-w-[240px] w-[600px] max-md:max-w-full"
+  >
+    <header
+      class="flex flex-wrap gap-10 justify-end items-center p-3 w-full text-xl text-cyan-600 whitespace-nowrap max-md:max-w-full"
+      [ngClass]="tagsleg.length ? 'justify-between' : 'justify-end'"
+    >
+      <div class="flex flex-row gap-2">
+        @for (tag of tagsFlight; track $index) {
+
+        <div
+          class="gap-2.5 self-stretch px-6 py-3 my-auto bg-green-100 rounded-xl max-md:px-5"
+        >
+          {{ tag }}
+        </div>
+        }
+      </div>
+      <span class="material-symbols-outlined text-black"> favorite </span>
+    </header>
+
+    @for (leg of legs; track $index) {
+    <div
+      class="flex gap-10 justify-between items-start px-6 py-3 w-full max-md:px-5 max-md:max-w-full"
+    >
+      <div class="flex gap-2 items-start self-stretch min-w-[240px] relative">
+        @if (leg.brandleg.length > 1){
+        <div class="flex justify-between flex-wrap w-10 h-10 relative">
+          @for (logo of leg.brandFlight; track $index; let o = $odd) {
+          <img
+            ngSrc="{{ logo.logoUrl }}"
+            width="20"
+            height="20"
+            ngClass="{{
+              o ? 'absolute right-0 bottom-0' : 'absolute left-0 top-0'
+            }}"
+          />
+          }
+        </div>
+        }@else {
+        <div class="w-10 h-10">
+          <img
+            ngSrc="{{ leg.brandFlight[0].logoUrl }}"
+            class="object-contain shrink-0"
+            width="40"
+            height="40"
+          />
+        </div>
+        }
+
+        <div class="flex flex-col w-[187px]">
+          <div class="text-black">
+            {{ leg.timeDeparture | timeFormat }} -
+            {{ leg.timeArrival | timeFormat }}
+          </div>
+          <div class="mt-2 text-black text-opacity-50">
+            {{ leg.brandNameFlight }}
+          </div>
+        </div>
+      </div>
+      <div class="self-stretch text-black">
+        {{ leg.stopCount > 0 ? leg.stopCount + " stop" : "Non-stop" }}
+      </div>
+      <div class="flex flex-col self-stretch text-black w-[72px]">
+        <div>{{ leg.duration | durationFormat }}</div>
+        <div class="mt-2 whitespace-nowrap">{{ leg.formatedDepDesCode }}</div>
+      </div>
+    </div>
+    }
+  </section>
+
+  <div
+    class="flex justify-center items-center min-h-[200px] py-4 w-0.5 bg-slate-400"
+  ></div>
+
+  <section class="flex flex-col grow shrink px-3 py-3.5 w-44 h-full">
+    <div class="flex flex-col w-full text-black whitespace-nowrap">
+      <div class="flex gap-6 items-center w-full text-base font-bold">
+        <div
+          class="flex overflow-hidden gap-2.5 items-center self-stretch p-1.5 my-auto rounded-sm border border-solid border-cyan-600 border-opacity-60"
+        >
+          <span class="material-symbols-outlined">
+            travel_luggage_and_bags
+          </span>
+          <div class="self-stretch my-auto">1</div>
+        </div>
+
+        <div
+          class="flex gap-2.5 items-center self-stretch p-1.5 my-auto rounded-sm border border-solid border-cyan-600 border-opacity-60"
+        >
+          <span class="material-symbols-outlined"> work </span>
+          <div class="self-stretch my-auto">0</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col mt-1.5 w-full">
+        <div class="text-3xl font-bold">{{ flightCard().price.formatted }}</div>
+        <div class="flex flex-col mt-2 text-base w-[70px]">
+          <div>Economy</div>
+          <div>eDream</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-success" (click)="toggleDetail()">
+      <span class="self-stretch my-auto text-white">View Detail</span>
+      <span class="material-symbols-outlined text-white">
+        {{ isDetailVisible ? "arrow_drop_up" : "arrow_drop_down" }}
+      </span>
+    </button>
+  </section>
+</div> -->
+
+<div
+  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-200 mb-4"
+>
+  @for (leg of legs; track $index) {
+  <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center space-x-4">
+      <img
+        [src]="leg.airlinePhoto"
+        alt="Airline Logo"
+        class="w-16 h-16 object-contain"
+      />
+      <div>
+        <h3 class="font-semibold">{{ leg.airline }}</h3>
+        <p class="text-sm text-gray-600">Flight {{ leg.flightNumber }}</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <p class="text-lg font-bold">{{ leg.timeDeparture | date }}</p>
+      <p class="text-sm text-gray-600">{{ leg.origin }}</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <p class="text-sm text-gray-600">{{ leg.duration | durationFormat }}</p>
+      <div class="w-32 h-0.5 bg-gray-300 relative">
+        <div
+          *ngIf="leg.stopCount > 0"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-gray-400 rounded-full"
+        ></div>
+      </div>
+      <p class="text-xs text-gray-500">{{ leg.stopCount }} stop(s)</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <p class="text-lg font-bold">{{ leg.timeArrival | date }}</p>
+      <p class="text-sm text-gray-600">{{ leg.destination }}</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <p class="text-2xl font-bold text-blue-600">
+        {{ flightCard().price.formatted }}
+      </p>
+      <button
+        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200"
+        (click)="toggleDetail()"
+      >
+        Select
+      </button>
+    </div>
+  </div>
+  }
+</div>
+
+<app-card-detail
+  *ngIf="isDetailVisible"
+  [tokenItinerary]="tokenItinerary()"
+  [itineraryId]="flightCard().id"
+></app-card-detail>

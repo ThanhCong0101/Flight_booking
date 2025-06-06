@@ -1,0 +1,258 @@
+<div
+  class="flex flex-col mx-auto mb-10 w-full min-w-16 text-xs bg-white rounded-xl border border-black border-solid"
+>
+
+<!-- <div
+  class="lg:w-1/4"
+> -->
+  <!-- Stops -->
+  <section class="flex flex-col w-auto">
+    <!-- Stops -->
+    <div class="collapse collapse-arrow collapse-open">
+      <input type="checkbox" />
+      <div
+        class="collapse-title flex justify-between items-center px-6 py-3 w-full text-xl font-bold text-black whitespace-nowrap"
+      >
+        Stops
+      </div>
+
+      <div class="collapse-content">
+        <ul>
+          <li
+            class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black"
+          >
+            <div class="flex gap-3 items-center">
+              <input
+                type="checkbox"
+                checked="checked"
+                [value]="'direct'"
+                (change)="onStopSelect($event)"
+                class="checkbox"
+                [disabled]="!filterStats().stopPrices.direct.isPresent"
+              />
+              <span class="self-stretch my-auto">Non Stop</span>
+            </div>
+            <span>{{ filterStats().stopPrices.direct.formattedPrice }}</span>
+          </li>
+          <li
+            class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black"
+          >
+            <div class="flex gap-3 items-center">
+              <input
+                type="checkbox"
+                checked="checked"
+                [value]="'one'"
+                (change)="onStopSelect($event)"
+                class="checkbox"
+                [disabled]="!filterStats().stopPrices.one.isPresent"
+              />
+              <span class="self-stretch my-auto">1 Stop</span>
+            </div>
+            <span>{{ filterStats().stopPrices.one.formattedPrice }}</span>
+          </li>
+          <li
+            class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black"
+          >
+            <div class="flex gap-3 items-center">
+              <input
+                type="checkbox"
+                checked="checked"
+                [value]="'twoOrMore'"
+                (change)="onStopSelect($event)"
+                class="checkbox"
+                [disabled]="!filterStats().stopPrices.twoOrMore.isPresent"
+              />
+              <span class="self-stretch my-auto">2 Stops+</span>
+            </div>
+            <span>{{ filterStats().stopPrices.twoOrMore.formattedPrice }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Flight Time -->
+  <section class="flex flex-col w-auto">
+    <div class="collapse collapse-arrow collapse-open">
+      <input type="checkbox" />
+      <div
+        class="collapse-title flex justify-between items-center px-6 py-3 w-full text-xl font-bold text-black whitespace-nowrap"
+      >
+        Flight Time
+      </div>
+
+      <div class="collapse-content">
+        <div>
+          <div class="gap-2 self-stretch px-4 py-2 w-full text-base text-black">
+            <strong>Departure from {{ filterStats().airports[0].city }}</strong>
+          </div>
+          <div class="custom-slider px-4 w-full">
+            <app-date-slider
+              [minTime]="minTimeDeparture()"
+              [maxTime]="maxTimeDeparture()"
+              (minTimeValueChanged)="handleMinTimeDepartureValueChange($event)"
+              (maxTimeValueChanged)="handleMaxTimeDepartureValueChange($event)"
+            ></app-date-slider>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="gap-2.5 self-stretch px-4 py-2 w-full text-base text-black"
+          >
+            <strong>Landing at {{ filterStats().airports[1].city }}</strong>
+          </div>
+          <div class="custom-slider px-4 py-2 w-full">
+            <app-date-slider
+              [minTime]="minTimeLanding()"
+              [maxTime]="maxTimeLanding()"
+              (minTimeValueChanged)="handleMinTimeLandingValueChange($event)"
+              (maxTimeValueChanged)="handleMaxTimeLandingValueChange($event)"
+            ></app-date-slider>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Airline -->
+  <div class="collapse collapse-arrow collapse-open">
+    <!-- Clear checkbox button -->
+    <div class="px-6 py-2">
+      <button class="btn btn-sm btn-outline" (click)="clearAirlineCheckboxes()">
+        Clear All Airlines
+      </button>
+    </div>
+
+    <input type="checkbox" />
+    <div
+      class="collapse-title flex justify-between items-center px-6 py-3 w-full text-xl font-bold text-black whitespace-nowrap"
+    >
+      Airline
+    </div>
+
+    <div class="collapse-content">
+      <ul>
+        @for (airline of airlineData() ; track $index) {
+        <li
+          class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black whitespace-nowrap"
+        >
+          <div class="flex gap-3 items-center">
+            <input
+              type="checkbox"
+              checked="{{ airline.isActive ? 'checked' : '' }}"
+              class="checkbox"
+              [value]="airline.id"
+              (change)="onAirlinesSelect($event)"
+            />
+            <span class="self-stretch my-auto">{{ airline.name }}</span>
+          </div>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Price -->
+  <section class="flex flex-col w-auto">
+  <!-- <section class="bg-white rounded-lg shadow-md p-6 space-y-6"> -->
+    <div class="collapse collapse-arrow collapse-open">
+      <input type="checkbox" />
+      <div
+        class="collapse-title flex justify-between items-center px-6 py-3 w-full text-xl font-bold text-black whitespace-nowrap"
+      >
+        Price
+      </div>
+
+      <div class="collapse-content">
+        <div class="custom-slider px-4 py-2 w-full">
+          <app-slider
+            [min]="filterStats().priceRange.minPrice"
+            [max]="filterStats().priceRange.maxPrice"
+            [label]="'$'"
+            (dataChange)="handlePriceChange($event)"
+          ></app-slider>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Airports -->
+  <section class="flex flex-col w-auto">
+    <!-- Stops -->
+    <div class="collapse collapse-arrow collapse-open">
+      <!-- Clear checkbox button -->
+      <div class="px-6 py-2">
+        <button
+          class="btn btn-sm btn-outline"
+          (click)="clearAirportCheckboxes()"
+        >
+          Clear All Airlines
+        </button>
+      </div>
+
+      <input type="checkbox" />
+      <div
+        class="collapse-title flex justify-between items-center px-6 py-3 w-full text-xl font-bold text-black whitespace-nowrap"
+      >
+        Airports
+      </div>
+
+      <div class="collapse-content">
+        <div class="gap-1 self-stretch px-4 py-2 w-full text-base text-black">
+          <strong>Departure from {{ airportData()[0].city }}</strong>
+        </div>
+
+        <ul>
+          @for (airport of airportData()[0].airports; track $index) {
+          <li
+            class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black"
+          >
+            <div class="flex gap-3 items-center">
+              <input
+                type="checkbox"
+                checked="{{ airport.isActive ? 'checked' : '' }}"
+                class="checkbox"
+                [value]="airport.entityId"
+                (change)="onAirportSelect($event)"
+              />
+              <span class="self-stretch my-auto">{{ airport.name }}</span>
+            </div>
+          </li>
+          }
+        </ul>
+
+        <div class="gap-1 self-stretch px-4 py-2 w-full text-base text-black">
+          <strong>Return at {{ airportData()[0].city }}</strong>
+        </div>
+
+        <ul>
+          @for (airport of airportData()[1].airports; track $index) {
+          <li
+            class="flex gap-10 justify-between items-start px-6 py-2 w-auto text-sm text-black"
+          >
+            <div class="flex gap-3 items-center">
+              <input
+                type="checkbox"
+                checked="{{ airport.isActive ? 'checked' : '' }}"
+                class="checkbox"
+                [value]="airport.entityId"
+                (change)="onAirportSelect($event)"
+              />
+              <span class="self-stretch my-auto">{{ airport.name }}</span>
+            </div>
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

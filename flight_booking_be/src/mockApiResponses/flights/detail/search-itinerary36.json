@@ -1,0 +1,91 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502281330--32558-0-12409-2502281935",
+            "legs": [
+                {
+                    "id": "12071-2502281330--32558-0-12409-2502281935",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-12409-2502281330-2502281935--32558",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 245,
+                            "dayChange": 0,
+                            "flightNumber": "730",
+                            "departure": "2025-02-28T13:30:00",
+                            "arrival": "2025-02-28T19:35:00",
+                            "marketingCarrier": {
+                                "id": "-32558",
+                                "name": "Asiana Airlines",
+                                "displayCode": "OZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#00256c",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
+                                "altId": "OZ"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32558",
+                                "name": "Asiana Airlines",
+                                "displayCode": "OZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#00256c",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png",
+                                "altId": "OZ"
+                            }
+                        }
+                    ],
+                    "duration": 245,
+                    "stopCount": 0,
+                    "departure": "2025-02-28T13:30:00",
+                    "arrival": "2025-02-28T19:35:00",
+                    "dayChange": 0
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "Asiana Airlines",
+                            "isCarrier": true,
+                            "price": 478.99,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 478.99,
+                    "id": "Enj2HCohR-30"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

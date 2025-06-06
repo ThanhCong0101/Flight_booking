@@ -1,0 +1,151 @@
+@if(!isLoad()) {
+<div class="{{ isCalendarOpen() ? 'block' : 'hidden' }}">
+  <div
+    class="absolute rounded-lg z-20 flex flex-row gap-4 items-center p-4 w-max bg-white shadow-[5px_10px_10px_#dedfe2]"
+  >
+    <div class="w-full">
+      <div class="flex gap-4">
+        <!-- Current Month Calendar -->
+        <div class="calendar-block flex flex-col justify-start items-center">
+          <div class="w-full font-semibold flex justify-between">
+            <button
+              class="cursor-pointer bg-transparent border-none hover:scale-110 transition-transform duration-300"
+              type="button"
+              (click)="navigatePrev()"
+            >
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+
+            {{ formatMonthYear(calendarMonths[currentMonthIndex].monthYear) }}
+
+            <div></div>
+          </div>
+
+          <!-- header days in weeks -->
+          <div class="grid grid-cols-7 w-full">
+            @for (day of weekDays; track day) {
+            <div class="flex-1 text-base p-2 text-center">{{ day }}</div>
+            }
+          </div>
+
+          <div class="grid grid-cols-7 gap-1">
+            @if(calendarMonths[currentMonthIndex].prevMonthDays.length !== 0){
+            @for (day of calendarMonths[currentMonthIndex].prevMonthDays; track
+            $index) {
+            <div></div>
+            } } @for (day of calendarMonths[currentMonthIndex].days; track
+            $index) {
+            <!-- If day in range "bg-blue-100" -->
+            <!-- If day is selected "bg-blue-500 text-white" -->
+            <!-- If day not is case above, default color -->
+            <button
+              class="rounded-lg transition-colors duration-200 text-black"
+              [ngClass]="
+                isInRange(day.day)
+                  ? 'bg-blue-100'
+                  : isChosenDate(day.day)
+                  ? 'bg-blue-500 text-white'
+                  : getPriceColorClass(day.group, day.day)
+              "
+              type="button"
+              (click)="getPriceDate(day.day)"
+              (mouseenter)="onDateHover(day.day)"
+              (mouseleave)="hoveredDate = null"
+            >
+              <div
+                class="flex flex-col flex-wrap items-center justify-center h-12 w-12 hover:opacity-80"
+              >
+                <span
+                  [ngClass]="
+                    isPastDate(day.day)
+                      ? 'text-gray-400'
+                      : day.price == 0
+                      ? 'text-black'
+                      : 'text-white'
+                  "
+                  >{{ formatDate(day.day) }}</span
+                >
+                @if(!isPastDate(day.day) && (day.price) !== 0) {
+                <span class="text-xs">{{ formatPrice(day.price) }}</span>
+                }
+              </div>
+            </button>
+            }
+          </div>
+        </div>
+
+        <!-- Next Month Calendar -->
+        <div class="calendar-block flex flex-col justify-start items-center">
+          <div class="w-full font-semibold flex justify-between">
+            <div></div>
+
+            {{
+              formatMonthYear(calendarMonths[currentMonthIndex + 1].monthYear)
+            }}
+
+            <button
+              class="cursor-pointer bg-transparent border-none hover:scale-110 transition-transform duration-300"
+              type="button"
+              (click)="navigateNext()"
+            >
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+
+          <!-- header days in weeks -->
+          <div class="grid grid-cols-7 w-full">
+            @for (day of weekDays; track $index) {
+            <div class="flex-1 text-base p-2 text-center">{{ day }}</div>
+            }
+          </div>
+
+          <div class="grid grid-cols-7 gap-1">
+            @if(calendarMonths[currentMonthIndex + 1].prevMonthDays.length !==
+            0){ @for (day of calendarMonths[currentMonthIndex +
+            1].prevMonthDays; track $index) {
+            <div></div>
+            } } @for (day of calendarMonths[currentMonthIndex + 1].days; track
+            $index) {
+            <!-- If day in range "bg-blue-100" -->
+            <!-- If day is selected "bg-blue-500 text-white" -->
+            <!-- If day not is case above, default color -->
+            <button
+              class="rounded-lg transition-colors duration-200 text-black"
+              [ngClass]="
+                isInRange(day.day)
+                  ? 'bg-blue-100 text-black'
+                  : isChosenDate(day.day)
+                  ? 'bg-blue-500 text-white'
+                  : getPriceColorClass(day.group, day.day)
+              "
+              type="button"
+              (click)="getPriceDate(day.day)"
+              (mouseenter)="onDateHover(day.day)"
+              (mouseleave)="hoveredDate = null"
+            >
+              <div
+                class="flex flex-col flex-wrap items-center justify-center h-12 w-12 hover:opacity-80"
+              >
+                <span
+                  [ngClass]="
+                    isPastDate(day.day)
+                      ? 'text-gray-400'
+                      : day.price == 0
+                      ? 'text-black'
+                      : 'text-white'
+                  "
+                  >{{ formatDate(day.day) }}</span
+                >
+                @if(!isPastDate(day.day) && (day.price) !== 0) {
+                <span class="text-xs">{{ formatPrice(day.price) }}</span>
+                }
+              </div>
+            </button>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}

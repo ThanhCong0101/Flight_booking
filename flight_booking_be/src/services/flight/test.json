@@ -1,0 +1,1449 @@
+{
+  "data": {
+    "context": {
+      "status": "incomplete",
+      "sessionId": "Cl0IARJZCk4KJGE3Njg3NDUxLWQ2NzYtNDUzNS1iZWEyLTBhYjcxOGQzZWI0YhACGiRkMGVkN2FjOS0yNmE1LTQ1M2MtYWM1Ni03MWQyMWVkM2MzZDcQsbH9-78yGAESKHVzc19kMTNmNzI3NS1iYjQ2LTQwZjUtOWQ3ZC1lNzgwMTI4NzU2NTMiAlVT",
+      "totalResults": 10
+    },
+    "itineraries": [
+      {
+        "id": "12071-2501240140--32179-0-12409-2501240820",
+        "price": {
+          "raw": 201,
+          "formatted": "$201",
+          "pricingOptionId": "gOzFZVA5TK90"
+        },
+        "legs": [
+          {
+            "id": "12071-2501240140--32179-0-12409-2501240820",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 280,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T01:40:00",
+            "arrival": "2025-01-24T08:20:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32179,
+                  "alternateId": "78",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                  "name": "Jeju Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-12409-2501240140-2501240820--32179",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T01:40:00",
+                "arrival": "2025-01-24T08:20:00",
+                "durationInMinutes": 280,
+                "flightNumber": "2804",
+                "marketingCarrier": {
+                  "id": -32179,
+                  "name": "Jeju Air",
+                  "alternateId": "78",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32179,
+                  "name": "Jeju Air",
+                  "alternateId": "78",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "eco": {
+          "ecoContenderDelta": 9.84639
+        },
+        "fareAttributes": {},
+        "tags": [
+          "cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.999
+      },
+      {
+        "id": "12071-2501241040--31703-0-12409-2501241630",
+        "price": {
+          "raw": 407.78,
+          "formatted": "$408",
+          "pricingOptionId": "bTr3miWkdkWd"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241040--31703-0-12409-2501241630",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 230,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T10:40:00",
+            "arrival": "2025-01-24T16:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31703,
+                  "alternateId": "VN",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "name": "Vietnam Airlines"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-12409-2501241040-2501241630--31703",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T10:40:00",
+                "arrival": "2025-01-24T16:30:00",
+                "durationInMinutes": 230,
+                "flightNumber": "414",
+                "marketingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "eco": {
+          "ecoContenderDelta": 18.89373
+        },
+        "fareAttributes": {},
+        "tags": [
+          "shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.59091
+      },
+      {
+        "id": "12071-2501241910--31703-1-12409-2501250725",
+        "price": {
+          "raw": 235.1,
+          "formatted": "$236",
+          "pricingOptionId": "D0ZcPAsoLRJ9"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241910--31703-1-12409-2501250725",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 615,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T19:10:00",
+            "arrival": "2025-01-25T07:25:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31703,
+                  "alternateId": "VN",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "name": "Vietnam Airlines"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10902-2501241910-2501242035--31703",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2025-01-24T19:10:00",
+                "arrival": "2025-01-24T20:35:00",
+                "durationInMinutes": 85,
+                "flightNumber": "197",
+                "marketingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10902-12409-2501250105-2501250725--31703",
+                "origin": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-25T01:05:00",
+                "arrival": "2025-01-25T07:25:00",
+                "durationInMinutes": 260,
+                "flightNumber": "430",
+                "marketingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.46538
+      },
+      {
+        "id": "12071-2501242340--31703-0-12409-2501250530",
+        "price": {
+          "raw": 539.25,
+          "formatted": "$540",
+          "pricingOptionId": "Gm9Vj7oKj6CK"
+        },
+        "legs": [
+          {
+            "id": "12071-2501242340--31703-0-12409-2501250530",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 230,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T23:40:00",
+            "arrival": "2025-01-25T05:30:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31703,
+                  "alternateId": "VN",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "name": "Vietnam Airlines"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-12409-2501242340-2501250530--31703",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T23:40:00",
+                "arrival": "2025-01-25T05:30:00",
+                "durationInMinutes": 230,
+                "flightNumber": "416",
+                "marketingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "eco": {
+          "ecoContenderDelta": 28.719723
+        },
+        "fareAttributes": {},
+        "tags": [
+          "second_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.32476
+      },
+      {
+        "id": "12071-2501240545--31705-1-12409-2501242130",
+        "price": {
+          "raw": 210.9,
+          "formatted": "$211",
+          "pricingOptionId": "dlEf3s0-L5kA"
+        },
+        "legs": [
+          {
+            "id": "12071-2501240545--31705-1-12409-2501242130",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 825,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T05:45:00",
+            "arrival": "2025-01-24T21:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "alternateId": "4V",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10902-2501240545-2501240705--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2025-01-24T05:45:00",
+                "arrival": "2025-01-24T07:05:00",
+                "durationInMinutes": 80,
+                "flightNumber": "501",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10902-12409-2501241510-2501242130--31705",
+                "origin": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T15:10:00",
+                "arrival": "2025-01-24T21:30:00",
+                "durationInMinutes": 260,
+                "flightNumber": "874",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": true,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "second_cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.31402
+      },
+      {
+        "id": "12071-2501241220--32128-0-12409-2501241825",
+        "price": {
+          "raw": 610.98,
+          "formatted": "$611",
+          "pricingOptionId": "9BNP7wMGT23H"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241220--32128-0-12409-2501241825",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 245,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T12:20:00",
+            "arrival": "2025-01-24T18:25:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32128,
+                  "alternateId": "KE",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KE.png",
+                  "name": "Korean Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-12409-2501241220-2501241825--32128",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T12:20:00",
+                "arrival": "2025-01-24T18:25:00",
+                "durationInMinutes": 245,
+                "flightNumber": "442",
+                "marketingCarrier": {
+                  "id": -32128,
+                  "name": "Korean Air",
+                  "alternateId": "KE",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32128,
+                  "name": "Korean Air",
+                  "alternateId": "KE",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.303402
+      },
+      {
+        "id": "12071-2501240700--31705-1-12409-2501242130",
+        "price": {
+          "raw": 218.86,
+          "formatted": "$219",
+          "pricingOptionId": "aSZ6DlFF6QTX"
+        },
+        "legs": [
+          {
+            "id": "12071-2501240700--31705-1-12409-2501242130",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 750,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T07:00:00",
+            "arrival": "2025-01-24T21:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "alternateId": "4V",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10902-2501240700-2501240820--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2025-01-24T07:00:00",
+                "arrival": "2025-01-24T08:20:00",
+                "durationInMinutes": 80,
+                "flightNumber": "503",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10902-12409-2501241510-2501242130--31705",
+                "origin": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T15:10:00",
+                "arrival": "2025-01-24T21:30:00",
+                "durationInMinutes": 260,
+                "flightNumber": "874",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": true,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.300927
+      },
+      {
+        "id": "12071-2501241040--32128-0-12409-2501241630",
+        "price": {
+          "raw": 610.98,
+          "formatted": "$611",
+          "pricingOptionId": "A6dZMfEsOUEw"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241040--32128-0-12409-2501241630",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 230,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T10:40:00",
+            "arrival": "2025-01-24T16:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32128,
+                  "alternateId": "KE",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KE.png",
+                  "name": "Korean Air"
+                }
+              ],
+              "operating": [
+                {
+                  "id": -31703,
+                  "alternateId": "VN",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "name": "Vietnam Airlines"
+                }
+              ],
+              "operationType": "not_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-12409-2501241040-2501241630--32128",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T10:40:00",
+                "arrival": "2025-01-24T16:30:00",
+                "durationInMinutes": 230,
+                "flightNumber": "5690",
+                "marketingCarrier": {
+                  "id": -32128,
+                  "name": "Korean Air",
+                  "alternateId": "KE",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "eco": {
+          "ecoContenderDelta": 18.89373
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.295808
+      },
+      {
+        "id": "12071-2501241050--31705-1-12409-2501242130",
+        "price": {
+          "raw": 244.64,
+          "formatted": "$245",
+          "pricingOptionId": "ctFRNubqtTiG"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241050--31705-1-12409-2501242130",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 520,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T10:50:00",
+            "arrival": "2025-01-24T21:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "alternateId": "4V",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10902-2501241050-2501241210--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2025-01-24T10:50:00",
+                "arrival": "2025-01-24T12:10:00",
+                "durationInMinutes": 80,
+                "flightNumber": "507",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10902-12409-2501241510-2501242130--31705",
+                "origin": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T15:10:00",
+                "arrival": "2025-01-24T21:30:00",
+                "durationInMinutes": 260,
+                "flightNumber": "874",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": true,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.294514
+      },
+      {
+        "id": "12071-2501241855--31705-1-12409-2501250505",
+        "price": {
+          "raw": 223.93,
+          "formatted": "$224",
+          "pricingOptionId": "c6GNgwmDOKqb"
+        },
+        "legs": [
+          {
+            "id": "12071-2501241855--31705-1-12409-2501250505",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International",
+              "displayCode": "ICN",
+              "city": "Seoul",
+              "country": "South Korea",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 490,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2025-01-24T18:55:00",
+            "arrival": "2025-01-25T05:05:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "alternateId": "4V",
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10902-2501241855-2501242015--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2025-01-24T18:55:00",
+                "arrival": "2025-01-24T20:15:00",
+                "durationInMinutes": 80,
+                "flightNumber": "511",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10902-12409-2501242245-2501250505--31705",
+                "origin": {
+                  "flightPlaceId": "DAD",
+                  "displayCode": "DAD",
+                  "parent": {
+                    "flightPlaceId": "DADV",
+                    "displayCode": "DAD",
+                    "name": "Da Nang",
+                    "type": "City"
+                  },
+                  "name": "Da Nang",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "ICN",
+                  "displayCode": "ICN",
+                  "parent": {
+                    "flightPlaceId": "SELA",
+                    "displayCode": "SEL",
+                    "name": "Seoul",
+                    "type": "City"
+                  },
+                  "name": "Incheon International",
+                  "type": "Airport",
+                  "country": "South Korea"
+                },
+                "departure": "2025-01-24T22:45:00",
+                "arrival": "2025-01-25T05:05:00",
+                "durationInMinutes": 260,
+                "flightNumber": "880",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": true,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.292036
+      }
+    ],
+    "messages": [],
+    "filterStats": {
+      "duration": {
+        "min": 230,
+        "max": 825,
+        "multiCityMin": 230,
+        "multiCityMax": 825
+      },
+      "airports": [
+        {
+          "city": "Hanoi",
+          "airports": [
+            {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi"
+            }
+          ]
+        },
+        {
+          "city": "Seoul",
+          "airports": [
+            {
+              "id": "ICN",
+              "entityId": "95673659",
+              "name": "Incheon International"
+            }
+          ]
+        }
+      ],
+      "carriers": [
+        {
+          "id": -32179,
+          "alternateId": "78",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+          "name": "Jeju Air"
+        },
+        {
+          "id": -32128,
+          "alternateId": "KE",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KE.png",
+          "name": "Korean Air"
+        },
+        {
+          "id": -31705,
+          "alternateId": "4V",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+          "name": "VietJet Air"
+        },
+        {
+          "id": -31703,
+          "alternateId": "VN",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+          "name": "Vietnam Airlines"
+        }
+      ],
+      "stopPrices": {
+        "direct": {
+          "isPresent": true,
+          "formattedPrice": "$201"
+        },
+        "one": {
+          "isPresent": true,
+          "formattedPrice": "$211"
+        },
+        "twoOrMore": {
+          "isPresent": false
+        }
+      }
+    },
+    "flightsSessionId": "a7687451-d676-4535-bea2-0ab718d3eb4b",
+    "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+    "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IklDTiIsImQxIjoiMjAyNS0wMS0yNCJ9"
+  },
+  "status": true,
+  "message": "Successful"
+}

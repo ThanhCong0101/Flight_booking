@@ -1,0 +1,281 @@
+{
+    "data": {
+      "flights": {
+        "noPriceLabel": "No price information",
+        "groups": [
+          {
+            "id": "low",
+            "label": "$"
+          },
+          {
+            "id": "medium",
+            "label": "$$"
+          },
+          {
+            "id": "high",
+            "label": "$$$"
+          }
+        ],
+        "days": [
+          {
+            "day": "2024-02-26",
+            "group": "low",
+            "price": 165.73
+          },
+          {
+            "day": "2024-02-29",
+            "group": "low",
+            "price": 288.16
+          },
+          {
+            "day": "2024-03-04",
+            "group": "low",
+            "price": 151.6
+          },
+          {
+            "day": "2024-03-06",
+            "group": "low",
+            "price": 283.96
+          },
+          {
+            "day": "2024-03-08",
+            "group": "low",
+            "price": 160.21
+          },
+          {
+            "day": "2024-03-10",
+            "group": "low",
+            "price": 161.54
+          },
+          {
+            "day": "2024-03-14",
+            "group": "low",
+            "price": 173.11
+          },
+          {
+            "day": "2024-03-15",
+            "group": "medium",
+            "price": 331.17
+          },
+          {
+            "day": "2024-03-16",
+            "group": "medium",
+            "price": 352.67
+          },
+          {
+            "day": "2024-03-22",
+            "group": "low",
+            "price": 302.14
+          },
+          {
+            "day": "2024-03-25",
+            "group": "low",
+            "price": 151.6
+          },
+          {
+            "day": "2024-03-28",
+            "group": "low",
+            "price": 173.11
+          },
+          {
+            "day": "2024-03-31",
+            "group": "medium",
+            "price": 435.47
+          },
+          {
+            "day": "2024-04-02",
+            "group": "low",
+            "price": 292.46
+          },
+          {
+            "day": "2024-04-03",
+            "group": "medium",
+            "price": 361.28
+          },
+          {
+            "day": "2024-04-18",
+            "group": "low",
+            "price": 173.11
+          },
+          {
+            "day": "2024-04-20",
+            "group": "medium",
+            "price": 363.43
+          },
+          {
+            "day": "2024-04-21",
+            "group": "medium",
+            "price": 397.83
+          },
+          {
+            "day": "2024-04-22",
+            "group": "medium",
+            "price": 336.54
+          },
+          {
+            "day": "2024-04-26",
+            "group": "medium",
+            "price": 376.15
+          },
+          {
+            "day": "2024-04-28",
+            "group": "medium",
+            "price": 421.05
+          },
+          {
+            "day": "2024-04-30",
+            "group": "medium",
+            "price": 386.81
+          },
+          {
+            "day": "2024-05-06",
+            "group": "medium",
+            "price": 390.1
+          },
+          {
+            "day": "2024-05-09",
+            "group": "medium",
+            "price": 379
+          },
+          {
+            "day": "2024-05-12",
+            "group": "medium",
+            "price": 375.14
+          },
+          {
+            "day": "2024-05-13",
+            "group": "medium",
+            "price": 365.58
+          },
+          {
+            "day": "2024-05-14",
+            "group": "medium",
+            "price": 336.13
+          },
+          {
+            "day": "2024-05-17",
+            "group": "medium",
+            "price": 336.13
+          },
+          {
+            "day": "2024-05-18",
+            "group": "medium",
+            "price": 405.36
+          },
+          {
+            "day": "2024-05-25",
+            "group": "medium",
+            "price": 431.17
+          },
+          {
+            "day": "2024-06-05",
+            "group": "medium",
+            "price": 544.77
+          },
+          {
+            "day": "2024-06-06",
+            "group": "medium",
+            "price": 510.73
+          },
+          {
+            "day": "2024-06-15",
+            "group": "high",
+            "price": 677.71
+          },
+          {
+            "day": "2024-06-19",
+            "group": "medium",
+            "price": 576.7
+          },
+          {
+            "day": "2024-06-20",
+            "group": "medium",
+            "price": 615.61
+          },
+          {
+            "day": "2024-07-01",
+            "group": "high",
+            "price": 679.29
+          },
+          {
+            "day": "2024-07-08",
+            "group": "high",
+            "price": 852.07
+          },
+          {
+            "day": "2024-07-11",
+            "group": "high",
+            "price": 647.29
+          },
+          {
+            "day": "2024-07-12",
+            "group": "high",
+            "price": 706.43
+          },
+          {
+            "day": "2024-07-20",
+            "group": "high",
+            "price": 689.22
+          },
+          {
+            "day": "2024-07-28",
+            "group": "high",
+            "price": 718.43
+          },
+          {
+            "day": "2024-07-29",
+            "group": "high",
+            "price": 770.55
+          },
+          {
+            "day": "2024-07-30",
+            "group": "high",
+            "price": 694.78
+          },
+          {
+            "day": "2024-08-09",
+            "group": "high",
+            "price": 740.91
+          },
+          {
+            "day": "2024-08-10",
+            "group": "high",
+            "price": 729.28
+          },
+          {
+            "day": "2024-08-11",
+            "group": "high",
+            "price": 717.23
+          },
+          {
+            "day": "2024-08-15",
+            "group": "high",
+            "price": 651.59
+          },
+          {
+            "day": "2024-08-19",
+            "group": "medium",
+            "price": 623.63
+          },
+          {
+            "day": "2024-08-21",
+            "group": "medium",
+            "price": 480.63
+          },
+          {
+            "day": "2024-09-07",
+            "group": "medium",
+            "price": 499.98
+          },
+          {
+            "day": "2024-11-11",
+            "group": "medium",
+            "price": 491.38
+          }
+        ],
+        "currency": "USD"
+      }
+    },
+    "status": true,
+    "message": "Successful"
+  }

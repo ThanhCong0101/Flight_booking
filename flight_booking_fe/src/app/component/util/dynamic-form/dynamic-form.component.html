@@ -1,0 +1,66 @@
+<form
+  [formGroup]="dynamicForm"
+  (ngSubmit)="onSubmit()"
+  class="card bg-amber-100 w-full max-w-lg mx-auto p-6 space-y-2"
+>
+  <div *ngFor="let field of formFields() | keyvalue" class="form-control">
+    <div [ngSwitch]="field.value.type">
+      <div *ngSwitchCase="'text'" class="space-y-1">
+        <label class="label p-0">
+          <span class="label-text font-medium">{{ field.value.label }}</span>
+          <span class="label-text-alt text-error" *ngIf="field.value.required"
+            >*</span
+          >
+        </label>
+        <input
+          type="text"
+          [formControlName]="field.key"
+          [placeholder]="field.value.placeholder"
+          class="input input-bordered w-full"
+        />
+      </div>
+
+      <div *ngSwitchCase="'select'" class="space-y-1">
+        <label class="label p-0">
+          <span class="label-text font-medium">{{ field.value.label }}</span>
+          <span class="label-text-alt text-error" *ngIf="field.value.required"
+            >*</span
+          >
+        </label>
+        <select
+          [formControlName]="field.key"
+          class="select select-bordered w-full"
+        >
+          <option value="" disabled selected>
+            Select {{ field.value.label }}
+          </option>
+          <option
+            *ngFor="let opt of field.value.options"
+            [value]="opt"
+            class="capitalize"
+          >
+            {{ opt }}
+          </option>
+        </select>
+      </div>
+
+      <div *ngSwitchCase="'date'" class="space-y-1">
+        <label class="label p-0">
+          <span class="label-text font-medium">{{ field.value.label }}</span>
+          <span class="label-text-alt text-error" *ngIf="field.value.required"
+            >*</span
+          >
+        </label>
+        <input
+          type="date"
+          [formControlName]="field.key"
+          class="input input-bordered w-full"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12">
+    <button type="submit" class="btn btn-primary w-full">Submit</button>
+  </div>
+</form>

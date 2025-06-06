@@ -1,0 +1,383 @@
+{
+    "data": {
+        "flightQuotes": {
+            "buckets": [
+                {
+                    "id": "CHEAPEST_FLIGHT_QUOTES",
+                    "label": "Cheapest flights",
+                    "resultIds": [
+                        "{bl}:202409230157*D*JFK*CDG*20241006*arus*N0",
+                        "{bl}:202409230348*D*JFK*CDG*20241007*arus*N0",
+                        "{bl}:202409230411*D*JFK*CDG*20241022*edus*N0",
+                        "{bl}:202409230445*D*JFK*CDG*20241020*edus*N0",
+                        "{bl}:202409230538*D*JFK*CDG*20241023*edus*N0",
+                        "{bl}:202409230924*D*JFK*CDG*20241018*cust*N0",
+                        "{bl}:202409230936*D*JFK*CDG*20241008*noaa*N0",
+                        "{bl}:202409230624*D*JFK*CDG*20241015*arus*N0",
+                        "{bl}:202409230530*D*JFK*CDG*20241005*arus*N0"
+                    ]
+                },
+                {
+                    "id": "DIRECT_FLIGHT_QUOTES",
+                    "label": "Direct flights",
+                    "resultIds": [
+                        "{bl}:202409230157*D*JFK*CDG*20241006*arus*N0",
+                        "{bl}:202409230348*D*JFK*CDG*20241007*arus*N0",
+                        "{bl}:202409230411*D*JFK*CDG*20241022*edus*N0",
+                        "{bl}:202409230445*D*JFK*CDG*20241020*edus*N0",
+                        "{bl}:202409230538*D*JFK*CDG*20241023*edus*N0",
+                        "{bl}:202409230924*D*JFK*CDG*20241018*cust*N0",
+                        "{bl}:202409230936*D*JFK*CDG*20241008*noaa*N0",
+                        "{bl}:202409230624*D*JFK*CDG*20241015*arus*N0",
+                        "{bl}:202409230530*D*JFK*CDG*20241005*arus*N0"
+                    ]
+                }
+            ],
+            "results": [
+                {
+                    "id": "{bl}:202409230411*D*JFK*CDG*20241022*edus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$119",
+                        "rawPrice": 119.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-22",
+                            "localDepartureDateLabel": "Tue, Oct 22"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230924*D*JFK*CDG*20241018*cust*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$121",
+                        "rawPrice": 121.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-18",
+                            "localDepartureDateLabel": "Fri, Oct 18"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230157*D*JFK*CDG*20241006*arus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$118",
+                        "rawPrice": 118.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-06",
+                            "localDepartureDateLabel": "Sun, Oct 6"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230936*D*JFK*CDG*20241008*noaa*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$121",
+                        "rawPrice": 121.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-08",
+                            "localDepartureDateLabel": "Tue, Oct 8"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230538*D*JFK*CDG*20241023*edus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$119",
+                        "rawPrice": 119.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-23",
+                            "localDepartureDateLabel": "Wed, Oct 23"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230530*D*JFK*CDG*20241005*arus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$138",
+                        "rawPrice": 138.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-05",
+                            "localDepartureDateLabel": "Sat, Oct 5"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230445*D*JFK*CDG*20241020*edus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$119",
+                        "rawPrice": 119.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-20",
+                            "localDepartureDateLabel": "Sun, Oct 20"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230624*D*JFK*CDG*20241015*arus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$138",
+                        "rawPrice": 138.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-15",
+                            "localDepartureDateLabel": "Tue, Oct 15"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                },
+                {
+                    "id": "{bl}:202409230348*D*JFK*CDG*20241007*arus*N0",
+                    "type": "FLIGHT_QUOTE",
+                    "content": {
+                        "price": "$118",
+                        "rawPrice": 118.0,
+                        "direct": true,
+                        "outboundLeg": {
+                            "originAirport": {
+                                "id": "95565058",
+                                "skyCode": "JFK",
+                                "name": "JFK",
+                                "type": "Airport"
+                            },
+                            "destinationAirport": {
+                                "id": "95565041",
+                                "skyCode": "CDG",
+                                "name": "CDG",
+                                "type": "Airport"
+                            },
+                            "localDepartureDate": "2024-10-07",
+                            "localDepartureDateLabel": "Mon, Oct 7"
+                        }
+                    },
+                    "entityId": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIn0=",
+                    "skyId": "CDG"
+                }
+            ],
+            "months": [
+                {
+                    "year": 2024,
+                    "month": 9,
+                    "monthLabel": "Sep",
+                    "selected": false
+                },
+                {
+                    "year": 2024,
+                    "month": 10,
+                    "monthLabel": "Oct",
+                    "selected": true
+                },
+                {
+                    "year": 2024,
+                    "month": 11,
+                    "monthLabel": "Nov",
+                    "selected": false
+                },
+                {
+                    "year": 2024,
+                    "month": 12,
+                    "monthLabel": "Dec",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 1,
+                    "monthLabel": "Jan",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 2,
+                    "monthLabel": "Feb",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 3,
+                    "monthLabel": "Mar",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 4,
+                    "monthLabel": "Apr",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 5,
+                    "monthLabel": "May",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 6,
+                    "monthLabel": "Jun",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 7,
+                    "monthLabel": "Jul",
+                    "selected": false
+                },
+                {
+                    "year": 2025,
+                    "month": 8,
+                    "monthLabel": "Aug",
+                    "selected": false
+                }
+            ],
+            "context": {
+                "status": "complete",
+                "sessionId": "UNFOCUSED_SESSION_ID",
+                "totalResults": 9
+            }
+        },
+        "differentDestination": {
+            "location": {
+                "id": "29475385",
+                "skyCode": "FR",
+                "name": "France",
+                "type": "Nation"
+            },
+            "context": {
+                "status": "complete",
+                "sessionId": "UNFOCUSED_SESSION_ID",
+                "totalResults": 0
+            }
+        },
+        "context": {
+            "status": "complete",
+            "sessionId": "UNFOCUSED_SESSION_ID",
+            "totalResults": 0
+        }
+    },
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/search-everywhere?fromEntityId=NYCA&toEntityId=PARI&month=10&year=2024"
+}

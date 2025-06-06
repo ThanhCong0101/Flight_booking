@@ -1,0 +1,1890 @@
+{
+    "data": {
+      "context": {
+        "status": "incomplete",
+        "sessionId": "ClQIARJQCk4KJGIzZWIyYjdlLWE3NzgtNGJiZi04ZDdmLTNhNTVlN2JkOWYxYxACGiQ2Y2ExMGJlMi0xZTI4LTRkMjItOGZhOC00NTFjOTFhN2ExMzU=",
+        "totalResults": 10
+      },
+      "itineraries": [
+        {
+          "id": "15083-2402151840--30858,-31825-1-14355-2402160020",
+          "price": {
+            "raw": 600,
+            "formatted": "$600",
+            "pricingOptionId": "8JVdsK6G1XjD"
+          },
+          "legs": [
+            {
+              "id": "15083-2402151840--30858,-31825-1-14355-2402160020",
+              "origin": {
+                "id": "ORY",
+                "name": "Paris Orly",
+                "displayCode": "ORY",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 760,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T18:40:00",
+              "arrival": "2024-02-16T00:20:00",
+              "timeDeltaInDays": 1,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -30858,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                    "name": "French Bee"
+                  },
+                  {
+                    "id": -31825,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NK.png",
+                    "name": "Spirit Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "15083-11442-2402151840-2402152100--30858",
+                  "origin": {
+                    "flightPlaceId": "ORY",
+                    "displayCode": "ORY",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Orly",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "EWR",
+                    "displayCode": "EWR",
+                    "parent": {
+                      "flightPlaceId": "NYCA",
+                      "displayCode": "NYC",
+                      "name": "New York",
+                      "type": "City"
+                    },
+                    "name": "New York Newark",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T18:40:00",
+                  "arrival": "2024-02-15T21:00:00",
+                  "durationInMinutes": 500,
+                  "flightNumber": "720",
+                  "marketingCarrier": {
+                    "id": -30858,
+                    "name": "French Bee",
+                    "alternateId": "BF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30858,
+                    "name": "French Bee",
+                    "alternateId": "BF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "11442-14355-2402152210-2402160020--31825",
+                  "origin": {
+                    "flightPlaceId": "EWR",
+                    "displayCode": "EWR",
+                    "parent": {
+                      "flightPlaceId": "NYCA",
+                      "displayCode": "NYC",
+                      "name": "New York",
+                      "type": "City"
+                    },
+                    "name": "New York Newark",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T22:10:00",
+                  "arrival": "2024-02-16T00:20:00",
+                  "durationInMinutes": 190,
+                  "flightNumber": "1594",
+                  "marketingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 33.53721
+          },
+          "fareAttributes": {},
+          "tags": [
+            "third_cheapest",
+            "shortest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.999
+        },
+        {
+          "id": "10413-2402150950--32356,-30598,-32289-2-14355-2402152111",
+          "price": {
+            "raw": 436,
+            "formatted": "$436",
+            "pricingOptionId": "5vs8tkW7WKH9"
+          },
+          "legs": [
+            {
+              "id": "10413-2402150950--32356,-30598,-32289-2-14355-2402152111",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 1101,
+              "stopCount": 2,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T09:50:00",
+              "arrival": "2024-02-15T21:11:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32356,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EZ.png",
+                    "name": "easyJet"
+                  },
+                  {
+                    "id": -30598,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I%29.png",
+                    "name": "Norse Atlantic Airways (UK)"
+                  },
+                  {
+                    "id": -32289,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/F9.png",
+                    "name": "Frontier Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-13542-2402150950-2402150955--32356",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "LGW",
+                    "displayCode": "LGW",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Gatwick",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T09:50:00",
+                  "arrival": "2024-02-15T09:55:00",
+                  "durationInMinutes": 65,
+                  "flightNumber": "8412",
+                  "marketingCarrier": {
+                    "id": -32356,
+                    "name": "easyJet",
+                    "alternateId": "EZ",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32356,
+                    "name": "easyJet",
+                    "alternateId": "EZ",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13542-13933-2402151400-2402151825--30598",
+                  "origin": {
+                    "flightPlaceId": "LGW",
+                    "displayCode": "LGW",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Gatwick",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T14:00:00",
+                  "arrival": "2024-02-15T18:25:00",
+                  "durationInMinutes": 565,
+                  "flightNumber": "783",
+                  "marketingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13933-14355-2402152011-2402152111--32289",
+                  "origin": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T20:11:00",
+                  "arrival": "2024-02-15T21:11:00",
+                  "durationInMinutes": 120,
+                  "flightNumber": "2011",
+                  "marketingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 10.4799385
+          },
+          "fareAttributes": {},
+          "tags": [
+            "second_cheapest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.834842
+        },
+        {
+          "id": "10413-2402150725--32356,-30598,-32289-2-14355-2402152111",
+          "price": {
+            "raw": 418,
+            "formatted": "$418",
+            "pricingOptionId": "XPsMyxFRReUw"
+          },
+          "legs": [
+            {
+              "id": "10413-2402150725--32356,-30598,-32289-2-14355-2402152111",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 1246,
+              "stopCount": 2,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T07:25:00",
+              "arrival": "2024-02-15T21:11:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32356,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EZ.png",
+                    "name": "easyJet"
+                  },
+                  {
+                    "id": -30598,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I%29.png",
+                    "name": "Norse Atlantic Airways (UK)"
+                  },
+                  {
+                    "id": -32289,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/F9.png",
+                    "name": "Frontier Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-13542-2402150725-2402150730--32356",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "LGW",
+                    "displayCode": "LGW",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Gatwick",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T07:25:00",
+                  "arrival": "2024-02-15T07:30:00",
+                  "durationInMinutes": 65,
+                  "flightNumber": "8402",
+                  "marketingCarrier": {
+                    "id": -32356,
+                    "name": "easyJet",
+                    "alternateId": "EZ",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32356,
+                    "name": "easyJet",
+                    "alternateId": "EZ",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13542-13933-2402151400-2402151825--30598",
+                  "origin": {
+                    "flightPlaceId": "LGW",
+                    "displayCode": "LGW",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Gatwick",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T14:00:00",
+                  "arrival": "2024-02-15T18:25:00",
+                  "durationInMinutes": 565,
+                  "flightNumber": "783",
+                  "marketingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13933-14355-2402152011-2402152111--32289",
+                  "origin": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T20:11:00",
+                  "arrival": "2024-02-15T21:11:00",
+                  "durationInMinutes": 120,
+                  "flightNumber": "2011",
+                  "marketingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 10.705751
+          },
+          "fareAttributes": {},
+          "tags": [
+            "cheapest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.712382
+        },
+        {
+          "id": "10413-2402151350--30667,-31825-1-14355-2402152224",
+          "price": {
+            "raw": 640.07,
+            "formatted": "$641",
+            "pricingOptionId": "eLpOhhaO1fLs"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151350--30667,-31825-1-14355-2402152224",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 934,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T13:50:00",
+              "arrival": "2024-02-15T22:24:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -30667,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/9%7E.png",
+                    "name": "Norse Atlantic Airways"
+                  },
+                  {
+                    "id": -31825,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NK.png",
+                    "name": "Spirit Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-14074-2402151350-2402151745--30667",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MIA",
+                    "displayCode": "MIA",
+                    "parent": {
+                      "flightPlaceId": "MIAA",
+                      "displayCode": "MIA",
+                      "name": "Miami",
+                      "type": "City"
+                    },
+                    "name": "Miami International",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T13:50:00",
+                  "arrival": "2024-02-15T17:45:00",
+                  "durationInMinutes": 595,
+                  "flightNumber": "323",
+                  "marketingCarrier": {
+                    "id": -30667,
+                    "name": "Norse Atlantic Airways",
+                    "alternateId": "9~",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30667,
+                    "name": "Norse Atlantic Airways",
+                    "alternateId": "9~",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "14074-14355-2402152109-2402152224--31825",
+                  "origin": {
+                    "flightPlaceId": "MIA",
+                    "displayCode": "MIA",
+                    "parent": {
+                      "flightPlaceId": "MIAA",
+                      "displayCode": "MIA",
+                      "name": "Miami",
+                      "type": "City"
+                    },
+                    "name": "Miami International",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T21:09:00",
+                  "arrival": "2024-02-15T22:24:00",
+                  "durationInMinutes": 135,
+                  "flightNumber": "868",
+                  "marketingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 9.849328
+          },
+          "fareAttributes": {},
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.706558
+        },
+        {
+          "id": "10413-2402151000--32677,-30598,-32289-2-14355-2402152111",
+          "price": {
+            "raw": 723,
+            "formatted": "$723",
+            "pricingOptionId": "e1EDK7l0mcLb"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151000--32677,-30598,-32289-2-14355-2402152111",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 1091,
+              "stopCount": 2,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T10:00:00",
+              "arrival": "2024-02-15T21:11:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32677,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+                    "name": "Air France"
+                  },
+                  {
+                    "id": -30598,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I%29.png",
+                    "name": "Norse Atlantic Airways (UK)"
+                  },
+                  {
+                    "id": -32289,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/F9.png",
+                    "name": "Frontier Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "airportChangesIn": [
+                "London"
+              ],
+              "segments": [
+                {
+                  "id": "10413-13554-2402151000-2402151030--32677",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "LHR",
+                    "displayCode": "LHR",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Heathrow",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T10:00:00",
+                  "arrival": "2024-02-15T10:30:00",
+                  "durationInMinutes": 90,
+                  "flightNumber": "1580",
+                  "marketingCarrier": {
+                    "id": -32677,
+                    "name": "Air France",
+                    "alternateId": "AF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32677,
+                    "name": "Air France",
+                    "alternateId": "AF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13542-13933-2402151400-2402151825--30598",
+                  "origin": {
+                    "flightPlaceId": "LGW",
+                    "displayCode": "LGW",
+                    "parent": {
+                      "flightPlaceId": "LOND",
+                      "displayCode": "LON",
+                      "name": "London",
+                      "type": "City"
+                    },
+                    "name": "London Gatwick",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T14:00:00",
+                  "arrival": "2024-02-15T18:25:00",
+                  "durationInMinutes": 565,
+                  "flightNumber": "783",
+                  "marketingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30598,
+                    "name": "Norse Atlantic Airways (UK)",
+                    "alternateId": "I)",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "13933-14355-2402152011-2402152111--32289",
+                  "origin": {
+                    "flightPlaceId": "MCO",
+                    "displayCode": "MCO",
+                    "parent": {
+                      "flightPlaceId": "ORLB",
+                      "displayCode": "ORL",
+                      "name": "Orlando",
+                      "type": "City"
+                    },
+                    "name": "Orlando International",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T20:11:00",
+                  "arrival": "2024-02-15T21:11:00",
+                  "durationInMinutes": 120,
+                  "flightNumber": "2011",
+                  "marketingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32289,
+                    "name": "Frontier Airlines",
+                    "alternateId": "F9",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 10.421866
+          },
+          "fareAttributes": {},
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.43512
+        },
+        {
+          "id": "15083-2402151430--30858,-31825-1-14355-2402152224",
+          "price": {
+            "raw": 1083.8,
+            "formatted": "$1,084",
+            "pricingOptionId": "LQh8mO5o2K5O"
+          },
+          "legs": [
+            {
+              "id": "15083-2402151430--30858,-31825-1-14355-2402152224",
+              "origin": {
+                "id": "ORY",
+                "name": "Paris Orly",
+                "displayCode": "ORY",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 894,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T14:30:00",
+              "arrival": "2024-02-15T22:24:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -30858,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+                    "name": "French Bee"
+                  },
+                  {
+                    "id": -31825,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NK.png",
+                    "name": "Spirit Airlines"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "15083-14074-2402151430-2402151845--30858",
+                  "origin": {
+                    "flightPlaceId": "ORY",
+                    "displayCode": "ORY",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Orly",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MIA",
+                    "displayCode": "MIA",
+                    "parent": {
+                      "flightPlaceId": "MIAA",
+                      "displayCode": "MIA",
+                      "name": "Miami",
+                      "type": "City"
+                    },
+                    "name": "Miami International",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T14:30:00",
+                  "arrival": "2024-02-15T18:45:00",
+                  "durationInMinutes": 615,
+                  "flightNumber": "742",
+                  "marketingCarrier": {
+                    "id": -30858,
+                    "name": "French Bee",
+                    "alternateId": "BF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -30858,
+                    "name": "French Bee",
+                    "alternateId": "BF",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "14074-14355-2402152109-2402152224--31825",
+                  "origin": {
+                    "flightPlaceId": "MIA",
+                    "displayCode": "MIA",
+                    "parent": {
+                      "flightPlaceId": "MIAA",
+                      "displayCode": "MIA",
+                      "name": "Miami",
+                      "type": "City"
+                    },
+                    "name": "Miami International",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T21:09:00",
+                  "arrival": "2024-02-15T22:24:00",
+                  "durationInMinutes": 135,
+                  "flightNumber": "868",
+                  "marketingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31825,
+                    "name": "Spirit Airlines",
+                    "alternateId": "NK",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": true,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "eco": {
+            "ecoContenderDelta": 26.418137
+          },
+          "fareAttributes": {},
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.430396
+        },
+        {
+          "id": "10413-2402151155--32478-1-14355-2402151859",
+          "price": {
+            "raw": 1461.1,
+            "formatted": "$1,462",
+            "pricingOptionId": "f18xEsykmN_e"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151155--32478-1-14355-2402151859",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 844,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T11:55:00",
+              "arrival": "2024-02-15T18:59:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32478,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/SN.png",
+                    "name": "Brussels Airlines"
+                  }
+                ],
+                "operating": [
+                  {
+                    "id": -31722,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UA.png",
+                    "name": "United"
+                  }
+                ],
+                "operationType": "not_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-12387-2402151155-2402151455--32478",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T11:55:00",
+                  "arrival": "2024-02-15T14:55:00",
+                  "durationInMinutes": 540,
+                  "flightNumber": "8926",
+                  "marketingCarrier": {
+                    "id": -32478,
+                    "name": "Brussels Airlines",
+                    "alternateId": "SN",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "12387-14355-2402151705-2402151859--32478",
+                  "origin": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T17:05:00",
+                  "arrival": "2024-02-15T18:59:00",
+                  "durationInMinutes": 174,
+                  "flightNumber": "8991",
+                  "marketingCarrier": {
+                    "id": -32478,
+                    "name": "Brussels Airlines",
+                    "alternateId": "SN",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": false,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "fareAttributes": {},
+          "tags": [
+            "third_shortest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.422852
+        },
+        {
+          "id": "10413-2402151155--32090-1-14355-2402151859",
+          "price": {
+            "raw": 1448.19,
+            "formatted": "$1,449",
+            "pricingOptionId": "y98duvHnnSNd"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151155--32090-1-14355-2402151859",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 844,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T11:55:00",
+              "arrival": "2024-02-15T18:59:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32090,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/LH.png",
+                    "name": "Lufthansa"
+                  }
+                ],
+                "operating": [
+                  {
+                    "id": -31722,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UA.png",
+                    "name": "United"
+                  }
+                ],
+                "operationType": "not_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-12387-2402151155-2402151455--32090",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T11:55:00",
+                  "arrival": "2024-02-15T14:55:00",
+                  "durationInMinutes": 540,
+                  "flightNumber": "7641",
+                  "marketingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "12387-14355-2402151705-2402151859--32090",
+                  "origin": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T17:05:00",
+                  "arrival": "2024-02-15T18:59:00",
+                  "durationInMinutes": 174,
+                  "flightNumber": "8996",
+                  "marketingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": false,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "fareAttributes": {},
+          "tags": [
+            "second_shortest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.422281
+        },
+        {
+          "id": "10413-2402151155--31722-1-14355-2402151859",
+          "price": {
+            "raw": 1461.1,
+            "formatted": "$1,462",
+            "pricingOptionId": "t1T0AnVyNiE9"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151155--31722-1-14355-2402151859",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 844,
+              "stopCount": 1,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T11:55:00",
+              "arrival": "2024-02-15T18:59:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -31722,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UA.png",
+                    "name": "United"
+                  }
+                ],
+                "operationType": "fully_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-12387-2402151155-2402151455--31722",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T11:55:00",
+                  "arrival": "2024-02-15T14:55:00",
+                  "durationInMinutes": 540,
+                  "flightNumber": "914",
+                  "marketingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "12387-14355-2402151705-2402151859--31722",
+                  "origin": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T17:05:00",
+                  "arrival": "2024-02-15T18:59:00",
+                  "durationInMinutes": 174,
+                  "flightNumber": "1521",
+                  "marketingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": false,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "fareAttributes": {},
+          "tags": [
+            "third_shortest"
+          ],
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.418608
+        },
+        {
+          "id": "10413-2402151020--32090-2-14355-2402151859",
+          "price": {
+            "raw": 1442.63,
+            "formatted": "$1,443",
+            "pricingOptionId": "WP2NtfX7pQIE"
+          },
+          "legs": [
+            {
+              "id": "10413-2402151020--32090-2-14355-2402151859",
+              "origin": {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle",
+                "displayCode": "CDG",
+                "city": "Paris",
+                "country": "France",
+                "isHighlighted": false
+              },
+              "destination": {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong",
+                "displayCode": "MSY",
+                "city": "New Orleans",
+                "country": "United States",
+                "isHighlighted": false
+              },
+              "durationInMinutes": 939,
+              "stopCount": 2,
+              "isSmallestStops": false,
+              "departure": "2024-02-15T10:20:00",
+              "arrival": "2024-02-15T18:59:00",
+              "timeDeltaInDays": 0,
+              "carriers": {
+                "marketing": [
+                  {
+                    "id": -32090,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/LH.png",
+                    "name": "Lufthansa"
+                  }
+                ],
+                "operating": [
+                  {
+                    "id": -31722,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UA.png",
+                    "name": "United"
+                  }
+                ],
+                "operationType": "partially_operated"
+              },
+              "segments": [
+                {
+                  "id": "10413-11616-2402151020-2402151140--32090",
+                  "origin": {
+                    "flightPlaceId": "CDG",
+                    "displayCode": "CDG",
+                    "parent": {
+                      "flightPlaceId": "PARI",
+                      "displayCode": "PAR",
+                      "name": "Paris",
+                      "type": "City"
+                    },
+                    "name": "Paris Charles de Gaulle",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "FRA",
+                    "displayCode": "FRA",
+                    "parent": {
+                      "flightPlaceId": "FRAN",
+                      "displayCode": "FRA",
+                      "name": "Frankfurt",
+                      "type": "City"
+                    },
+                    "name": "Frankfurt am Main",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T10:20:00",
+                  "arrival": "2024-02-15T11:40:00",
+                  "durationInMinutes": 80,
+                  "flightNumber": "1029",
+                  "marketingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "11616-12387-2402151255-2402151550--32090",
+                  "origin": {
+                    "flightPlaceId": "FRA",
+                    "displayCode": "FRA",
+                    "parent": {
+                      "flightPlaceId": "FRAN",
+                      "displayCode": "FRA",
+                      "name": "Frankfurt",
+                      "type": "City"
+                    },
+                    "name": "Frankfurt am Main",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T12:55:00",
+                  "arrival": "2024-02-15T15:50:00",
+                  "durationInMinutes": 535,
+                  "flightNumber": "418",
+                  "marketingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                },
+                {
+                  "id": "12387-14355-2402151705-2402151859--32090",
+                  "origin": {
+                    "flightPlaceId": "IAD",
+                    "displayCode": "IAD",
+                    "parent": {
+                      "flightPlaceId": "WASA",
+                      "displayCode": "WAS",
+                      "name": "Washington, D.C.",
+                      "type": "City"
+                    },
+                    "name": "Washington Dulles",
+                    "type": "Airport"
+                  },
+                  "destination": {
+                    "flightPlaceId": "MSY",
+                    "displayCode": "MSY",
+                    "parent": {
+                      "flightPlaceId": "MSYA",
+                      "displayCode": "MSY",
+                      "name": "New Orleans",
+                      "type": "City"
+                    },
+                    "name": "New Orleans Louis Armstrong",
+                    "type": "Airport"
+                  },
+                  "departure": "2024-02-15T17:05:00",
+                  "arrival": "2024-02-15T18:59:00",
+                  "durationInMinutes": 174,
+                  "flightNumber": "8996",
+                  "marketingCarrier": {
+                    "id": -32090,
+                    "name": "Lufthansa",
+                    "alternateId": "LH",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  },
+                  "operatingCarrier": {
+                    "id": -31722,
+                    "name": "United",
+                    "alternateId": "UA",
+                    "allianceId": 0,
+                    "displayCode": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "isSelfTransfer": false,
+          "isProtectedSelfTransfer": false,
+          "farePolicy": {
+            "isChangeAllowed": false,
+            "isPartiallyChangeable": false,
+            "isCancellationAllowed": false,
+            "isPartiallyRefundable": false
+          },
+          "fareAttributes": {},
+          "isMashUp": false,
+          "hasFlexibleOptions": false,
+          "score": 0.364248
+        }
+      ],
+      "messages": [],
+      "filterStats": {
+        "duration": {
+          "min": 760,
+          "max": 1246,
+          "multiCityMin": 760,
+          "multiCityMax": 1246
+        },
+        "airports": [
+          {
+            "city": "New Orleans",
+            "airports": [
+              {
+                "id": "MSY",
+                "name": "New Orleans Louis Armstrong"
+              }
+            ]
+          },
+          {
+            "city": "Paris",
+            "airports": [
+              {
+                "id": "CDG",
+                "name": "Paris Charles de Gaulle"
+              },
+              {
+                "id": "ORY",
+                "name": "Paris Orly"
+              }
+            ]
+          }
+        ],
+        "carriers": [
+          {
+            "id": -32677,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AF.png",
+            "name": "Air France"
+          },
+          {
+            "id": -32478,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/SN.png",
+            "name": "Brussels Airlines"
+          },
+          {
+            "id": -32356,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EZ.png",
+            "name": "easyJet"
+          },
+          {
+            "id": -30858,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/BF.png",
+            "name": "French Bee"
+          },
+          {
+            "id": -32289,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/F9.png",
+            "name": "Frontier Airlines"
+          },
+          {
+            "id": -32090,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/LH.png",
+            "name": "Lufthansa"
+          },
+          {
+            "id": -30667,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/9%7E.png",
+            "name": "Norse Atlantic Airways"
+          },
+          {
+            "id": -30598,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I%29.png",
+            "name": "Norse Atlantic Airways (UK)"
+          },
+          {
+            "id": -31825,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/NK.png",
+            "name": "Spirit Airlines"
+          },
+          {
+            "id": -31722,
+            "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UA.png",
+            "name": "United"
+          }
+        ],
+        "stopPrices": {
+          "direct": {
+            "isPresent": false
+          },
+          "one": {
+            "isPresent": true,
+            "formattedPrice": "$600"
+          },
+          "twoOrMore": {
+            "isPresent": true,
+            "formattedPrice": "$418"
+          }
+        }
+      },
+      "flightsSessionId": "b3eb2b7e-a778-4bbf-8d7f-3a55e7bd9f1c",
+      "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+      "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiUEFSSSIsImQiOiJNU1lBIiwiZDEiOiIyMDI0LTAyLTE1In0="
+    },
+    "status": true,
+    "message": "Successful"
+  }

@@ -1,0 +1,623 @@
+{
+    "data": {
+        "context": {
+            "status": "complete",
+            "sessionId": "ClQIARJQCk4KJDc5ZThiMzcyLTcwZjEtNDNhMC1iNzJkLTFhMzU2OWI0Y2U2ZhACGiQyZGEzZWJjMC04OTUwLTQwMTMtYjg0Ni1jNmFhN2M3ODhjNjYSKHVzc181YzEzMDE1ZC1jMWYwLTQ5NjctYWQ2MC0zNzAxNjU1YjM3NDU=",
+            "totalResults": 8
+        },
+        "itineraries": [
+            {
+                "id": "12071-2507200140--31703-0-12409-2507200240",
+                "price": {
+                    "raw": 45.6,
+                    "formatted": "$46",
+                    "pricingOptionId": "SxFI3sonsngf"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2507200140--31703-0-12409-2507200240",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport",
+                            "displayCode": "SGN",
+                            "city": "Ho Chi Minh City",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 120,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-20T01:40:00",
+                        "arrival": "2025-06-20T03:40:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31703,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                                    "name": "Vietnam Airlines"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2507200140-2507200240--31703",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "SGN",
+                                    "displayCode": "SGN",
+                                    "parent": {
+                                        "flightPlaceId": "SGNV",
+                                        "displayCode": "SGN",
+                                        "name": "Ho Chi Minh City",
+                                        "type": "City"
+                                    },
+                                    "name": "Tan Son Nhat International Airport",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2025-06-20T01:40:00",
+                                "arrival": "2025-06-20T03:40:00",
+                                "durationInMinutes": 120,
+                                "flightNumber": "241",
+                                "marketingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.999
+            },
+            {
+                "id": "12071-2507200145--31705-0-12409-2507200245",
+                "price": {
+                    "raw": 31.31,
+                    "formatted": "$32",
+                    "pricingOptionId": "ym2w7dfwxcOQ"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2507200145--31705-0-12409-2507200245",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport",
+                            "displayCode": "SGN",
+                            "city": "Ho Chi Minh City",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 120,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-20T01:45:00",
+                        "arrival": "2025-06-20T03:45:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31705,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                                    "name": "VietJet Air"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2507200145-2507200245--31705",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "SGN",
+                                    "displayCode": "SGN",
+                                    "parent": {
+                                        "flightPlaceId": "SGNV",
+                                        "displayCode": "SGN",
+                                        "name": "Ho Chi Minh City",
+                                        "type": "City"
+                                    },
+                                    "name": "Tan Son Nhat International Airport",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2025-06-20T01:45:00",
+                                "arrival": "2025-06-20T03:45:00",
+                                "durationInMinutes": 120,
+                                "flightNumber": "960",
+                                "marketingCarrier": {
+                                    "id": -31705,
+                                    "name": "VietJet Air",
+                                    "alternateId": "4V",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -31705,
+                                    "name": "VietJet Air",
+                                    "alternateId": "4V",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "second_cheapest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.825373
+            },
+            {
+                "id": "12071-2507200640--31703-0-12409-2507200840",
+                "price": {
+                    "raw": 52.6,
+                    "formatted": "$53",
+                    "pricingOptionId": "SxFI3sonsngf2"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2507200640--31703-0-12409-2507200840",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport",
+                            "displayCode": "SGN",
+                            "city": "Ho Chi Minh City",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 120,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-20T06:40:00",
+                        "arrival": "2025-06-20T08:40:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31703,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                                    "name": "Vietnam Airlines"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2507200640-2507200840--31703",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "SGN",
+                                    "displayCode": "SGN",
+                                    "parent": {
+                                        "flightPlaceId": "SGNV",
+                                        "displayCode": "SGN",
+                                        "name": "Ho Chi Minh City",
+                                        "type": "City"
+                                    },
+                                    "name": "Tan Son Nhat International Airport",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2025-06-20T06:40:00",
+                                "arrival": "2025-06-20T08:40:00",
+                                "durationInMinutes": 120,
+                                "flightNumber": "243",
+                                "marketingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "morning_flight"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.923
+            },
+            {
+                "id": "12071-2507201045--31705-0-12409-2507201245",
+                "price": {
+                    "raw": 38.31,
+                    "formatted": "$39",
+                    "pricingOptionId": "ym2w7dfwxcOQ2"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2507201045--31705-0-12409-2507201245",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport",
+                            "displayCode": "SGN",
+                            "city": "Ho Chi Minh City",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 120,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-20T10:45:00",
+                        "arrival": "2025-06-20T12:45:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31705,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                                    "name": "VietJet Air"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2507201045-2507201245--31705",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "SGN",
+                                    "displayCode": "SGN",
+                                    "parent": {
+                                        "flightPlaceId": "SGNV",
+                                        "displayCode": "SGN",
+                                        "name": "Ho Chi Minh City",
+                                        "type": "City"
+                                    },
+                                    "name": "Tan Son Nhat International Airport",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2025-06-20T10:45:00",
+                                "arrival": "2025-06-20T12:45:00",
+                                "durationInMinutes": 120,
+                                "flightNumber": "962",
+                                "marketingCarrier": {
+                                    "id": -31705,
+                                    "name": "VietJet Air",
+                                    "alternateId": "4V",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -31705,
+                                    "name": "VietJet Air",
+                                    "alternateId": "4V",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "midday_flight"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.876
+            },
+            {
+                "id": "12071-2507201540--31703-0-12409-2507201740",
+                "price": {
+                    "raw": 58.6,
+                    "formatted": "$59",
+                    "pricingOptionId": "SxFI3sonsngf3"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2507201540--31703-0-12409-2507201740",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport",
+                            "displayCode": "SGN",
+                            "city": "Ho Chi Minh City",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 120,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-20T15:40:00",
+                        "arrival": "2025-06-20T17:40:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31703,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                                    "name": "Vietnam Airlines"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2507201540-2507201740--31703",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "SGN",
+                                    "displayCode": "SGN",
+                                    "parent": {
+                                        "flightPlaceId": "SGNV",
+                                        "displayCode": "SGN",
+                                        "name": "Ho Chi Minh City",
+                                        "type": "City"
+                                    },
+                                    "name": "Tan Son Nhat International Airport",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2025-06-20T15:40:00",
+                                "arrival": "2025-06-20T17:40:00",
+                                "durationInMinutes": 120,
+                                "flightNumber": "245",
+                                "marketingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -31703,
+                                    "name": "Vietnam Airlines",
+                                    "alternateId": "VN",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "afternoon_flight"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.912
+            }
+        ],
+        "messages": [],
+        "filterStats": {
+            "duration": {
+                "min": 120,
+                "max": 120,
+                "multiCityMin": 120,
+                "multiCityMax": 120
+            },
+            "airports": [
+                {
+                    "city": "Hanoi",
+                    "airports": [
+                        {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi"
+                        }
+                    ]
+                },
+                {
+                    "city": "Ho Chi Minh City",
+                    "airports": [
+                        {
+                            "id": "SGN",
+                            "entityId": "95673660",
+                            "name": "Tan Son Nhat International Airport"
+                        }
+                    ]
+                }
+            ],
+            "carriers": [
+                {
+                    "id": -31703,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                    "name": "Vietnam Airlines"
+                },
+                {
+                    "id": -31705,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                    "name": "VietJet Air"
+                }
+            ],
+            "stopPrices": {
+                "direct": {
+                    "isPresent": true,
+                    "formattedPrice": "$32"
+                },
+                "one": {
+                    "isPresent": false
+                },
+                "twoOrMore": {
+                    "isPresent": false
+                }
+            }
+        },
+        "flightsSessionId": "79e8b372-70f1-43a0-b72d-1a3569b4ce6f",
+        "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+        "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IlNHTiIsImQxIjoiMjAyNS0wNy0yMCJ9"
+    },
+    "status": true,
+    "message": "Successful"
+} 

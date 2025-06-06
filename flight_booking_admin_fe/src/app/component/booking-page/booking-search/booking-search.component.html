@@ -1,0 +1,81 @@
+<form class="flex gap-4 my-6" [formGroup]="searchBookingForm">
+  <div class="form-control">
+    <input
+      type="text"
+      formControlName="search"
+      name="search"
+      placeholder="Search Booking ..."
+      class="input input-bordered w-64"
+    />
+  </div>
+
+  <div class="flex gap-2 items-center">
+    <!-- Toggle between specific date and range -->
+    <select class="select select-bordered" formControlName="dateFilterType">
+      <option value="specific">Specific Date</option>
+      <option value="range">Date Range</option>
+    </select>
+
+    <!-- Specific Date Input -->
+    <div
+      class="form-control"
+      *ngIf="searchBookingForm.get('dateFilterType')?.value === 'specific'"
+    >
+      <input
+        type="date"
+        formControlName="specificDate"
+        name="specificDate"
+        class="input input-bordered"
+      />
+    </div>
+
+    <!-- Date Range Inputs -->
+    <ng-container
+      *ngIf="searchBookingForm.get('dateFilterType')?.value === 'range'"
+    >
+      <div class="form-control">
+        <input
+          type="date"
+          formControlName="departDate"
+          name="departDate"
+          class="input input-bordered"
+        />
+      </div>
+      <span class="self-center">to</span>
+      <div class="form-control">
+        <input
+          type="date"
+          formControlName="endDate"
+          name="endDate"
+          class="input input-bordered"
+        />
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- Sort Options -->
+  <select
+    class="select select-bordered"
+    formControlName="sortBy"
+    name="sortBy"
+    (change)="onSortChange($event)"
+  >
+    <option value="">Sort By</option>
+    <option value="booking_date">Booking Date</option>
+    <option value="noPassengers">Capacity</option>
+    <option value="total_price">Price</option>
+  </select>
+
+  <!-- Sort Order -->
+  @if(this.searchBookingForm.get('sortBy')?.value !== ''){
+  <select
+    class="select select-bordered"
+    formControlName="sortOrder"
+    name="sortOrder"
+  >
+    <option value="">Sort Order</option>
+    <option value="ASC">Ascending</option>
+    <option value="DESC">Descending</option>
+  </select>
+  }
+</form>

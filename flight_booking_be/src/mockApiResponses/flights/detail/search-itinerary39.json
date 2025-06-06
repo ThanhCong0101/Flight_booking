@@ -1,0 +1,2196 @@
+{
+	"data": {
+		"itinerary": {
+			"id": "12071-2502280145--31705-0-12409-2502280755",
+			"legs": [
+				{
+					"id": "12071-2502280145--31705-0-12409-2502280755",
+					"departure": {
+						"year": 2025,
+						"month": 2,
+						"day": 28,
+						"hour": 1,
+						"minute": 45
+					},
+					"arrival": {
+						"year": 2025,
+						"month": 2,
+						"day": 28,
+						"hour": 7,
+						"minute": 55
+					},
+					"durationMinutes": 250,
+					"stopCount": 0,
+					"origin": {
+						"airport": {
+							"id": "12071",
+							"altId": "HAN",
+							"name": "Hanoi",
+							"displayCode": "HAN"
+						},
+						"city": {
+							"id": "3094",
+							"altId": "HANV",
+							"name": "Hanoi",
+							"displayCode": "HAN"
+						},
+						"country": {
+							"id": "18",
+							"altId": "VN",
+							"name": "Vietnam",
+							"displayCode": "VN"
+						}
+					},
+					"destination": {
+						"airport": {
+							"id": "12409",
+							"altId": "ICN",
+							"name": "Incheon International",
+							"displayCode": "ICN"
+						},
+						"city": {
+							"id": "7001",
+							"altId": "SELA",
+							"name": "Seoul",
+							"displayCode": "SEL"
+						},
+						"country": {
+							"id": "173",
+							"altId": "KR",
+							"name": "South Korea",
+							"displayCode": "KR"
+						}
+					},
+					"segments": [
+						{
+							"id": "12071-12409-2502280145-2502280755--31705",
+							"departure": {
+								"year": 2025,
+								"month": 2,
+								"day": 28,
+								"hour": 1,
+								"minute": 45
+							},
+							"arrival": {
+								"year": 2025,
+								"month": 2,
+								"day": 28,
+								"hour": 7,
+								"minute": 55
+							},
+							"durationMinutes": 250,
+							"flightNumber": "960",
+							"origin": {
+								"airport": {
+									"id": "12071",
+									"altId": "HAN",
+									"name": "Hanoi",
+									"displayCode": "HAN"
+								},
+								"city": {
+									"id": "3094",
+									"altId": "HANV",
+									"name": "Hanoi",
+									"displayCode": "HAN"
+								},
+								"country": {
+									"id": "18",
+									"altId": "VN",
+									"name": "Vietnam",
+									"displayCode": "VN"
+								}
+							},
+							"destination": {
+								"airport": {
+									"id": "12409",
+									"altId": "ICN",
+									"name": "Incheon International",
+									"displayCode": "ICN"
+								},
+								"city": {
+									"id": "7001",
+									"altId": "SELA",
+									"name": "Seoul",
+									"displayCode": "SEL"
+								},
+								"country": {
+									"id": "173",
+									"altId": "KR",
+									"name": "South Korea",
+									"displayCode": "KR"
+								}
+							},
+							"marketingCarrier": {
+								"id": -31705,
+								"altId": "4V",
+								"name": "VietJet Air",
+								"displayCode": "VJ"
+							},
+							"operatingCarrier": {
+								"id": -31705,
+								"altId": "4V",
+								"name": "VietJet Air",
+								"displayCode": "VJ"
+							},
+							"dayChange": 0,
+							"goodToKnowItems": [],
+							"amenityInfo": null
+						}
+					],
+					"layovers": [],
+					"dayChange": 0,
+					"goodToKnowItems": []
+				}
+			],
+			"pricingOptions": [
+				{
+					"id": "cu2_OlTr0I0D",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "27500",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "vaya",
+								"name": "BudgetAir",
+								"carrier": false,
+								"rating": {
+									"value": 3.61,
+									"count": 3161
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 customer support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/vaya/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=275.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpS6xMFGLmWB4nxczxM0Gh4WfzPjYjJgVGAC4V22wcAAAA|-3453656418418500893|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:19&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "27500",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "teFSEtt_ye5d",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "22199",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "arus",
+								"name": "Mytrip",
+								"carrier": false,
+								"rating": {
+									"value": 3.25,
+									"count": 3949
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 live chat and telephone support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H_TELEPHONE_LIVE_CHAT"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/arus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=221.99&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS52JJLCotFmLmWB4nxczxM0Gh4WfzPjYjJgXGKubQYBcAfe-jTSEAAAA|8481433969730850850|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:34&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "22199",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "MrttBpBrbeCH",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "20760",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "cust",
+								"name": "Trip.com",
+								"carrier": false,
+								"rating": {
+									"value": 4.44,
+									"count": 9446
+								},
+								"partnerMessages": [
+									{
+										"text": "Pay by installments available",
+										"messageType": "PARTNER_MESSAGE_PAY_IN_INSTALMENTS"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/cust/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=207.60&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-NS42JJLi0uEWLmWB4nxczxM0Gh4WfzPjYjJgXGItbUPN3Q4Crm0GAXAN33WEUoAAAA|-6546738533931047603|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T15:15:46&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "20760",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_PENDING",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_PENDING",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "jkm3hbd7gauT",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "22499",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "fnus",
+								"name": "Flightnetwork",
+								"carrier": false,
+								"rating": {
+									"value": 2.68,
+									"count": 771
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 customer support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/fnus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=224.99&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS52JJyystFmLmWB4nxczxM0Gh4WfzPjYjJgXGKubQYBcAjCviryEAAAA|8481433969730850850|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:34&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "22499",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "cJnake5rcGnz",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "22900",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "kfus",
+								"name": "Kissandfly",
+								"carrier": false,
+								"rating": {
+									"value": 2.07,
+									"count": 1264
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/kfus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=229.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mLJTistFmLmWB4nxcxx00yh4WfzPjYjJgVGAHVf350cAAAA|-6254466388150636072|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:28&pqid=false",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "22900",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "qWA0aIsJtvvp",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "24300",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "xpus",
+								"name": "Expedia",
+								"carrier": false,
+								"rating": {
+									"value": 4.65,
+									"count": 6184
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/xpus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|LBG|L|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=243.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mKpKCgtFmLmWB4nxczxM0Gh4WfzPjYjJgVGAMmxKN4cAAAA|-3582345131648386036|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:17&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "24300",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "GptU_9RsxoiC",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "24300",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "pcln",
+								"name": "Priceline",
+								"carrier": false,
+								"rating": {
+									"value": 3.09,
+									"count": 1108
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 live chat and telephone support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H_TELEPHONE_LIVE_CHAT"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/pcln/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|LBG|L|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=243.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpSM7JE2LmWB4nxczxM0Gh4WfzPjYjJgVGADimG58cAAAA|5782096043060535691|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:13&pqid=false",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "24300",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "1r7OIuQwlT5u",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "21899",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "bcom",
+								"name": "Booking.com ",
+								"carrier": false,
+								"rating": {
+									"value": 4.77,
+									"count": 7768
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 live chat and telephone support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H_TELEPHONE_LIVE_CHAT"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/bcom/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=218.99&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS52JJSs7PFWLmWB4nxczxM0Gh4WfzPjYjJgXGKubQYBcA9EgKcyEAAAA|-3555115149761833546|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:18&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "21899",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "rhDWkOD3TPii",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "25700",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "stbf",
+								"name": "Sky-tours",
+								"carrier": false,
+								"rating": {
+									"value": 2.37,
+									"count": 1127
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/stbf/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|L|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=257.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpLklKE2LmWB4nxczxM0Gh4WfzPjYjJgVGAARkjl4cAAAA|3738574056881882040|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T15:15:47&pqid=false",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "25700",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_PENDING",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_PENDING",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "cHJeeecXqInj",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "20397",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "edus",
+								"name": "eDreams",
+								"carrier": false,
+								"rating": {
+									"value": 2.58,
+									"count": 5077
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 customer support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/edus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=203.97&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mJJTSktFmLmWB4nxczxM0Gh4WfzPjYjJgVGAO0uQ5ocAAAA|2945740498199710111|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:12&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "20397",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "K-2G-Zn0YYDV",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "24300",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "tlcy",
+								"name": "Travelocity",
+								"carrier": false,
+								"rating": {
+									"value": 1.93,
+									"count": 414
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/tlcy/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|LBG|L|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=243.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpyUmuFGLmWB4nxczxM0Gh4WfzPjYjJgVGABtvhH4cAAAA|-3582345131648386036|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:17&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "24300",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "ZEWN7YVJqftU",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "24178",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "suus",
+								"name": "StudentUniverse",
+								"carrier": false,
+								"rating": {
+									"value": 1.25,
+									"count": 401
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/suus/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=241.78&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpLi0tFmLmWB4nxczxM0Gh4WfzPjYjJgVGABhvFM8cAAAA|6491021489347150492|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:11&pqid=false",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "24178",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "VXuTyzeId5F0",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "23194",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "oojo",
+								"name": "Oojo",
+								"carrier": false,
+								"rating": {
+									"value": 4.66,
+									"count": 3745
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 telephone support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H_TELEPHONE"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/oojo/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=231.94&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mLJz8_KF2LmWB4nxczxM0Gh4WfzPjYjJgVGAGfpq-4cAAAA|-2775062133206693476|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:12&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "23194",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "8AckKco8jCTK",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "21800",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "skyp",
+								"name": "Kiwi.com",
+								"carrier": false,
+								"rating": {
+									"value": 2.82,
+									"count": 3394
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 customer support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|X|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=218.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpzq4sEGLmWB4nxczxM0Gh4WfzPjYjJgVGAOvv6b0cAAAA|3145360218370871293|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:12&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "21800",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "bzqzeItcojZh",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "21076",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "chpo",
+								"name": "CheapOair",
+								"carrier": false,
+								"rating": {
+									"value": 1.79,
+									"count": 1699
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/chpo/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=210.76&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mJJzijIF2LmWB4nxczxM0Gh4WfzPjYjJgVGAOl2_R0cAAAA|6234508049175200510|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:12&pqid=false",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "21076",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				},
+				{
+					"id": "hkzRna3eXVKL",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "24300",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "orbz",
+								"name": "Orbitz",
+								"carrier": false,
+								"rating": {
+									"value": 1.86,
+									"count": 389
+								},
+								"partnerMessages": []
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/orbz/1/12071.12409.2025-02-28/air/trava/flights?itinerary=flight|-31705|960|12071|2025-02-28T01:45|12409|2025-02-28T07:55|250|LBG|L|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=8362a2dc-356a-40b4-98f8-ef7e641aaa6c&ticket_price=243.00&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mLJL0qqEmLmWB4nxczxM0Gh4WfzPjYjJgVGAIPUywscAAAA|-3582345131648386036|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:15&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "24300",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2502280145-2502280755--31705",
+									"departure": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 1,
+										"minute": 45
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 2,
+										"day": 28,
+										"hour": 7,
+										"minute": 55
+									},
+									"durationMinutes": 250,
+									"flightNumber": "960",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"operatingCarrier": {
+										"id": -31705,
+										"altId": "4V",
+										"name": "VietJet Air",
+										"displayCode": "VJ"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				}
+			],
+			"upgrades": null,
+			"pricingOptionIdsByAttribute": []
+		},
+		"pollingCompleted": false,
+		"bookingSessionId": "8362a2dc-356a-40b4-98f8-ef7e641aaa6c",
+		"frenchMarketData": null,
+		"itineraryLegacyInfo": {
+			"itineraryId": "12071-2502280145--31705-0-12409-2502280755",
+			"transferRequired": false,
+			"transferProtectionDetails": null,
+			"destinationImage": "https://content.skyscnr.com/m/88689d9401443b9a/original/sync_206569853_2023_TB_Seoul_N_Seoul_Tower_206569853_4206.jpg",
+			"carrierLogos": {
+				"-31705": "https://content.skyscnr.com/047b31b75c59a0091ceabaaf504d3e73/ai-template-vietjet-air-thumb-1-xxxhdpi.png"
+			},
+			"agentBaggagePolicy": {}
+		},
+		"legacyPlaces": []
+	},
+	"status": true,
+	"message": "Successful"
+}

@@ -1,0 +1,86 @@
+<div class="container w-full h-screen flex mx-auto justify-center items-center">
+  <form
+    class="register-form min-w-80"
+    autocomplete="off"
+    [formGroup]="loginForm"
+  >
+    <!-- User name -->
+    <div class="row-control">
+      <label class="form-control w-full min-w-80">
+        <div class="label">
+          <span class="label-text">Email</span>
+        </div>
+        <input
+          type="email"
+          placeholder="Type here"
+          class="input input-bordered w-full min-w-80"
+          id="email"
+          formControlName="email"
+          name="email"
+          required
+        />
+        <div class="label">
+          <span
+            class="error-message label-text-alt text-red-600"
+            *ngIf="
+              loginForm.get('email')?.invalid &&
+              (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)
+            "
+          >
+            {{ getErrorMessage("email") }}
+          </span>
+        </div>
+      </label>
+    </div>
+
+    <!-- Password -->
+    <div class="row-control">
+      <label class="form-control w-full min-w-80">
+        <div class="label">
+          <span class="label-text" for="password">Password</span>
+        </div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          formControlName="password"
+          required
+          class="input input-bordered w-full min-w-80"
+        />
+        <div class="label">
+          <span
+            class="error-message label-text-alt text-red-600"
+            *ngIf="
+              loginForm.get('password')?.invalid &&
+              (loginForm.get('password')?.dirty ||
+                loginForm.get('password')?.touched)
+            "
+          >
+            {{ getErrorMessage("password") }}
+          </span>
+        </div>
+      </label>
+    </div>
+
+    <div class="label">
+      <span
+        class="error-message label-text-alt text-red-600"
+        *ngIf="getCommonError().length > 0"
+      >
+        {{ getCommonError() }}
+      </span>
+    </div>
+
+    <div class="row-control row-actions">
+      <button
+        class="btn btn-primary w-full"
+        type="submit"
+        [disabled]="loginForm.invalid"
+        (click)="submitForm()"
+      >
+        Login
+      </button>
+    </div>
+  </form>
+</div>

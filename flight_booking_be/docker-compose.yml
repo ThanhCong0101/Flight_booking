@@ -1,0 +1,66 @@
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: flight_booking_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: hoidanit
+      MYSQL_TCP_PORT: 3308
+    ports:
+      - 3308:3308
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 2
+
+  mongodb:
+    image: mongo:latest
+    container_name: flight_booking_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: quangphammrr19
+      MONGO_INITDB_ROOT_PASSWORD: B6nLawMTkpfasCEx
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 5s
+      timeout: 3s
+      retries: 2
+
+  redis:
+    image: redis:alpine
+    container_name: flight_booking_redis
+    ports:
+      - 6380:6379
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 2
+
+  app:
+    image: minhquang1007/flight_booking_be
+    container_name: flight_booking_app
+    ports:
+      - 8080:8081
+    env_file: .env
+    depends_on:
+      mysql:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
+  mongodb_data:
+  redis_data:

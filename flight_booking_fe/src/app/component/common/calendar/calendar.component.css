@@ -1,0 +1,15 @@
+.calendar-block button {
+  position: relative;
+}
+
+.calendar-block button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: background-color 0.2s ease;
+  pointer-events: none;
+}
+
+.calendar-block button:hover::after {
+  background-color: rgba(59, 130, 246, 0.1);
+}

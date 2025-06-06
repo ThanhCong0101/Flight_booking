@@ -1,0 +1,328 @@
+<div class="fixed bottom-4 right-4">
+  <!-- Chat Toggle Button -->
+  <button
+    *ngIf="!isMinimized"
+    (click)="toggleMinimize()"
+    class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md hover:bg-blue-600"
+  >
+    <span class="material-symbols-outlined">chat</span>
+  </button>
+
+  <!-- Chat Window -->
+  <div
+    *ngIf="isMinimized"
+    class="w-[350px] h-[650px] bg-white rounded-lg shadow-md flex flex-col relative"
+  >
+    <!-- Header -->
+    <div
+      class="p-4 bg-blue-500 text-white rounded-t-lg flex justify-between items-center"
+    >
+      <h3>Chat Assistant</h3>
+      <div class="flex gap-2">
+        <!-- Minimize button -->
+        <button
+          (click)="toggleMinimize()"
+          class="text-white hover:text-gray-200"
+        >
+          <span class="material-symbols-outlined">{{
+            isMinimized ? "expand_more" : "remove"
+          }}</span>
+        </button>
+
+        <!-- Close button -->
+        <label
+          for="end-chat-drawer"
+          (click)="showEndChatPopup()"
+          class="text-white hover:text-gray-200"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="flex-1 p-4 overflow-y-auto" #scrollContainer>
+      <div
+        *ngFor="let message of messages"
+        [ngClass]="{ 'flex flex-col': true, 'items-end': message.isUser }"
+      >
+        @if(message.type == 'text'){
+        <div
+          [ngClass]="{
+            'max-w-[80%] rounded-lg p-3 mb-2': true,
+            'bg-blue-500 text-white': message.isUser,
+            'bg-gray-100 text-black': !message.isUser
+          }"
+        >
+          {{ message.payload?.text }}
+        </div>
+        } @else if (message.type === 'choice') {
+        <div class="flex flex-wrap gap-2 my-2">
+          <button
+            *ngFor="let button of message.payload?.choice"
+            class="btn btn-primary btn-sm text-white"
+            (click)="handleChoiceSelection(button)"
+          >
+            {{ button.request["payload"]["label"] }}
+          </button>
+        </div>
+        } @else if(message.type === 'carousel'){
+        <div
+          class="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4"
+        >
+          <div
+            class="carousel-item w-full"
+            *ngFor="let card of message.payload?.carousel; let i = index"
+            id="slide{{ i }}"
+          >
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img [src]="card.imageUrl" [alt]="card.title" />
+              </figure>
+              <div class="card-body">
+                <!-- Header -->
+                <div>
+                  <h2 class="card-title">{{ card.title }}</h2>
+
+                  <!-- Badge -->
+
+                  @if(card.variables && card.variables['tags']){
+                  <span
+                    class="badge badge-sm"
+                    [ngClass]="{
+                      'badge-neutral':
+                        card.variables['tags'].includes('cheapest'),
+
+                      'badge-success text-white':
+                        card.variables['tags'].includes('shortest')
+                    }"
+                  >
+                    {{ card.variables["tags"] }}
+                  </span>
+                  }
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-2 text-sm">
+                  <div
+                    class="whitespace-pre-line"
+                    [innerHTML]="
+                      renderStyledText(card.description.slate[0].children)
+                    "
+                  ></div>
+                </div>
+                <div class="card-actions">
+                  @for(button of card.buttons;track $index){
+                  <button
+                    class="btn btn-primary w-full"
+                    (click)="handleSelectionCarousel(button)"
+                  >
+                    {{ button.request["payload"]["label"] }}
+                  </button>
+
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        } @else if(message.type === 'cardV2'){
+
+        <!-- <div class="cardV2 bg-base-100 w-80 shadow-xl">
+              <figure>
+                <img [src]="message.payload?.cardV2![0].imageUrl" [alt]="message.payload?.cardV2![0].title" />
+              </figure>
+              <div class="cardV2-body">
+                <div>
+                  <h2 class="cardV2-title">
+                    {{ message.payload?.cardV2![0].title }}
+                  </h2>
+
+
+                  @if(message.payload?.cardV2![0].variables && message.payload?.cardV2![0].variables['tags']){
+                  <span
+                    class="badge badge-sm"
+                    [ngClass]="{
+                      'badge-neutral':
+
+                        message.payload?.cardV2![0].variables['tags'].includes('cheapest'),
+
+                      'badge-success text-white':
+
+                        message.payload?.cardV2![0].variables['tags'].includes('shortest')
+                    }"
+                  >
+
+                    {{ message.payload?.cardV2![0].variables["tags"] }}
+                  </span>
+                  }
+                </div>
+
+                <div class="space-y-2 text-sm">
+                  <div
+                    class="whitespace-pre-line"
+                    [innerHTML]="
+
+                      renderStyledText(message.payload?.cardV2![0].description.slate[0].children)
+                    "
+                  ></div>
+                </div>
+                <div class="cardV2-actions">
+
+                  @for(button of message.payload?.cardV2![0].buttons;track $index){
+                  <button
+                    class="btn btn-primary w-full"
+                    (click)="handleSelectionCarousel(button)"
+                  >
+                    {{ button.request["payload"]["label"] }}
+                  </button>
+
+                  }
+                </div>
+              </div>
+            </div> -->
+
+        <div
+          class="cardV2 bg-base-100 w-72 shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+        >
+          <figure class="px-2 pt-2">
+            <img
+              [src]="(message.payload?.cardV2)![0].imageUrl"
+              [alt]="(message.payload?.cardV2)![0].title"
+              class="rounded-xl h-48 w-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </figure>
+          <div class="cardV2-body p-6">
+            <div class="flex items-center gap-2">
+              <h2 class="cardV2-title text-xl font-bold">
+                {{ (message.payload?.cardV2)![0].title }}
+              </h2>
+              @if(message.payload?.cardV2![0].variables &&
+              message.payload?.cardV2![0].variables['tags']){
+              <span
+                class="badge badge-sm"
+                [ngClass]="{
+                  'badge-neutral':
+                    message.payload?.cardV2![0].variables['tags'].includes(
+                      'cheapest'
+                    ),
+                  'badge-success text-white':
+                    message.payload?.cardV2![0].variables['tags'].includes(
+                      'shortest'
+                    )
+                }"
+              >
+                {{ (message.payload?.cardV2)![0].variables["tags"] }}
+              </span>
+              }
+            </div>
+
+            <div class="space-y-3 text-sm mt-2">
+              <div
+                class="whitespace-pre-line prose"
+                [innerHTML]="
+                  renderStyledText(
+                    (message.payload?.cardV2)![0].description.slate[0].children
+                  )
+                "
+              ></div>
+            </div>
+
+            <div class="cardV2-actions mt-4 gap-2">
+              @for(button of message.payload?.cardV2![0].buttons;track $index){
+              <button
+                class="btn btn-primary w-full hover:btn-primary-focus transition-colors duration-200"
+                (click)="handleSelectionCarousel(button)"
+              >
+                {{ button.request["payload"]["label"] }}
+              </button>
+              }
+            </div>
+          </div>
+        </div>
+
+        } @else if(message.type === 'custom_form'){
+        @if(message.payload?.formField){
+        <app-dynamic-form
+          [formFields]="message.payload?.formField || {}"
+          (formSubmit)="onFormSubmit($event)"
+        >
+        </app-dynamic-form>
+        } }
+      </div>
+
+      <div class="flex items-center gap-1 p-2" *ngIf="isTyping">
+        <div class="w-2 h-2 rounded-full bg-gray-400 animate-bounce"></div>
+        <div
+          class="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
+          style="animation-delay: 0.2s"
+        ></div>
+        <div
+          class="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
+          style="animation-delay: 0.4s"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <form
+      [formGroup]="chatForm"
+      (ngSubmit)="sendMessage()"
+      class="p-4 border-t"
+    >
+      <div class="flex gap-2">
+        <input
+          type="text"
+          formControlName="message"
+          class="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
+          placeholder="Type your message..."
+        />
+        <button
+          type="submit"
+          class="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          [disabled]="!chatForm.valid"
+        >
+          <span class="material-symbols-outlined"> send </span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Dark Overlay -->
+    <div
+      *ngIf="showEndChat"
+      class="absolute rounded-lg inset-0 bg-black/50 transition-opacity duration-300"
+      (click)="showEndChat = false"
+    ></div>
+
+    <!-- Add this inside your chat window component -->
+    <div
+      *ngIf="showEndChat"
+      class="absolute bottom-0 left-0 right-0 p-4 bg-white border-t transform transition-all duration-300 ease-out z-10"
+      [ngClass]="{
+        'translate-y-0 opacity-100': showEndChat,
+        'translate-y-full opacity-0': !showEndChat
+      }"
+    >
+      <div class="flex flex-col gap-2">
+        <p class="text-sm text-gray-600">
+          Are you sure you want to end this chat?
+        </p>
+
+        <div class="flex items-center justify-center flex-col gap-2 mt-2">
+          <button
+            class="btn btn-error btn-sm text-white w-full"
+            (click)="endChat()"
+          >
+            End Chat
+          </button>
+          <button
+            class="btn btn-ghost btn-sm w-full"
+            (click)="showEndChat = false"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

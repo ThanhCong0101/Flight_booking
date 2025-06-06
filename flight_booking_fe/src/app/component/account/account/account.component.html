@@ -1,0 +1,40 @@
+<div class="flex min-h-screen bg-base-100">
+  <!-- Left Navigation Sidebar -->
+  <div class="w-64 bg-base-200 p-4">
+    <div class="flex flex-col space-y-2">
+      <h2 class="text-xl font-bold mb-4">My Account</h2>
+
+      <!-- Navigation Links -->
+      <ng-container *ngFor="let item of navItems">
+        <ng-container *ngTemplateOutlet="navItem; context: { $implicit: item }">
+        </ng-container>
+      </ng-container>
+
+      <button
+        class="btn btn-outline btn-ghost border-red-500 text-red-500 justify-start"
+        (click)="logout()"
+      >
+        <span class="material-symbols-outlined"> logout </span>
+        <span>Logout</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Content Area -->
+  <div class="flex-1 p-8">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<ng-template #navItem let-item>
+  <a
+    [routerLink]="item.path"
+    routerLinkActive="bg-primary text-primary-content"
+    class="btn btn-ghost justify-start"
+  >
+    <span class="material-symbols-outlined">
+      {{ item.icon }}
+    </span>
+    {{ item.label }}
+  </a>
+</ng-template>

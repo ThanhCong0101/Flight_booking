@@ -1,0 +1,103 @@
+{
+    "data": [
+      {
+        "presentation": {
+          "title": "London",
+          "suggestionTitle": "London (Any)",
+          "subtitle": "United Kingdom",
+          "id": "eyJlIjoiMjc1NDQwMDAiLCJzIjoiTE9OQSIsImgiOiIyNzU0NDAwMCJ9"
+        },
+        "navigation": {
+          "entityId": "27544000",
+          "entityType": "CITY",
+          "localizedName": "London",
+          "relevantFlightParams": {
+            "skyId": "LONA",
+            "entityId": "27544000",
+            "flightPlaceType": "CITY",
+            "localizedName": "London"
+          },
+          "relevantHotelParams": {
+            "entityId": "27544000",
+            "entityType": "CITY",
+            "localizedName": "London"
+          }
+        }
+      },
+      {
+        "presentation": {
+          "title": "London Heathrow",
+          "suggestionTitle": "London Heathrow (LHR)",
+          "subtitle": "United Kingdom",
+          "id": "eyJlIjoiOTU1NjUwMDAiLCJzIjoiTEhSIiwiaCI6IjI3NTQ0MDAwIn0="
+        },
+        "navigation": {
+          "entityId": "95565000",
+          "entityType": "AIRPORT",
+          "localizedName": "London Heathrow",
+          "relevantFlightParams": {
+            "skyId": "LHR",
+            "entityId": "95565000",
+            "flightPlaceType": "AIRPORT",
+            "localizedName": "London Heathrow"
+          },
+          "relevantHotelParams": {
+            "entityId": "27544000",
+            "entityType": "CITY",
+            "localizedName": "London"
+          }
+        }
+      },
+      {
+        "presentation": {
+          "title": "London Gatwick",
+          "suggestionTitle": "London Gatwick (LGW)",
+          "subtitle": "United Kingdom",
+          "id": "eyJlIjoiOTU1NjUwMDEiLCJzIjoiTEdXIiwiaCI6IjI3NTQ0MDAwIn0="
+        },
+        "navigation": {
+          "entityId": "95565001",
+          "entityType": "AIRPORT",
+          "localizedName": "London Gatwick",
+          "relevantFlightParams": {
+            "skyId": "LGW",
+            "entityId": "95565001",
+            "flightPlaceType": "AIRPORT",
+            "localizedName": "London Gatwick"
+          },
+          "relevantHotelParams": {
+            "entityId": "27544000",
+            "entityType": "CITY",
+            "localizedName": "London"
+          }
+        }
+      },
+      {
+        "presentation": {
+          "title": "London Stansted",
+          "suggestionTitle": "London Stansted (STN)",
+          "subtitle": "United Kingdom",
+          "id": "eyJlIjoiOTU1NjUwMDIiLCJzIjoiU1ROIiwiaCI6IjI3NTQ0MDAwIn0="
+        },
+        "navigation": {
+          "entityId": "95565002",
+          "entityType": "AIRPORT",
+          "localizedName": "London Stansted",
+          "relevantFlightParams": {
+            "skyId": "STN",
+            "entityId": "95565002",
+            "flightPlaceType": "AIRPORT",
+            "localizedName": "London Stansted"
+          },
+          "relevantHotelParams": {
+            "entityId": "27544000",
+            "entityType": "CITY",
+            "localizedName": "London"
+          }
+        }
+      }
+    ],
+    "status": true,
+    "message": "Successful"
+  }
+  

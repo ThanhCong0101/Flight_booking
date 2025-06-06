@@ -1,0 +1,313 @@
+<div
+  *ngIf="activeTab() === 'upcoming'"
+  class="overflow-x-auto drawer drawer-end"
+>
+  <input id="booking-detail-drawer" type="checkbox" class="drawer-toggle" />
+
+  @if(isLoading()){
+  <table class="table table-zebra w-full">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Booking Date</th>
+        <th>Flight</th>
+        <th>Date & Time</th>
+        <th>Route</th>
+        <th>No.Passenger</th>
+        <th>Status</th>
+        <th>User</th>
+        <th>Documents</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of [1, 2, 3, 4, 5]">
+        <td><div class="skeleton h-4 w-16"></div></td>
+        <td>
+          <div class="space-y-2">
+            <div class="skeleton h-4 w-24"></div>
+            <div class="skeleton h-4 w-20"></div>
+          </div>
+        </td>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="skeleton w-12 h-12 rounded-full"></div>
+            <div class="space-y-2">
+              <div class="skeleton h-4 w-24"></div>
+              <div class="skeleton h-4 w-20"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="space-y-2">
+            <div class="skeleton h-4 w-24"></div>
+            <div class="skeleton h-4 w-20"></div>
+          </div>
+        </td>
+        <td><div class="skeleton h-4 w-32"></div></td>
+        <td><div class="skeleton h-4 w-16"></div></td>
+        <td><div class="skeleton h-6 w-20 rounded-full"></div></td>
+        <td><div class="skeleton w-8 h-8 rounded-full"></div></td>
+        <td>
+          <div class="flex gap-2">
+            <div class="skeleton h-8 w-24"></div>
+            <div class="skeleton h-8 w-24"></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  }@else {
+  <table class="table table-zebra w-full drawer-content">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Booking Date</th>
+        <th>Flight</th>
+        <th>Date & Time</th>
+        <th>Route</th>
+        <th>No.Passenger</th>
+        <th>Status</th>
+        <th>User</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (booking of bookings(); track $index; let i = $index) {
+      <tr
+        (click)="toggleFlightDetails(i)"
+        class="cursor-pointer hover:bg-base-200"
+      >
+        <td>{{ booking.booking_id }}</td>
+
+        <td>
+          <div>
+            {{ booking.booking_date | shortDate }}
+          </div>
+          <div class="text-sm opacity-50">
+            {{ booking.booking_date | timeFormat }}
+          </div>
+        </td>
+
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img
+                  ngSrc="{{
+                    booking?.itinerary?.legs[0]?.segments[0]?.aircraft.logoUrl
+                  }}"
+                  fill
+                  alt="Airline"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.flight_number }}
+              </div>
+              <div class="badge bg-red-300 text-sm opacity-50">
+                {{ booking?.itinerary?.legs[0]?.segments[0]?.aircraft.name }}
+              </div>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div>
+            {{ booking?.itinerary?.legs[0]?.departure_time | shortDate }}
+          </div>
+          <div class="text-sm opacity-50">
+            {{ booking?.itinerary?.legs[0]?.departure_time | timeFormat }}
+          </div>
+        </td>
+
+        <td>{{ formatedDepDes()[i] }}</td>
+
+        <td>{{ booking.noPassengers }}/100</td>
+
+        <td>
+          <div
+            class="badge text-white"
+            [ngClass]="{
+              'badge-success': booking.status === 'complete',
+              'badge-warning': booking.status === 'pending',
+              'badge-secondary': booking.status === 'approved'
+            }"
+          >
+            {{ booking.status }}
+          </div>
+        </td>
+
+        <td>
+          <div class="avatar">
+            <div class="w-8 rounded-full">
+              @if(booking?.user?.profile_picture){
+              <img src="{{ booking?.user?.profile_picture }}" />
+              }@else {
+              <img src="/assets/images/avatar.png" />
+              }
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="flex space-x-2">
+            <label
+              for="booking-detail-drawer"
+              class="booking-detail-drawer btn btn-sm drawer-button btn-primary"
+              [class.btn-disabled]="booking?.status === 'rejected'"
+              (click)="
+                setSelectedBooking(booking, booking?.booking_id, i);
+                $event.stopPropagation()
+              "
+              >Modify</label
+            >
+            <button
+              [attr.booking-id]="booking?.booking_id"
+              class="cancel-btn btn btn-sm btn-error text-white"
+              #cancelBtn
+              (click)="$event.stopPropagation()"
+              [disabled]="booking?.status === 'rejected'"
+            >
+              Cancel
+            </button>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Collapsible detail row -->
+      <tr *ngIf="expandedIndex === i">
+        <td colspan="6">
+          <div class="p-4 bg-base-100">
+            <!-- Flight itinerary details -->
+            <div class="flex flex-col space-y-4">
+              @for (leg of booking?.itinerary?.legs; track $index; let
+              even=$even) {
+              <app-leg-detail
+                [leg]="leg"
+                [headerText]="even ? 'Depart' : 'Return'"
+              ></app-leg-detail>
+              }
+            </div>
+          </div>
+        </td>
+        <td colspan="3">
+          <div class="flex flex-col space-y-4 overflow-y-auto">
+            @for (passenger of booking.passengers; track $index) {
+            <div
+              class="card shadow-md whitespace-nowrap"
+              [ngClass]="i % 2 === 0 ? 'bg-base-100' : 'bg-base-200'"
+            >
+              <div class="card-body">
+                <h2 class="card-title text-primary">
+                  Passenger Information {{ $index + 1 }}
+                </h2>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Full Name</span>
+                    <span
+                      >{{ passenger.first_name }}
+                      {{ passenger.last_name }}</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Passport Number</span>
+                    <span>{{ passenger.passport_number }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Nationality</span>
+                    <span>{{ passenger.nationality }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Date of Birth</span>
+                    <span>{{
+                      passenger.date_of_birth | date : "mediumDate"
+                    }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Gender</span>
+                    <span class="capitalize">{{ passenger.gender }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-semibold">Passport Expiry</span>
+                    <span>{{
+                      passenger.passport_expiry | date : "mediumDate"
+                    }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            }
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+
+  <!-- Add this after your bookings table -->
+  <div class="flex justify-center mt-4">
+    <div class="join">
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="currentPageUpcomingBooking() === 1"
+        (click)="changePage(currentPageUpcomingBooking() - 1)"
+      >
+        «
+      </button>
+
+      <ng-container *ngFor="let page of getPagesArray(); let i = index">
+        <button
+          class="join-item btn btn-sm"
+          [class.btn-active]="currentPageUpcomingBooking() === i + 1"
+          (click)="changePage(i + 1)"
+        >
+          {{ i + 1 }}
+        </button>
+      </ng-container>
+
+      <button
+        class="join-item btn btn-sm"
+        [disabled]="currentPageUpcomingBooking() === totalBookings()"
+        (click)="changePage(currentPageUpcomingBooking() + 1)"
+      >
+        »
+      </button>
+    </div>
+  </div>
+
+  <ng-container *ngTemplateOutlet="drawerSide"> </ng-container>
+</div>
+
+<ng-template #drawerSide>
+  <div class="drawer-side">
+    <label for="booking-detail-drawer" class="drawer-overlay"></label>
+    <div class="menu p-4 w-[800px] min-h-full bg-base-200">
+      <app-booking-detail
+        [bookingData]="selectedBooking"
+        [formatedDepDes]="selectedFormatedDepDes"
+        (bookingDataChange)="bookingDetailChange($event)"
+      ></app-booking-detail>
+    </div>
+  </div>
+</ng-template>
+
+<dialog id="cancel_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Cancel Booking</h3>
+    <p class="py-4">Do you want to cancel this booking?</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn btn-sm btn-ghost">No</button>
+        <button
+          class="btn btn-sm btn-error text-white"
+          (click)="confirmCancel()"
+        >
+          Yes
+        </button>
+      </form>
+    </div>
+  </div>
+</dialog>

@@ -1,0 +1,83 @@
+{
+    "data": [
+        {
+            "presentation": {
+                "title": "British Virgin Islands",
+                "suggestionTitle": "British Virgin Islands",
+                "subtitle": "",
+                "id": "eyJlIjoiMjk0NzUwOTMiLCJzIjoiVkciLCJoIjoiMjk0NzUwOTMiLCJ0IjoiQ09VTlRSWSJ9",
+                "skyId": "VG"
+            },
+            "navigation": {
+                "entityId": "29475093",
+                "entityType": "COUNTRY",
+                "localizedName": "British Virgin Islands",
+                "relevantFlightParams": {
+                    "skyId": "VG",
+                    "entityId": "29475093",
+                    "flightPlaceType": "COUNTRY",
+                    "localizedName": "British Virgin Islands"
+                },
+                "relevantHotelParams": {
+                    "entityId": "29475093",
+                    "entityType": "COUNTRY",
+                    "localizedName": "British Virgin Islands"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Virgin Gorda",
+                "suggestionTitle": "Virgin Gorda (VIJ)",
+                "subtitle": "British Virgin Islands",
+                "id": "eyJlIjoiMTA0MTIwMzIwIiwicyI6IlZJSiIsImgiOiI4MTk3MjEwMCIsInQiOiJBSVJQT1JUIn0=",
+                "skyId": "VIJ"
+            },
+            "navigation": {
+                "entityId": "104120320",
+                "entityType": "AIRPORT",
+                "localizedName": "Virgin Gorda",
+                "relevantFlightParams": {
+                    "skyId": "VIJ",
+                    "entityId": "104120320",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Virgin Gorda"
+                },
+                "relevantHotelParams": {
+                    "entityId": "81972100",
+                    "entityType": "CITY",
+                    "localizedName": "Virgin Gorda"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Terrance B. Lettsome International",
+                "suggestionTitle": "Terrance B. Lettsome International (EIS)",
+                "subtitle": "British Virgin Islands",
+                "id": "eyJlIjoiMTA0MTIwMzE5IiwicyI6IkVJUyIsImgiOiIzOTg0MDI0MiIsInQiOiJBSVJQT1JUIn0=",
+                "skyId": "EIS"
+            },
+            "navigation": {
+                "entityId": "104120319",
+                "entityType": "AIRPORT",
+                "localizedName": "Terrance B. Lettsome International",
+                "relevantFlightParams": {
+                    "skyId": "EIS",
+                    "entityId": "104120319",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Terrance B. Lettsome International"
+                },
+                "relevantHotelParams": {
+                    "entityId": "39840242",
+                    "entityType": "CITY",
+                    "localizedName": "Road Town"
+                }
+            }
+        }
+    ],
+    "status": true,
+    "message": "Successful", 
+    "query" : "https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=British Virgin Islands&locale=en-GB"
+}
+

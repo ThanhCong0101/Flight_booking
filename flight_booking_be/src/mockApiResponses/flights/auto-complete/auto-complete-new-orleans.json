@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "presentation": {
+                "title": "New Orleans Louis Armstrong",
+                "suggestionTitle": "New Orleans Louis Armstrong (MSY)",
+                "subtitle": "United States",
+                "id": "eyJlIjoiOTU2NzM3NTAiLCJzIjoiTVNZIiwiaCI6IjM1MjM0ODkyIiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "MSY"
+            },
+            "navigation": {
+                "entityId": "95673750",
+                "entityType": "AIRPORT",
+                "localizedName": "New Orleans Louis Armstrong",
+                "relevantFlightParams": {
+                    "skyId": "MSY",
+                    "entityId": "95673750",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "New Orleans Louis Armstrong"
+                },
+                "relevantHotelParams": {
+                    "entityId": "35234892",
+                    "entityType": "CITY",
+                    "localizedName": "New Orleans"
+                }
+            }
+        }
+    ],
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=new-orleans"
+}

@@ -1,0 +1,202 @@
+{
+    "data": {
+        "flights": {
+            "noPriceLabel": "No price information",
+            "groups": [
+                {
+                    "id": "low",
+                    "label": "$"
+                },
+                {
+                    "id": "medium",
+                    "label": "$$"
+                },
+                {
+                    "id": "high",
+                    "label": "$$$"
+                }
+            ],
+            "days": [
+                {
+                    "day": "2025-06-01",
+                    "group": "medium",
+                    "price": 89.99
+                },
+                {
+                    "day": "2025-06-05",
+                    "group": "low",
+                    "price": 75.50
+                },
+                {
+                    "day": "2025-06-10",
+                    "group": "medium",
+                    "price": 85.25
+                },
+                {
+                    "day": "2025-06-11",
+                    "group": "low",
+                    "price": 156.98
+                },
+                {
+                    "day": "2025-06-12",
+                    "group": "low",
+                    "price": 143.29
+                },
+                {
+                    "day": "2025-06-13",
+                    "group": "low",
+                    "price": 117.98
+                },
+                {
+                    "day": "2025-06-14",
+                    "group": "low",
+                    "price": 142.86
+                },
+                {
+                    "day": "2025-06-15",
+                    "group": "high",
+                    "price": 95.75
+                },
+                {
+                    "day": "2025-06-20",
+                    "group": "medium",
+                    "price": 82.50
+                },
+                {
+                    "day": "2025-06-25",
+                    "group": "low",
+                    "price": 78.99
+                },
+                {
+                    "day": "2025-07-01",
+                    "group": "high",
+                    "price": 92.25
+                },
+                {
+                    "day": "2025-07-05",
+                    "group": "medium",
+                    "price": 88.50
+                },
+                {
+                    "day": "2025-07-10",
+                    "group": "low",
+                    "price": 76.75
+                },
+                {
+                    "day": "2025-07-15",
+                    "group": "high",
+                    "price": 94.99
+                },
+                {
+                    "day": "2025-07-20",
+                    "group": "medium",
+                    "price": 86.25
+                },
+                {
+                    "day": "2025-07-25",
+                    "group": "low",
+                    "price": 79.50
+                },
+                {
+                    "day": "2025-08-01",
+                    "group": "high",
+                    "price": 93.75
+                },
+                {
+                    "day": "2025-08-05",
+                    "group": "medium",
+                    "price": 87.99
+                },
+                {
+                    "day": "2025-08-10",
+                    "group": "low",
+                    "price": 77.25
+                },
+                {
+                    "day": "2025-08-15",
+                    "group": "high",
+                    "price": 96.50
+                },
+                {
+                    "day": "2025-08-20",
+                    "group": "medium",
+                    "price": 84.75
+                },
+                {
+                    "day": "2025-08-25",
+                    "group": "low",
+                    "price": 78.50
+                },
+                {
+                    "day": "2025-09-01",
+                    "group": "high",
+                    "price": 91.99
+                },
+                {
+                    "day": "2025-09-05",
+                    "group": "medium",
+                    "price": 85.25
+                },
+                {
+                    "day": "2025-09-10",
+                    "group": "low",
+                    "price": 76.50
+                },
+                {
+                    "day": "2025-09-15",
+                    "group": "high",
+                    "price": 95.75
+                },
+                {
+                    "day": "2025-09-20",
+                    "group": "medium",
+                    "price": 83.99
+                },
+                {
+                    "day": "2025-09-25",
+                    "group": "low",
+                    "price": 77.75
+                },
+                {
+                    "day": "2025-10-01",
+                    "group": "high",
+                    "price": 94.25
+                },
+                {
+                    "day": "2025-10-05",
+                    "group": "medium",
+                    "price": 86.50
+                },
+                {
+                    "day": "2025-10-10",
+                    "group": "low",
+                    "price": 75.99
+                },
+                {
+                    "day": "2025-10-15",
+                    "group": "high",
+                    "price": 93.25
+                },
+                {
+                    "day": "2025-10-20",
+                    "group": "medium",
+                    "price": 84.75
+                },
+                {
+                    "day": "2025-10-25",
+                    "group": "low",
+                    "price": 78.50
+                },
+                {
+                    "day": "2025-10-31",
+                    "group": "high",
+                    "price": 92.99
+                }
+            ],
+            "currency": "USD"
+        }
+    },
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/price-calendar?fromEntityId=HAN&departDate=2025-06-01&toEntityId=SGN&returnDate=2025-10-31"
+}

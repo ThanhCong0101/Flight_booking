@@ -1,0 +1,9 @@
+{
+    "data": null,
+    "errors": {
+        "departDate": "The departDate cannot be entered before 2024-09-25"
+    },
+    "status": false,
+    "message": "Errors",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/search-one-way?fromEntityId=MSYA&toEntityId=PARI&departDate=2024-05-23"
+}

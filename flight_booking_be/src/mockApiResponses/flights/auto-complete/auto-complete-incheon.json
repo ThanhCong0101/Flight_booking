@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "presentation": {
+                "title": "Incheon International Airport",
+                "suggestionTitle": "Incheon International Airport (ICN)",
+                "subtitle": "South Korea",
+                "id": "eyJlIjoiOTU2NzM2NTkiLCJzIjoiSUNOIiwiaCI6IjI3NTM4NjM4IiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "ICN"
+            },
+            "navigation": {
+                "entityId": "95673659",
+                "entityType": "AIRPORT",
+                "localizedName": "Incheon International Airport",
+                "relevantFlightParams": {
+                    "skyId": "ICN",
+                    "entityId": "95673659",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Incheon International Airport"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27538638",
+                    "entityType": "CITY",
+                    "localizedName": "Seoul"
+                }
+            }
+        }
+    ],
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=Incheon"
+}

@@ -1,0 +1,176 @@
+<div class="px-6 py-2 bg-base-100 shadow-lg rounded-lg">
+  <form class="flex flex-col my-6" [formGroup]="searchFlightForm">
+    <div class="flex gap-4 mb-4">
+      <label class="flex items-center gap-2">
+        <input
+          type="radio"
+          name="searchType"
+          value="flight"
+          formControlName="searchType"
+          class="radio"
+        />
+        Search Flight
+      </label>
+      <label class="flex items-center gap-2">
+        <input
+          type="radio"
+          name="searchType"
+          value="itinerary"
+          formControlName="searchType"
+          class="radio"
+        />
+        Search Itinerary
+      </label>
+    </div>
+
+    <!-- Flight Search Section -->
+    <div
+      *ngIf="searchFlightForm.get('searchType')?.value === 'flight'"
+      class="flex gap-4 my-6"
+    >
+      <div class="flex gap-4">
+        <input
+          type="text"
+          placeholder="Search Flight..."
+          class="input input-bordered w-80"
+          formControlName="flightSearch"
+        />
+
+        <select
+          class="select select-bordered"
+          formControlName="sortBy"
+          (change)="onSortChange($event)"
+        >
+          <option value="">Sort By</option>
+          <option value="depature_time">Departure Time</option>
+          <option value="arrival_time">Arrival Time</option>
+          <option value="duration_in_minutes">Duration</option>
+        </select>
+
+        @if(this.searchFlightForm.get('sortBy')?.value !== ''){
+        <select class="select select-bordered" formControlName="sortOrder">
+          <option value="">Sort Order</option>
+          <option value="ASC">Ascending</option>
+          <option value="DESC">Descending</option>
+        </select>
+        }
+      </div>
+    </div>
+
+    <!-- Itinerary Search Section -->
+    <div
+      *ngIf="searchFlightForm.get('searchType')?.value === 'itinerary'"
+      class="grid gap-4"
+    >
+      <div class="flex gap-4 my-6">
+        <div class="row-control">
+          <input
+            type="text"
+            placeholder="Depature"
+            class="input input-bordered w-60"
+            formControlName="departureAirport"
+            name="departureAirport"
+          />
+
+          <ng-container
+            *ngTemplateOutlet="
+              autocompleteTemplate;
+              context: { results: fromResults, field: 'departureAirport' }
+            "
+          ></ng-container>
+        </div>
+
+        <!-- Arrival Airport -->
+
+        <div class="row-control">
+          <input
+            type="text"
+            placeholder="To"
+            class="input input-bordered w-60"
+            formControlName="arrivalAirport"
+            name="arrivalAirport"
+          />
+
+          <ng-container
+            *ngTemplateOutlet="
+              autocompleteTemplate;
+              context: { results: toResults, field: 'arrivalAirport' }
+            "
+          ></ng-container>
+        </div>
+
+        <!-- Date Selection -->
+        <div class="flex gap-2 items-center">
+          <select
+            class="select select-bordered"
+            formControlName="dateFilterType"
+          >
+            <option value="specific">Specific Date</option>
+            <option value="range">Date Range</option>
+          </select>
+
+          <!-- Specific Date Input -->
+          <div
+            class="form-control"
+            *ngIf="searchFlightForm.get('dateFilterType')?.value === 'specific'"
+          >
+            <input
+              type="date"
+              formControlName="departDate"
+              name="departDate"
+              class="input input-bordered"
+            />
+          </div>
+
+          <!-- Date Range Inputs -->
+          <ng-container
+            *ngIf="searchFlightForm.get('dateFilterType')?.value === 'range'"
+          >
+            <div class="form-control">
+              <input
+                type="date"
+                formControlName="departDate"
+                name="departDate"
+                class="input input-bordered"
+              />
+            </div>
+            <span class="self-center">to</span>
+            <div class="form-control">
+              <input
+                type="date"
+                formControlName="returnDate"
+                name="returnDate"
+                class="input input-bordered"
+              />
+            </div>
+          </ng-container>
+        </div>
+
+        <button
+          class="btn btn-primary w-fit md:col-span-2 lg:col-span-4"
+          type="submit"
+          (click)="submitItineraryForm()"
+        >
+          <span class="material-symbols-outlined text-white">search</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<ng-template #autocompleteTemplate let-results="results" let-field="field">
+  <div
+    *ngIf="results && results.length > 0"
+    class="absolute z-10 w-60 bg-white shadow-lg rounded-md"
+  >
+    <ul class="py-1">
+      <li
+        *ngFor="let result of results"
+        class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+        (click)="selectResult(field, result)"
+      >
+        {{ result.presentation.title }}
+      </li>
+    </ul>
+  </div>
+</ng-template>

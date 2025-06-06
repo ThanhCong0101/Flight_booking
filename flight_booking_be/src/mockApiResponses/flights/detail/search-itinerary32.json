@@ -1,0 +1,91 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502282340--31703-0-12409-2503010530",
+            "legs": [
+                {
+                    "id": "12071-2502282340--31703-0-12409-2503010530",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-12409-2502282340-2503010530--31703",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 230,
+                            "dayChange": 1,
+                            "flightNumber": "416",
+                            "departure": "2025-02-28T23:40:00",
+                            "arrival": "2025-03-01T05:30:00",
+                            "marketingCarrier": {
+                                "id": "-31703",
+                                "name": "Vietnam Airlines",
+                                "displayCode": "VN",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#00205b",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                                "altId": "VN"
+                            },
+                            "operatingCarrier": {
+                                "id": "-31703",
+                                "name": "Vietnam Airlines",
+                                "displayCode": "VN",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#00205b",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                                "altId": "VN"
+                            }
+                        }
+                    ],
+                    "duration": 230,
+                    "stopCount": 0,
+                    "departure": "2025-02-28T23:40:00",
+                    "arrival": "2025-03-01T05:30:00",
+                    "dayChange": 1
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "Vietnam Airlines",
+                            "isCarrier": true,
+                            "price": 291.99,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 291.99,
+                    "id": "lrCPX5DW-vJd"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

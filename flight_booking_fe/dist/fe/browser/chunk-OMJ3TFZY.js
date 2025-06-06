@@ -1,0 +1,1 @@
+import{N as i}from"./chunk-BSEN6LWU.js";var o=(()=>{class t{transform(e){return new Date(e).toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",hour12:!0}).toUpperCase()}static{this.\u0275fac=function(r){return new(r||t)}}static{this.\u0275pipe=i({name:"timeFormat",type:t,pure:!0,standalone:!0})}}return t})();export{o as a};

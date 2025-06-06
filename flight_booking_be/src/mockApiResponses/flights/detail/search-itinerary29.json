@@ -1,0 +1,91 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502282250--31705-0-12409-2503010525",
+            "legs": [
+                {
+                    "id": "12071-2502282250--31705-0-12409-2503010525",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-12409-2502282250-2503010525--31705",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 275,
+                            "dayChange": 1,
+                            "flightNumber": "962",
+                            "departure": "2025-02-28T22:50:00",
+                            "arrival": "2025-03-01T05:25:00",
+                            "marketingCarrier": {
+                                "id": "-31705",
+                                "name": "VietJet Air",
+                                "displayCode": "4V",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#e31837",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                                "altId": "4V"
+                            },
+                            "operatingCarrier": {
+                                "id": "-31705",
+                                "name": "VietJet Air",
+                                "displayCode": "4V",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#e31837",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                                "altId": "4V"
+                            }
+                        }
+                    ],
+                    "duration": 275,
+                    "stopCount": 0,
+                    "departure": "2025-02-28T22:50:00",
+                    "arrival": "2025-03-01T05:25:00",
+                    "dayChange": 1
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "VietJet Air",
+                            "isCarrier": true,
+                            "price": 198.97,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 198.97,
+                    "id": "Fcxcu3k0nlfW"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

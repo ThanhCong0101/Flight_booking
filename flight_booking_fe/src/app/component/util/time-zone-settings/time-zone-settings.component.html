@@ -1,0 +1,31 @@
+<div class="timezone-settings flex flex-col gap-2">
+  <h3>Time Zone Settings</h3>
+  <select
+    class="select select-bordered w-full max-w-xs"
+    (change)="onTimezoneChange($event)"
+    [(ngModel)]="selectedTimezone"
+    [value]="currentTimezone()"
+  >
+    <option *ngFor="let tz of timezones" [value]="tz">{{ tz }}</option>
+  </select>
+</div>
+
+<!-- Confirmation Modal -->
+<dialog #timezoneModal class="modal">
+  <div class="modal-box">
+    <h3>Confirm Timezone Change</h3>
+    <p>Do you want to save this timezone preference to your profile?</p>
+    <div class="modal-action">
+      <button
+        class="btn btn-success text-white"
+        (click)="confirmTimezoneChange(true)"
+      >
+        Save to Profile
+      </button>
+      <button class="btn btn-primary" (click)="confirmTimezoneChange(false)">
+        Keep Locally Only
+      </button>
+      <button class="btn" (click)="cancelTimezoneChange()">Cancel</button>
+    </div>
+  </div>
+</dialog>

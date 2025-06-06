@@ -1,0 +1,108 @@
+<div class="flex p-2 min-h-screen">
+  <!-- Main Content -->
+  <div class="flex-1">
+    <!-- Metrics Summary Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <!-- Total Bookings Card -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title text-2xl">{{ metrics.totalBookings }}</h2>
+          <p class="text-gray-600">Total Bookings</p>
+          <div class="badge badge-primary badge-lg text-white">
+            +12% from last month
+          </div>
+        </div>
+      </div>
+
+      <!-- Revenue Card -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title text-2xl">${{ metrics.revenue }}</h2>
+          <p class="text-gray-600">Revenue Generated</p>
+          <div class="badge badge-success badge-lg text-white">
+            +8% from last month
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Users Card -->
+      <!-- <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title text-2xl">892</h2>
+          <p class="text-gray-600">Active Users</p>
+          <div class="badge badge-info badge-lg text-white">
+            +5% from last month
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Available Flights Card -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title text-2xl">{{ metrics.availableFlights }}</h2>
+          <p class="text-gray-600">Available Flights</p>
+          <div class="badge badge-warning badge-lg">82% booked</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Booking Trends Chart -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h3 class="text-xl font-bold mb-4">Booking Trends</h3>
+          <ngx-charts-line-chart
+            [view]="view"
+            [results]="bookingTrends"
+            [gradient]="gradient"
+            [xAxis]="true"
+            [yAxis]="true"
+            [legend]="false"
+            [showXAxisLabel]="true"
+            [showYAxisLabel]="true"
+            xAxisLabel="Period"
+            yAxisLabel="Bookings"
+          >
+          </ngx-charts-line-chart>
+        </div>
+      </div>
+
+      <!-- Revenue Growth Chart -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h3 class="text-xl font-bold mb-4">Revenue Growth</h3>
+          <ngx-charts-area-chart
+            [view]="view"
+            [results]="revenueGrowth"
+            [gradient]="gradient"
+            [xAxis]="true"
+            [yAxis]="true"
+            [legend]="false"
+            [showXAxisLabel]="true"
+            [showYAxisLabel]="true"
+            xAxisLabel="Period"
+            yAxisLabel="Revenue ($)"
+          >
+          </ngx-charts-area-chart>
+        </div>
+      </div>
+
+      <!-- Popular Destinations Chart -->
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h3 class="text-xl font-bold mb-4">Popular Destinations</h3>
+          <ngx-charts-pie-chart
+            [view]="view"
+            [results]="popularDestinations"
+            [gradient]="gradient"
+            [legend]="true"
+            [labels]="showLabels"
+            [doughnut]="isDoughnut"
+          >
+          </ngx-charts-pie-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

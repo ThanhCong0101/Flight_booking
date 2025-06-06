@@ -1,0 +1,207 @@
+{
+    "data": [
+        {
+            "presentation": {
+                "title": "Paris",
+                "suggestionTitle": "Paris (Any)",
+                "subtitle": "France",
+                "id": "eyJlIjoiMjc1Mzk3MzMiLCJzIjoiUEFSSSIsImgiOiIyNzUzOTczMyIsInQiOiJDSVRZIn0=",
+                "skyId": "PARI"
+            },
+            "navigation": {
+                "entityId": "27539733",
+                "entityType": "CITY",
+                "localizedName": "Paris",
+                "relevantFlightParams": {
+                    "skyId": "PARI",
+                    "entityId": "27539733",
+                    "flightPlaceType": "CITY",
+                    "localizedName": "Paris"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27539733",
+                    "entityType": "CITY",
+                    "localizedName": "Paris"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Paris Charles de Gaulle",
+                "suggestionTitle": "Paris Charles de Gaulle (CDG)",
+                "subtitle": "France",
+                "id": "eyJlIjoiOTU1NjUwNDEiLCJzIjoiQ0RHIiwiaCI6IjI3NTM5NzMzIiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "CDG"
+            },
+            "navigation": {
+                "entityId": "95565041",
+                "entityType": "AIRPORT",
+                "localizedName": "Paris Charles de Gaulle",
+                "relevantFlightParams": {
+                    "skyId": "CDG",
+                    "entityId": "95565041",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Paris Charles de Gaulle"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27539733",
+                    "entityType": "CITY",
+                    "localizedName": "Paris"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Paris Orly",
+                "suggestionTitle": "Paris Orly (ORY)",
+                "subtitle": "France",
+                "id": "eyJlIjoiOTU1NjUwNDAiLCJzIjoiT1JZIiwiaCI6IjI3NTM5NzMzIiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "ORY"
+            },
+            "navigation": {
+                "entityId": "95565040",
+                "entityType": "AIRPORT",
+                "localizedName": "Paris Orly",
+                "relevantFlightParams": {
+                    "skyId": "ORY",
+                    "entityId": "95565040",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Paris Orly"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27539733",
+                    "entityType": "CITY",
+                    "localizedName": "Paris"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Paris Beauvais",
+                "suggestionTitle": "Paris Beauvais (BVA)",
+                "subtitle": "France",
+                "id": "eyJlIjoiOTU1NjYyNzgiLCJzIjoiQlZBIiwiaCI6IjI3NTM5NzMzIiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "BVA"
+            },
+            "navigation": {
+                "entityId": "95566278",
+                "entityType": "AIRPORT",
+                "localizedName": "Paris Beauvais",
+                "relevantFlightParams": {
+                    "skyId": "BVA",
+                    "entityId": "95566278",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Paris Beauvais"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27539733",
+                    "entityType": "CITY",
+                    "localizedName": "Paris"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Paris Le Bourget",
+                "suggestionTitle": "Paris Le Bourget (LBG)",
+                "subtitle": "France",
+                "id": "eyJlIjoiMTI5MDUzNjA5IiwicyI6IkxCRyIsImgiOiIyNzUzOTczMyIsInQiOiJBSVJQT1JUIn0=",
+                "skyId": "LBG"
+            },
+            "navigation": {
+                "entityId": "129053609",
+                "entityType": "AIRPORT",
+                "localizedName": "Paris Le Bourget",
+                "relevantFlightParams": {
+                    "skyId": "LBG",
+                    "entityId": "129053609",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Paris Le Bourget"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27539733",
+                    "entityType": "CITY",
+                    "localizedName": "Paris"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Montego Bay",
+                "suggestionTitle": "Montego Bay (MBJ)",
+                "subtitle": "Jamaica",
+                "id": "eyJlIjoiOTk1Mzk2NjciLCJzIjoiTUJKIiwiaCI6IjI3NTQ0ODY0IiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "MBJ"
+            },
+            "navigation": {
+                "entityId": "99539667",
+                "entityType": "AIRPORT",
+                "localizedName": "Montego Bay",
+                "relevantFlightParams": {
+                    "skyId": "MBJ",
+                    "entityId": "99539667",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Montego Bay"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27544864",
+                    "entityType": "CITY",
+                    "localizedName": "Montego Bay"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Kingston Norman Manley",
+                "suggestionTitle": "Kingston Norman Manley (KIN)",
+                "subtitle": "Jamaica",
+                "id": "eyJlIjoiOTk1Mzk2MzYiLCJzIjoiS0lOIiwiaCI6IjI3NTQzODYzIiwidCI6IkFJUlBPUlQifQ==",
+                "skyId": "KIN"
+            },
+            "navigation": {
+                "entityId": "99539636",
+                "entityType": "AIRPORT",
+                "localizedName": "Kingston Norman Manley",
+                "relevantFlightParams": {
+                    "skyId": "KIN",
+                    "entityId": "99539636",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Kingston Norman Manley"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27543863",
+                    "entityType": "CITY",
+                    "localizedName": "Kingston"
+                }
+            }
+        },
+        {
+            "presentation": {
+                "title": "Paros",
+                "suggestionTitle": "Paros (PAS)",
+                "subtitle": "Greece",
+                "id": "eyJlIjoiMTA0MTIwMzMyIiwicyI6IlBBUyIsImgiOiIyNzU0NTI5NCIsInQiOiJBSVJQT1JUIn0=",
+                "skyId": "PAS"
+            },
+            "navigation": {
+                "entityId": "104120332",
+                "entityType": "AIRPORT",
+                "localizedName": "Paros",
+                "relevantFlightParams": {
+                    "skyId": "PAS",
+                    "entityId": "104120332",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Paros"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27545294",
+                    "entityType": "CITY",
+                    "localizedName": "Paros"
+                }
+            }
+        }
+    ],
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=Paris"
+}

@@ -1,0 +1,129 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502281145--32439-1-12409-2502282150",
+            "legs": [
+                {
+                    "id": "12071-2502281145--32439-1-12409-2502282150",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-10342-2502281145-2502281420--32439",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "CAN",
+                                "name": "Guangzhou",
+                                "displayCode": "CAN",
+                                "city": "Guangzhou"
+                            },
+                            "duration": 95,
+                            "dayChange": 0,
+                            "flightNumber": "3050",
+                            "departure": "2025-02-28T11:45:00",
+                            "arrival": "2025-02-28T14:20:00",
+                            "marketingCarrier": {
+                                "id": "-32439",
+                                "name": "China Southern",
+                                "displayCode": "CZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#0033a0",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CZ.png",
+                                "altId": "CZ"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32439",
+                                "name": "China Southern",
+                                "displayCode": "CZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#0033a0",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CZ.png",
+                                "altId": "CZ"
+                            }
+                        },
+                        {
+                            "id": "10342-12409-2502281745-2502282150--32439",
+                            "origin": {
+                                "id": "CAN",
+                                "name": "Guangzhou",
+                                "displayCode": "CAN",
+                                "city": "Guangzhou"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 185,
+                            "dayChange": 0,
+                            "flightNumber": "339",
+                            "departure": "2025-02-28T17:45:00",
+                            "arrival": "2025-02-28T21:50:00",
+                            "marketingCarrier": {
+                                "id": "-32439",
+                                "name": "China Southern",
+                                "displayCode": "CZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#0033a0",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CZ.png",
+                                "altId": "CZ"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32439",
+                                "name": "China Southern",
+                                "displayCode": "CZ",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#0033a0",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/CZ.png",
+                                "altId": "CZ"
+                            }
+                        }
+                    ],
+                    "duration": 485,
+                    "stopCount": 1,
+                    "departure": "2025-02-28T11:45:00",
+                    "arrival": "2025-02-28T21:50:00",
+                    "dayChange": 0
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "China Southern",
+                            "isCarrier": true,
+                            "price": 196.50,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 196.50,
+                    "id": "EXV27_dhqybu"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

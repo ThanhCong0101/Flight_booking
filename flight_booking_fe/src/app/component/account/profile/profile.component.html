@@ -1,0 +1,231 @@
+<div class="space-y-8" [formGroup]="userForm">
+  <!-- Personal Information Section -->
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title text-2xl mb-4">
+        <span class="material-symbols-outlined"> account_circle </span>
+      </h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="form-control">
+          <label class="label">First Name</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="firstName"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Last Name</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="lastName"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Date of Birth</label>
+          <input
+            type="date"
+            class="input input-bordered"
+            formControlName="dateOfBirth"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Gender</label>
+          <select formControlName="gender" class="select select-bordered">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label class="label">Email Address</label>
+          <input
+            type="email"
+            class="input input-bordered"
+            formControlName="email"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Phone Number</label>
+          <input
+            type="tel"
+            class="input input-bordered"
+            formControlName="phoneNumber"
+            [readonly]="!isEditing"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Travel Document Section -->
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title text-2xl mb-4">
+        <span class="material-symbols-outlined"> airplane_ticket </span>
+      </h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="form-control">
+          <label class="label">Passport Number</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="passportNumber"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Passport Expiry Date</label>
+          <input
+            type="date"
+            class="input input-bordered"
+            formControlName="passportExpiry"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Nationality</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="nationality"
+            [readonly]="!isEditing"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information Section -->
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title text-2xl mb-4">
+        <span class="material-symbols-outlined"> home </span>
+      </h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="form-control">
+          <label class="label">Street Address</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="streetAddress"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">City</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="city"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Country</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="country"
+            [readonly]="!isEditing"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">Postal Code</label>
+          <input
+            type="text"
+            class="input input-bordered"
+            formControlName="postalCode"
+            [readonly]="!isEditing"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Button -->
+  <div class="flex justify-end">
+    <button class="btn btn-primary" (click)="toggleEdit()">
+      <span class="material-symbols-outlined"> edit </span>
+      {{ isEditing ? "Save Changes" : "Edit Profile" }}
+    </button>
+  </div>
+</div>
+
+<!-- Password Update Section -->
+<form [formGroup]="passwordForm" (ngSubmit)="updatePassword()">
+  <div class="space-y-8">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title text-2xl mb-4">
+          <span class="material-symbols-outlined"> vpn_key </span>
+          Password Update
+        </h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="form-control">
+            <label class="label">Current Password</label>
+            <input
+              type="password"
+              formControlName="currentPassword"
+              class="input input-bordered"
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">New Password</label>
+            <input
+              type="password"
+              formControlName="newPassword"
+              class="input input-bordered"
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">Confirm New Password</label>
+            <input
+              type="password"
+              formControlName="confirmPassword"
+              class="input input-bordered"
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">Email Verification Code</label>
+            <div class="flex gap-2">
+              <input
+                type="text"
+                formControlName="verificationCode"
+                class="input input-bordered"
+              />
+              <button
+                type="button"
+                class="btn btn-primary"
+                (click)="sendVerificationCode()"
+              >
+                Send Code
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-end mt-4">
+      <button type="submit" class="btn btn-primary">
+        <span class="material-symbols-outlined"> edit </span>
+
+        Update Password
+      </button>
+    </div>
+  </div>
+</form>
+
+<!-- Time Zone Settings -->
+<div class="card bg-base-100 shadow-xl">
+  <div class="card-body">
+    <app-time-zone-settings></app-time-zone-settings>
+  </div>
+</div>

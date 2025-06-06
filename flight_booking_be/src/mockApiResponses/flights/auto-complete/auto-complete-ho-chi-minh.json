@@ -1,0 +1,79 @@
+{
+    "data": [
+      {
+        "presentation": {
+          "title": "Ho Chi Minh City",
+          "suggestionTitle": "Ho Chi Minh City (Any)",
+          "subtitle": "Vietnam",
+          "id": "eyJlIjoiMjc1Mzc1NDMiLCJzIjoiU0dOQSIsImgiOiIyNzUzNzU0MyJ9"
+        },
+        "navigation": {
+          "entityId": "27537543",
+          "entityType": "CITY",
+          "localizedName": "Ho Chi Minh City",
+          "relevantFlightParams": {
+            "skyId": "SGNA",
+            "entityId": "27537543",
+            "flightPlaceType": "CITY",
+            "localizedName": "Ho Chi Minh City"
+          },
+          "relevantHotelParams": {
+            "entityId": "27537543",
+            "entityType": "CITY",
+            "localizedName": "Ho Chi Minh City"
+          }
+        }
+      },
+      {
+        "presentation": {
+          "title": "Tan Son Nhat International",
+          "suggestionTitle": "Tan Son Nhat International (SGN)",
+          "subtitle": "Vietnam",
+          "id": "eyJlIjoiOTU1NjUwNjAiLCJzIjoiU0dOIiwiaCI6IjI3NTM3NTQzIn0="
+        },
+        "navigation": {
+          "entityId": "95565060",
+          "entityType": "AIRPORT",
+          "localizedName": "Tan Son Nhat International",
+          "relevantFlightParams": {
+            "skyId": "SGN",
+            "entityId": "95565060",
+            "flightPlaceType": "AIRPORT",
+            "localizedName": "Tan Son Nhat International"
+          },
+          "relevantHotelParams": {
+            "entityId": "27537543",
+            "entityType": "CITY",
+            "localizedName": "Ho Chi Minh City"
+          }
+        }
+      },
+      {
+        "presentation": {
+          "title": "Long Thanh International",
+          "suggestionTitle": "Long Thanh International (LTI)",
+          "subtitle": "Vietnam",
+          "id": "eyJlIjoiOTU1NjUwNjEiLCJzIjoiTFRJIiwiaCI6IjI3NTM3NTQzIn0="
+        },
+        "navigation": {
+          "entityId": "95565061",
+          "entityType": "AIRPORT",
+          "localizedName": "Long Thanh International",
+          "relevantFlightParams": {
+            "skyId": "LTI",
+            "entityId": "95565061",
+            "flightPlaceType": "AIRPORT",
+            "localizedName": "Long Thanh International"
+          },
+          "relevantHotelParams": {
+            "entityId": "27537543",
+            "entityType": "CITY",
+            "localizedName": "Ho Chi Minh City"
+          }
+        }
+      }
+    ],
+    "status": true,
+    "message": "Successful"
+  }
+  

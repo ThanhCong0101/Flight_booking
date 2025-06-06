@@ -1,0 +1,87 @@
+{
+	"data": {
+		"flights": {
+			"noPriceLabel": "No price information",
+			"groups": [
+				{
+					"id": "low",
+					"label": "$"
+				},
+				{
+					"id": "medium",
+					"label": "$$"
+				},
+				{
+					"id": "high",
+					"label": "$$$"
+				}
+			],
+			"days": [
+				{
+					"day": "2024-12-30",
+					"group": "high",
+					"price": 745.53
+				},
+				{
+					"day": "2025-01-02",
+					"group": "medium",
+					"price": 389.44
+				},
+				{
+					"day": "2025-01-03",
+					"group": "medium",
+					"price": 388.16
+				},
+				{
+					"day": "2025-01-04",
+					"group": "medium",
+					"price": 416.9
+				},
+				{
+					"day": "2025-01-05",
+					"group": "medium",
+					"price": 397.59
+				},
+				{
+					"day": "2025-01-06",
+					"group": "low",
+					"price": 306.18
+				},
+				{
+					"day": "2025-01-07",
+					"group": "low",
+					"price": 304.08
+				},
+				{
+					"day": "2025-01-09",
+					"group": "medium",
+					"price": 365.58
+				},
+				{
+					"day": "2025-01-12",
+					"group": "low",
+					"price": 305.13
+				},
+				{
+					"day": "2025-01-28",
+					"group": "medium",
+					"price": 417.42
+				},
+				{
+					"day": "2025-01-29",
+					"group": "high",
+					"price": 449.43
+				},
+				{
+					"day": "2025-03-24",
+					"group": "high",
+					"price": 834.65
+				}
+			],
+			"currency": "USD"
+		}
+	},
+	"status": true,
+	"message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/price-calendar-return?fromEntityId=HAN&departDate=2024-12-30&toEntityId=NRT&returnDate=2025-03-30"
+}

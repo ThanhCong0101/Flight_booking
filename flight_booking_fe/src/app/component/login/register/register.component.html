@@ -1,0 +1,112 @@
+<form
+  class="register-form min-w-80"
+  autocomplete="off"
+  [formGroup]="registerForm"
+>
+<div class="text-center mb-8">
+  <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+    Create Your Account
+  </h2>
+</div>
+
+  <!-- User name -->
+  <div class="row-control">
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text">Email</span>
+      </div>
+      <input
+        type="email"
+        placeholder="Type here"
+        class="input input-bordered w-full max-w-xs"
+        id="email"
+        formControlName="email"
+        name="email"
+        required
+      />
+      <div class="label">
+        <span
+          class="error-message label-text-alt text-red-600"
+          *ngIf="
+            registerForm.get('email')?.invalid &&
+            (registerForm.get('email')?.dirty ||
+              registerForm.get('email')?.touched)
+          "
+        >
+          {{ getErrorMessage("email") }}
+        </span>
+      </div>
+    </label>
+  </div>
+
+  <!-- Password -->
+  <div class="row-control">
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text" for="password">Password</span>
+      </div>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        formControlName="password"
+        required
+        class="input input-bordered w-full max-w-xs"
+      />
+      <div class="label">
+        <span
+          class="error-message label-text-alt text-red-600"
+          *ngIf="
+            registerForm.get('password')?.invalid &&
+            (registerForm.get('password')?.dirty ||
+              registerForm.get('password')?.touched)
+          "
+        >
+          {{ getErrorMessage("password") }}
+        </span>
+      </div>
+    </label>
+  </div>
+
+  <!-- Confirm Password -->
+  <div class="row-control">
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text" for="confirmPassword">Confirm Password</span>
+      </div>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm Password"
+        formControlName="confirmPassword"
+        required
+        class="input input-bordered w-full max-w-xs"
+      />
+      <div class="label">
+        <span
+          class="error-message label-text-alt text-red-600"
+          *ngIf="
+            registerForm.get('confirmPassword')?.invalid &&
+            (registerForm.get('confirmPassword')?.dirty ||
+              registerForm.get('confirmPassword')?.touched)
+          "
+        >
+          {{ getErrorMessage("confirmPassword") }}
+        </span>
+      </div>
+    </label>
+  </div>
+
+  <div class="row-control row-actions mt-2">
+    <button
+      class="btn btn-primary w-full"
+      type="submit"
+      [disabled]="registerForm.invalid"
+      (click)="submitForm()"
+    >
+      Register
+    </button>
+  </div>
+</form>

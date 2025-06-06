@@ -1,0 +1,15 @@
+auto completion -> price calendar -> search one way 
+                                  -> search round trip 
+                                                        -> search incomplete
+                                                                                -> search detail -> booking
+
+
+1. mock data search one way, round trip, incomplete, detail, price calendar (one-way, round-trip)
+2. create open ai key for chatbot ai 
+3. create account for gmail
+4. clone repo voiceflow design chatbot
+5. call OPEN AI server qua ngrok
+
+
+refresh token : 
+access token : header, payload, signature

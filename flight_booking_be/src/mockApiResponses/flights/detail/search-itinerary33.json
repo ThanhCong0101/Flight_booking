@@ -1,0 +1,167 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502280235--32442-2-12409-2502281550",
+            "legs": [
+                {
+                    "id": "12071-2502280235--32442-2-12409-2502281550",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-17839-2502280235-2502280605--32442",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "WUH",
+                                "name": "Wuhan Tianhe International",
+                                "displayCode": "WUH",
+                                "city": "Wuhan"
+                            },
+                            "duration": 150,
+                            "dayChange": 0,
+                            "flightNumber": "2574",
+                            "departure": "2025-02-28T02:35:00",
+                            "arrival": "2025-02-28T06:05:00",
+                            "marketingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            }
+                        },
+                        {
+                            "id": "17839-16755-2502280810-2502281010--32442",
+                            "origin": {
+                                "id": "WUH",
+                                "name": "Wuhan Tianhe International",
+                                "displayCode": "WUH",
+                                "city": "Wuhan"
+                            },
+                            "destination": {
+                                "id": "TAO",
+                                "name": "Qingdao",
+                                "displayCode": "TAO",
+                                "city": "Qingdao"
+                            },
+                            "duration": 120,
+                            "dayChange": 0,
+                            "flightNumber": "2517",
+                            "departure": "2025-02-28T08:10:00",
+                            "arrival": "2025-02-28T10:10:00",
+                            "marketingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            }
+                        },
+                        {
+                            "id": "16755-12409-2502281315-2502281550--32442",
+                            "origin": {
+                                "id": "TAO",
+                                "name": "Qingdao",
+                                "displayCode": "TAO",
+                                "city": "Qingdao"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 95,
+                            "dayChange": 0,
+                            "flightNumber": "559",
+                            "departure": "2025-02-28T13:15:00",
+                            "arrival": "2025-02-28T15:50:00",
+                            "marketingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32442",
+                                "name": "China Eastern",
+                                "displayCode": "MU",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#1a3e6f",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/MU.png",
+                                "altId": "MU"
+                            }
+                        }
+                    ],
+                    "duration": 675,
+                    "stopCount": 2,
+                    "departure": "2025-02-28T02:35:00",
+                    "arrival": "2025-02-28T15:50:00",
+                    "dayChange": 0
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "China Eastern",
+                            "isCarrier": true,
+                            "price": 150.40,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 150.40,
+                    "id": "ps43pfczTL8N"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

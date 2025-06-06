@@ -1,0 +1,71 @@
+{
+   "name": "typeorm_nodejs",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "mocha -r ts-node/register 'src/tests/**.test.ts' --reporter spec",
+      "build": "tsc --outdir dist",
+      "dev": "nodemon --exec ts-node src/index.ts",
+      "start": "node dist/index.js",
+      "start:prod": "node app/dist/index.js",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/quangg1007/flight_booking_be.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/quangg1007/flight_booking_be/issues"
+   },
+   "homepage": "https://github.com/quangg1007/flight_booking_be#readme",
+   "dependencies": {
+      "@types/express": "^4.17.21",
+      "cors": "^2.8.5",
+      "express": "^4.19.2",
+      "mysql2": "^3.10.1",
+      "reflect-metadata": "^0.1.13",
+      "swagger-jsdoc": "^6.2.8",
+      "swagger-ui-express": "^5.0.1",
+      "typeorm": "0.3.20"
+   },
+   "devDependencies": {
+      "@google-cloud/local-auth": "^2.1.0",
+      "@types/chai": "^4.3.17",
+      "@types/mocha": "^10.0.7",
+      "@types/mongoose": "^5.11.97",
+      "@types/node": "^16.11.10",
+      "axios": "^1.7.3",
+      "bcrypt": "^5.1.1",
+      "bull": "^4.16.4",
+      "bullmq": "^5.25.6",
+      "chai": "^4.5.0",
+      "colors": "^1.4.0",
+      "concurrently": "^8.2.2",
+      "cookie-parser": "^1.4.7",
+      "date-fns": "^4.1.0",
+      "date-fns-tz": "^3.2.0",
+      "dotenv": "^16.4.5",
+      "googleapis": "^105.0.0",
+      "ioredis": "^5.5.0",
+      "jsonwebtoken": "^9.0.2",
+      "mailgen": "^2.0.28",
+      "mocha": "^10.7.0",
+      "mongodb": "^5.9.2",
+      "mongoose": "^8.9.3",
+      "morgan": "^1.10.0",
+      "ngrok": "^5.0.0-beta.2",
+      "nodemailer": "^6.9.14",
+      "nodemon": "^3.1.7",
+      "openai": "^4.76.3",
+      "rand-token": "^1.0.1",
+      "sinon": "^18.0.0",
+      "socket.io": "^4.8.1",
+      "ts-node": "10.9.1",
+      "typescript": "^4.5.2",
+      "ws": "^8.18.0",
+      "zod": "^3.24.1"
+   }
+}

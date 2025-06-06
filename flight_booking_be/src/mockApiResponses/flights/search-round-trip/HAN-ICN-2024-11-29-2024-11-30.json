@@ -1,0 +1,578 @@
+{
+    "data": {
+        "context": {
+            "status": "incomplete",
+            "sessionId": "ClsIARJXCk4KJDg4MGQ3YjM0LTc4NDItNDM1MC1iMTM5LTJjNGU1NzljYThlNRACGiQxMjRhOTY5Mi03NmViLTQwODEtOWVmYS02NmUxZjA3NDg2OGIQ_bal2a8yEih1c3NfODAzYzNiNjAtODlmMi00NWIzLWJkM2QtMmY4ZWU0MGY0YThj",
+            "totalResults": 2
+        },
+        "itineraries": [
+            {
+                "id": "12071-2411290140--32179-0-12409-2411290820|12409-2411302120--32179-0-12071-2412010030",
+                "price": {
+                    "raw": 258.34,
+                    "formatted": "$259",
+                    "pricingOptionId": "osRxRfxVkAnH"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2411290140--32179-0-12409-2411290820",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "ICN",
+                            "entityId": "95673659",
+                            "name": "Incheon International Airport",
+                            "displayCode": "ICN",
+                            "city": "Seoul",
+                            "country": "South Korea",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 280,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-11-29T01:40:00",
+                        "arrival": "2024-11-29T08:20:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32179,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                                    "name": "Jeju Air"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2411290140-2411290820--32179",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "ICN",
+                                    "displayCode": "ICN",
+                                    "parent": {
+                                        "flightPlaceId": "SELA",
+                                        "displayCode": "SEL",
+                                        "name": "Seoul",
+                                        "type": "City"
+                                    },
+                                    "name": "Incheon International Airport",
+                                    "type": "Airport",
+                                    "country": "South Korea"
+                                },
+                                "departure": "2024-11-29T01:40:00",
+                                "arrival": "2024-11-29T08:20:00",
+                                "durationInMinutes": 280,
+                                "flightNumber": "2804",
+                                "marketingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12409-2411302120--32179-0-12071-2412010030",
+                        "origin": {
+                            "id": "ICN",
+                            "entityId": "95673659",
+                            "name": "Incheon International Airport",
+                            "displayCode": "ICN",
+                            "city": "Seoul",
+                            "country": "South Korea",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 310,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-11-30T21:20:00",
+                        "arrival": "2024-12-01T00:30:00",
+                        "timeDeltaInDays": 1,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32179,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                                    "name": "Jeju Air"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12409-12071-2411302120-2412010030--32179",
+                                "origin": {
+                                    "flightPlaceId": "ICN",
+                                    "displayCode": "ICN",
+                                    "parent": {
+                                        "flightPlaceId": "SELA",
+                                        "displayCode": "SEL",
+                                        "name": "Seoul",
+                                        "type": "City"
+                                    },
+                                    "name": "Incheon International Airport",
+                                    "type": "Airport",
+                                    "country": "South Korea"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2024-11-30T21:20:00",
+                                "arrival": "2024-12-01T00:30:00",
+                                "durationInMinutes": 310,
+                                "flightNumber": "2803",
+                                "marketingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "cheapest",
+                    "shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.999
+            },
+            {
+                "id": "12071-2411291450--32611,-32709-1-12409-2411300620|12409-2411301845--32709,-32611-1-12071-2412011420",
+                "price": {
+                    "raw": 609.7,
+                    "formatted": "$610",
+                    "pricingOptionId": "WRF4DNjobSme"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2411291450--32611,-32709-1-12409-2411300620",
+                        "origin": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "ICN",
+                            "entityId": "95673659",
+                            "name": "Incheon International Airport",
+                            "displayCode": "ICN",
+                            "city": "Seoul",
+                            "country": "South Korea",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 810,
+                        "stopCount": 1,
+                        "isSmallestStops": false,
+                        "departure": "2024-11-29T14:50:00",
+                        "arrival": "2024-11-30T06:20:00",
+                        "timeDeltaInDays": 1,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32611,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                                    "name": "AirAsia"
+                                },
+                                {
+                                    "id": -32709,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/D7.png",
+                                    "name": "AirAsia X"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-13311-2411291450-2411291905--32611",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "KUL",
+                                    "displayCode": "KUL",
+                                    "parent": {
+                                        "flightPlaceId": "KULM",
+                                        "displayCode": "KUL",
+                                        "name": "Kuala Lumpur",
+                                        "type": "City"
+                                    },
+                                    "name": "Kuala Lumpur International",
+                                    "type": "Airport",
+                                    "country": "Malaysia"
+                                },
+                                "departure": "2024-11-29T14:50:00",
+                                "arrival": "2024-11-29T19:05:00",
+                                "durationInMinutes": 195,
+                                "flightNumber": "513",
+                                "marketingCarrier": {
+                                    "id": -32611,
+                                    "name": "AirAsia",
+                                    "alternateId": "AK",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32611,
+                                    "name": "AirAsia",
+                                    "alternateId": "AK",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            },
+                            {
+                                "id": "13311-12409-2411292250-2411300620--32709",
+                                "origin": {
+                                    "flightPlaceId": "KUL",
+                                    "displayCode": "KUL",
+                                    "parent": {
+                                        "flightPlaceId": "KULM",
+                                        "displayCode": "KUL",
+                                        "name": "Kuala Lumpur",
+                                        "type": "City"
+                                    },
+                                    "name": "Kuala Lumpur International",
+                                    "type": "Airport",
+                                    "country": "Malaysia"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "ICN",
+                                    "displayCode": "ICN",
+                                    "parent": {
+                                        "flightPlaceId": "SELA",
+                                        "displayCode": "SEL",
+                                        "name": "Seoul",
+                                        "type": "City"
+                                    },
+                                    "name": "Incheon International Airport",
+                                    "type": "Airport",
+                                    "country": "South Korea"
+                                },
+                                "departure": "2024-11-29T22:50:00",
+                                "arrival": "2024-11-30T06:20:00",
+                                "durationInMinutes": 390,
+                                "flightNumber": "504",
+                                "marketingCarrier": {
+                                    "id": -32709,
+                                    "name": "AirAsia X",
+                                    "alternateId": "D7",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32709,
+                                    "name": "AirAsia X",
+                                    "alternateId": "D7",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12409-2411301845--32709,-32611-1-12071-2412011420",
+                        "origin": {
+                            "id": "ICN",
+                            "entityId": "95673659",
+                            "name": "Incheon International Airport",
+                            "displayCode": "ICN",
+                            "city": "Seoul",
+                            "country": "South Korea",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 1295,
+                        "stopCount": 1,
+                        "isSmallestStops": false,
+                        "departure": "2024-11-30T18:45:00",
+                        "arrival": "2024-12-01T14:20:00",
+                        "timeDeltaInDays": 1,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32709,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/D7.png",
+                                    "name": "AirAsia X"
+                                },
+                                {
+                                    "id": -32611,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                                    "name": "AirAsia"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12409-13311-2411301845-2412010025--32709",
+                                "origin": {
+                                    "flightPlaceId": "ICN",
+                                    "displayCode": "ICN",
+                                    "parent": {
+                                        "flightPlaceId": "SELA",
+                                        "displayCode": "SEL",
+                                        "name": "Seoul",
+                                        "type": "City"
+                                    },
+                                    "name": "Incheon International Airport",
+                                    "type": "Airport",
+                                    "country": "South Korea"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "KUL",
+                                    "displayCode": "KUL",
+                                    "parent": {
+                                        "flightPlaceId": "KULM",
+                                        "displayCode": "KUL",
+                                        "name": "Kuala Lumpur",
+                                        "type": "City"
+                                    },
+                                    "name": "Kuala Lumpur International",
+                                    "type": "Airport",
+                                    "country": "Malaysia"
+                                },
+                                "departure": "2024-11-30T18:45:00",
+                                "arrival": "2024-12-01T00:25:00",
+                                "durationInMinutes": 400,
+                                "flightNumber": "507",
+                                "marketingCarrier": {
+                                    "id": -32709,
+                                    "name": "AirAsia X",
+                                    "alternateId": "D7",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32709,
+                                    "name": "AirAsia X",
+                                    "alternateId": "D7",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            },
+                            {
+                                "id": "13311-12071-2412011210-2412011420--32611",
+                                "origin": {
+                                    "flightPlaceId": "KUL",
+                                    "displayCode": "KUL",
+                                    "parent": {
+                                        "flightPlaceId": "KULM",
+                                        "displayCode": "KUL",
+                                        "name": "Kuala Lumpur",
+                                        "type": "City"
+                                    },
+                                    "name": "Kuala Lumpur International",
+                                    "type": "Airport",
+                                    "country": "Malaysia"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport",
+                                    "country": "Vietnam"
+                                },
+                                "departure": "2024-12-01T12:10:00",
+                                "arrival": "2024-12-01T14:20:00",
+                                "durationInMinutes": 190,
+                                "flightNumber": "512",
+                                "marketingCarrier": {
+                                    "id": -32611,
+                                    "name": "AirAsia",
+                                    "alternateId": "AK",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32611,
+                                    "name": "AirAsia",
+                                    "alternateId": "AK",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "second_cheapest",
+                    "second_shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.118771
+            }
+        ],
+        "messages": [],
+        "filterStats": {
+            "duration": {
+                "min": 310,
+                "max": 1295,
+                "multiCityMin": 590,
+                "multiCityMax": 2105
+            },
+            "airports": [
+                {
+                    "city": "Hanoi",
+                    "airports": [
+                        {
+                            "id": "HAN",
+                            "entityId": "128668079",
+                            "name": "Hanoi"
+                        }
+                    ]
+                },
+                {
+                    "city": "Seoul",
+                    "airports": [
+                        {
+                            "id": "ICN",
+                            "entityId": "95673659",
+                            "name": "Incheon International Airport"
+                        }
+                    ]
+                }
+            ],
+            "carriers": [
+                {
+                    "id": -32611,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                    "name": "AirAsia"
+                },
+                {
+                    "id": -32709,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/D7.png",
+                    "name": "AirAsia X"
+                },
+                {
+                    "id": -32179,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                    "name": "Jeju Air"
+                }
+            ],
+            "stopPrices": {
+                "direct": {
+                    "isPresent": true,
+                    "formattedPrice": "$259"
+                },
+                "one": {
+                    "isPresent": true,
+                    "formattedPrice": "$610"
+                },
+                "twoOrMore": {
+                    "isPresent": false
+                }
+            }
+        },
+        "flightsSessionId": "880d7b34-7842-4350-b139-2c4e579ca8e5",
+        "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+        "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IklDTiIsImQxIjoiMjAyNC0xMS0yOSIsImQyIjoiMjAyNC0xMS0zMCJ9"
+    },
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip?fromEntityId=HAN&toEntityId=ICN&departDate=2024-11-29&returnDate=2024-11-30"
+}

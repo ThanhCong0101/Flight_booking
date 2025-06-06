@@ -1,0 +1,174 @@
+{
+    "data": {
+        "context": {
+            "status": "complete",
+            "sessionId": "ClQIARJQCk4KJDc5ZThiMzcyLTcwZjEtNDNhMC1iNzJkLTFhMzU2OWI0Y2U2ZhACGiQyZGEzZWJjMC04OTUwLTQwMTMtYjg0Ni1jNmFhN2M3ODhjNjYSKHVzc181YzEzMDE1ZC1jMWYwLTQ5NjctYWQ2MC0zNzAxNjU1YjM3NDU=",
+            "totalResults": 8
+        },
+        "itineraries": [
+            {
+                "id": "12071-2506150140--32179-0-12409-2506150820",
+                "price": {
+                    "raw": 145.6,
+                    "formatted": "$146",
+                    "pricingOptionId": "SxFI3sonsngf"
+                },
+                "legs": [
+                    {
+                        "id": "12071-2506150140--32179-0-12409-2506150820",
+                        "origin": {
+                            "id": "HAN",
+                            "name": "Hanoi",
+                            "displayCode": "HAN",
+                            "city": "Hanoi",
+                            "country": "Vietnam",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "ICN",
+                            "name": "Incheon International Airport",
+                            "displayCode": "ICN",
+                            "city": "Seoul",
+                            "country": "South Korea",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 280,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2025-06-15T01:40:00",
+                        "arrival": "2025-06-15T08:20:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32179,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                                    "name": "Jeju Air"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "12071-12409-2506150140-2506150820--32179",
+                                "origin": {
+                                    "flightPlaceId": "HAN",
+                                    "displayCode": "HAN",
+                                    "parent": {
+                                        "flightPlaceId": "HANV",
+                                        "displayCode": "HAN",
+                                        "name": "Hanoi",
+                                        "type": "City"
+                                    },
+                                    "name": "Hanoi",
+                                    "type": "Airport"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "ICN",
+                                    "displayCode": "ICN",
+                                    "parent": {
+                                        "flightPlaceId": "SELA",
+                                        "displayCode": "SEL",
+                                        "name": "Seoul",
+                                        "type": "City"
+                                    },
+                                    "name": "Incheon International Airport",
+                                    "type": "Airport"
+                                },
+                                "departure": "2025-06-15T01:40:00",
+                                "arrival": "2025-06-15T08:20:00",
+                                "durationInMinutes": 280,
+                                "flightNumber": "2804",
+                                "marketingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32179,
+                                    "name": "Jeju Air",
+                                    "alternateId": "78",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": ["cheapest"],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.999
+            }
+        ],
+        "messages": [
+            {
+                "type": "info",
+                "text": "Search is still in progress. More results will be available soon."
+            }
+        ],
+        "filterStats": {
+            "duration": {
+                "min": 230,
+                "max": 280,
+                "multiCityMin": 230,
+                "multiCityMax": 280
+            },
+            "airports": [
+                {
+                    "city": "Hanoi",
+                    "airports": [
+                        {
+                            "id": "HAN",
+                            "name": "Hanoi"
+                        }
+                    ]
+                },
+                {
+                    "city": "Seoul",
+                    "airports": [
+                        {
+                            "id": "ICN",
+                            "name": "Incheon International Airport"
+                        }
+                    ]
+                }
+            ],
+            "carriers": [
+                {
+                    "id": -32179,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                    "name": "Jeju Air"
+                }
+            ],
+            "stopPrices": {
+                "direct": {
+                    "isPresent": true,
+                    "formattedPrice": "$146"
+                },
+                "one": {
+                    "isPresent": false
+                },
+                "twoOrMore": {
+                    "isPresent": false
+                }
+            }
+        },
+        "flightsSessionId": "79e8b372-70f1-43a0-b72d-1a3569b4ce6f",
+        "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+        "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IklDTiIsImQxIjoiMjAyNS0wNi0xNSJ9"
+    },
+    "status": true,
+    "message": "Search in progress"
+} 

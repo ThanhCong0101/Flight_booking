@@ -1,0 +1,281 @@
+<div class="container mx-auto p-8 bg-base-100">
+  <!-- Header -->
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold">Flight Booking Invoice</h1>
+    <p class="text-sm">Invoice #{{ invoiceNumber }}</p>
+  </div>
+
+  <!-- Flight Information Card -->
+  <!-- <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Flight Information</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <p class="font-normal">From:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ flightInfo?.departure }}
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">To:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ flightInfo?.arrival }}
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">Date:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ flightInfo?.date }}
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">Flight Number:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ flightInfo?.flightNumber }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary mb-4">Flight Itinerary Details</h2>
+
+      <!-- Booking Summary -->
+      <div class="bg-base-100 p-4 rounded-lg mb-6">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-sm">Booking Reference</p>
+            <p class="font-bold">
+              {{ booking?.booking_id }}
+            </p>
+          </div>
+          <div>
+            <p class="text-sm">Total Price</p>
+            <p class="font-bold">${{ flightItinerary?.formatted_price }}</p>
+          </div>
+          <div>
+            <p class="text-sm">Status</p>
+            <span class="badge badge-success text-white">{{
+              booking?.status
+            }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flight Legs -->
+      @for (leg of flightItinerary?.legs; track leg; let i = $index) {
+      <div class="mb-8">
+        <!-- Leg Header -->
+        <div class="flex items-center mb-4 gap-2">
+          <span class="material-symbols-outlined"> flight_takeoff </span>
+          <h3 class="font-bold text-lg">
+            {{ i === 0 ? "Outbound Flight" : "Return Flight" }}
+          </h3>
+        </div>
+
+        <!-- Leg Overview -->
+        <div class="grid grid-cols-2 gap-4 bg-base-100 p-4 rounded-lg mb-4">
+          <div>
+            <p class="text-sm">From</p>
+            <p class="font-bold">
+              {{ leg.origin_name }} ({{ leg.origin_iata }})
+            </p>
+          </div>
+          <div>
+            <p class="text-sm">To</p>
+            <p class="font-bold">
+              {{ leg.destination_name }} ({{ leg.destination_iata }})
+            </p>
+          </div>
+          <div>
+            <p class="text-sm">Duration</p>
+            <p class="font-bold">
+              {{ leg.duration_in_minutes | durationFormat }}
+            </p>
+          </div>
+          <div>
+            <p class="text-sm">Stops</p>
+            <p class="font-bold">{{ leg.stop_count }} stop(s)</p>
+          </div>
+        </div>
+
+        <!-- Flight Segments -->
+        @for (segment of leg.segments; track segment) {
+        <div class="border-l-4 border-primary pl-4 mb-4">
+          <!-- Airline Info -->
+          <div class="flex items-center mb-2">
+            <img
+              [src]="segment.aircraft.logoUrl"
+              [alt]="segment.aircraft.name"
+              class="h-8 w-8 mr-2"
+            />
+            <div>
+              <p class="font-bold">{{ segment.aircraft.name }}</p>
+              <p class="text-sm">Flight {{ segment.flight_number }}</p>
+            </div>
+          </div>
+
+          <!-- Segment Details -->
+          <div class="grid grid-cols-3 gap-4 bg-base-100 p-3 rounded-lg">
+            <div>
+              <p class="text-sm">Departure</p>
+              <p class="font-bold">{{ segment.origin_name }}</p>
+              <p>
+                @if (isInvoiceEmail()) {
+                {{ segment.depature_time | mediumDate }}
+                } @else {
+                {{ segment.depature_time | userTimezone }}
+                }
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <i class="fas fa-arrow-right"></i>
+              <p class="text-sm ml-2">
+                {{ segment.duration_in_minutes | durationFormat }}
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">Arrival</p>
+              <p class="font-bold">{{ segment.destination_name }}</p>
+              <p>
+                @if (isInvoiceEmail()) {
+                {{ segment.arrival_time | mediumDate }}
+                } @else {
+                {{ segment.arrival_time | userTimezone }}
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+        }
+
+        <!-- Layover Information -->
+        @if (leg.stop_count > 0 && !$last) {
+        <div
+          class="flex items-center justify-center bg-base-300 p-2 rounded-lg mb-4"
+        >
+          <i class="fas fa-clock mr-2"></i>
+          <p>
+            Layover:
+            {{ calculateLayover(leg.segments[0], leg.segments[1]) }}
+          </p>
+        </div>
+        }
+      </div>
+      }
+    </div>
+  </div>
+
+  <!-- Passenger Information -->
+  <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Passenger Information</h2>
+      <div class="overflow-x-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="font-medium">Name</th>
+              <th class="font-medium">Type</th>
+              <th class="font-medium">Seat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let passenger of passengersInfo">
+              <td class="text-lg text-neutral-950 font-bold">
+                {{ passenger.name }}
+              </td>
+              <td class="text-lg text-neutral-950 font-bold">
+                {{ passenger.type }}
+              </td>
+              <td class="text-lg text-neutral-950 font-bold">
+                {{ passenger.seat }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Information -->
+  <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Booking Information</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <p class="font-normal">Booking Reference:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ bookingInfo?.reference }}
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">Booking Date:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            @if (isInvoiceEmail()) {
+            {{ bookingInfo?.date }}
+            }@else {
+            {{ bookingInfo?.date | userTimezone }}
+            }
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">Payment Status:</p>
+          <div class="badge badge-success badge-lg text-white">
+            {{ bookingInfo?.status }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Contact Information</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <p class="font-normal">Email:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ contactInfo?.email }}
+          </p>
+        </div>
+        <div>
+          <p class="font-normal">Phone:</p>
+          <p class="text-lg text-neutral-950 font-bold">
+            {{ contactInfo?.phone }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="card bg-base-200 shadow-xl mb-6">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Additional Information</h2>
+      <div class="space-y-2">
+        <div class="alert alert-info">
+          <span class="material-symbols-outlined"> info </span>
+          <span>Check-in opens 24 hours before departure</span>
+        </div>
+        <div class="alert alert-warning">
+          <span class="material-symbols-outlined"> warning </span>
+          <span
+            >Please arrive at the airport at least 2 hours before
+            departure</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="flex justify-end gap-4">
+    <button class="btn btn-primary" (click)="downloadInvoice()">
+      Download Invoice
+    </button>
+    <button class="btn btn-outline" (click)="printInvoice()">Print</button>
+  </div>
+</div>

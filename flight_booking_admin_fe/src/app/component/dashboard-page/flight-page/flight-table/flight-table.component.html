@@ -1,0 +1,150 @@
+<div class="flex flex-col justify-center min-w-[800px]">
+  @if(flightData() ){ @if(!isLoading()){ @if(searchType() === 'flight') {
+  <table class="table w-full">
+    <thead>
+      <tr>
+        <th class="w-20">Flight ID</th>
+        <th>Airline</th>
+        <th>Route</th>
+        <th>Schedule</th>
+        <th>Capacity</th>
+        <th>Duration</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flightData()">
+        <td>{{ flight.flight_id }}</td>
+        <td>{{ flight.airline }}</td>
+        <td>{{ flight.departure }} → {{ flight.destination }}</td>
+        <td>
+          <div>Dep: {{ flight.departure_time | date : "short" }}</div>
+          <div>Arr: {{ flight.arrival_time | date : "short" }}</div>
+        </td>
+        <td>
+          {{ flight.capacity }}/100
+          <div class="text-sm text-gray-500">
+            {{ ((flight.capacity / 100) * 100).toFixed(0) }}% available
+          </div>
+        </td>
+        <td>{{ flight.duration_in_minutes | durationFormat }}</td>
+        <td>
+          <div class="flex gap-2">
+            <button class="btn btn-sm btn-info">Edit</button>
+            <button class="btn btn-sm btn-error">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  } @else{
+  <table class="table w-full">
+    <thead>
+      <tr>
+        <th class="w-20">Itinerary ID</th>
+        <th>Airline</th>
+        <th>Route</th>
+        <th>Schedule</th>
+        <th>Stops</th>
+        <th>Duration</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let itinerary of itineraryData()">
+        <td>{{ itinerary.itinerary_id }}</td>
+        <td>{{ itinerary.airline }}</td>
+        <td>{{ itinerary.departure }} → {{ itinerary.destination }}</td>
+        <td>
+          <div>Dep: {{ itinerary.departure_time | date : "short" }}</div>
+          <div>Arr: {{ itinerary.arrival_time | date : "short" }}</div>
+        </td>
+        <td>{{ itinerary.stops }}</td>
+        <td>{{ itinerary.duration }}</td>
+        <td>
+          <div class="flex gap-2">
+            <button class="btn btn-sm btn-info">Edit</button>
+            <button class="btn btn-sm btn-error">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  }
+  <!-- Add this after your Flight table -->
+  <div class="flex justify-center mt-4">
+    <div class="join">
+      <!-- First Page -->
+      <button
+        class="join-item btn"
+        [ngClass]="{ 'btn-active': currentPage() === 1 }"
+        (click)="changePage(1)"
+      >
+        1
+      </button>
+
+      <!-- Left Ellipsis -->
+      <button class="join-item btn" *ngIf="currentPage() > 3">...</button>
+
+      <!-- Pages around current page -->
+      <ng-container *ngFor="let page of getVisiblePages()">
+        <button
+          *ngIf="page !== 1 && page !== totalPage()"
+          class="join-item btn"
+          [ngClass]="{ 'btn-active': currentPage() === page }"
+          (click)="changePage(page)"
+        >
+          {{ page }}
+        </button>
+      </ng-container>
+
+      <!-- Right Ellipsis -->
+      <button class="join-item btn" *ngIf="currentPage() < totalPage() - 2">
+        ...
+      </button>
+
+      <!-- Last Page -->
+      <button
+        class="join-item btn"
+        [ngClass]="{ 'btn-active': currentPage() === totalPage() }"
+        (click)="changePage(totalPage())"
+        *ngIf="totalPage() > 1"
+      >
+        {{ totalPage() }}
+      </button>
+    </div>
+  </div>
+  } @else{
+  <div class="flex flex-col items-center justify-center h-96 w-full">
+    <h2>Searching for flights...</h2>
+    <span class="loading loading-spinner h-16 w-16"></span>
+  </div>
+
+  } } @else {
+  <div
+    class="flex flex-col items-center justify-center p-8 text-center min-w-full"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-16 h-16 text-gray-400 mb-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+      />
+    </svg>
+    <h3 class="text-xl font-semibold text-gray-700 mb-2">No Flights Found</h3>
+    <p class="text-gray-500 mb-4">
+      We couldn't find any flights matching your search criteria.
+    </p>
+    <p class="text-gray-500">
+      Try adjusting your filters or searching for different dates.
+    </p>
+  </div>
+  }
+</div>

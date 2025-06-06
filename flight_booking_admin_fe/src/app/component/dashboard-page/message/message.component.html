@@ -1,0 +1,341 @@
+<div class="h-screen -m-8 flex bg-gray-100">
+  <!-- Sidebar -->
+  <div class="w-80 bg-white border-r border-gray-200 flex flex-col">
+    <div class="p-4 border-b border-gray-200">
+      <h2 class="text-xl font-semibold mb-4">Messages</h2>
+
+      <div class="relative">
+        <form [formGroup]="searchForm">
+          <input
+            type="text"
+            formControlName="searchQuery"
+            placeholder="Search messages..."
+            class="w-full p-2 pl-8 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <i class="fas fa-search absolute left-2 top-3 text-gray-400"></i>
+        </form>
+      </div>
+    </div>
+
+    <div class="tabs tabs-boxed mb-4">
+      <a
+        class="tab"
+        [class.tab-active]="activeTab === 'connected'"
+        (click)="setActiveTab('connected')"
+      >
+        Connected
+      </a>
+      <a
+        class="tab"
+        [class.tab-active]="activeTab === 'pending'"
+        (click)="setActiveTab('pending')"
+      >
+        Pending
+      </a>
+    </div>
+
+    <div class="flex-1 overflow-y-auto">
+      <ng-container *ngIf="activeTab === 'connected'">
+        <div
+          *ngFor="let chat of connectedChats"
+          class="p-4 border-b border-gray-200 cursor-pointer hover:bg-gray-300"
+          [class.bg-gray-300]="selectedRoom === chat.id"
+          (click)="setSelectedRoom(chat.id, chat.socket_room_name, chat.userInfo)"
+        >
+          <!-- Existing chat item content -->
+          <ng-container
+            *ngTemplateOutlet="
+              chatMessageTemplate;
+              context: { $implicit: chat }
+            "
+          >
+          </ng-container>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="activeTab === 'pending'">
+        <div
+          *ngFor="let chat of pendingChats"
+          class="p-4 border-b border-gray-200 cursor-pointer hover:bg-gray-300"
+          [class.bg-gray-300]="selectedRoom === chat.id"
+          (click)="setSelectedRoom(chat.id, chat.socket_room_name, chat.userInfo)"
+        >
+          <!-- Same chat item content structure -->
+
+          <ng-container
+            *ngTemplateOutlet="
+              chatMessageTemplate;
+              context: { $implicit: chat }
+            "
+          >
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  @if(selectedRoom){
+  <div class="flex-1 flex flex-col">
+    <!-- Fixed header -->
+    <div
+      class="p-4 border-b border-gray-200 bg-white flex justify-between items-center"
+    >
+      <div class="flex items-center">
+        <img
+          [src]="userInfo.avatar"
+          [alt]="userInfo.name"
+          class="w-10 h-10 rounded-full"
+        />
+        <h2 class="ml-3 text-lg font-semibold">
+          {{ userInfo.name || "Guest" }}
+        </h2>
+      </div>
+    </div>
+
+    <!-- Scrollable Message Area -->
+    <div class="flex-1 overflow-y-auto p-4 bg-gray-50" #scrollContainer>
+      <div
+        *ngFor="let message of dummyMessages"
+        [class]="
+          'flex mb-4 ' +
+          (message.sender.isAdmin ? 'justify-end' : 'justify-start')
+        "
+      >
+        @if(message.type === 'text'){
+        <div
+          [class]="
+            'max-w-[70%] p-3 rounded-lg ' +
+            (message.sender.isAdmin
+              ? 'bg-blue-500 text-white'
+              : 'bg-orange-100 text-gray-800')
+          "
+        >
+          <p>{{ message.payload!.text }}</p>
+          <span
+            [class]="
+              'text-xs ' +
+              (message.sender.isAdmin ? 'text-blue-100' : 'text-gray-500')
+            "
+          >
+            {{ message.timestamp | date : "short" }}
+          </span>
+        </div>
+        } @else if (message.type === 'choice') {
+        <div class="flex flex-wrap gap-2 my-2">
+          <button
+            *ngFor="let button of message.payload?.choice"
+            class="btn btn-primary btn-sm text-white"
+            (click)="handleChoiceSelection(button)"
+          >
+            {{ button.request["payload"]["label"] }}
+          </button>
+        </div>
+        } @else if (message.type === 'carousel') {
+        <div
+          class="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4"
+        >
+          <div
+            class="carousel-item w-full"
+            *ngFor="let card of message.payload?.carousel; let i = index"
+            id="slide{{ i }}"
+          >
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img [src]="card.imageUrl" [alt]="card.title" />
+              </figure>
+              <div class="card-body">
+                <!-- Header -->
+                <div>
+                  <h2 class="card-title">{{ card.title }}</h2>
+
+                  <!-- Badge -->
+
+                  @if(card.variables && card.variables['tags']){
+                  <span
+                    class="badge badge-sm"
+                    [ngClass]="{
+                      'badge-neutral':
+                        card.variables['tags'].includes('cheapest'),
+
+                      'badge-success text-white':
+                        card.variables['tags'].includes('shortest')
+                    }"
+                  >
+                    {{ card.variables["tags"] }}
+                  </span>
+                  }
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-2 text-sm">
+                  <div
+                    class="whitespace-pre-line"
+                    [innerHTML]="
+                      renderStyledText(card.description.slate[0].children)
+                    "
+                  ></div>
+                </div>
+                <div class="card-actions">
+                  @for(button of card.buttons;track $index){
+                  <button
+                    class="btn btn-primary w-full"
+                  >
+                    {{ button.request["payload"]["label"] }}
+                  </button>
+
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        } @else if (message.type === 'cardV2') { }
+      </div>
+    </div>
+
+    <!-- Fixed Input Area -->
+    <div class="p-4 bordert bg-white border-gray-200">
+      <form [formGroup]="chatForm" (ngSubmit)="sendMessage()">
+        @if( isChatEnabled()){
+        <div class="flex gap-2">
+          <input
+            type="text"
+            formControlName="message"
+            class="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
+            placeholder="Type your message..."
+          />
+          <button
+            type="submit"
+            class="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 flex justify-center items-center"
+            [disabled]="!chatForm.valid"
+          >
+            <span class="material-symbols-outlined"> send </span>
+          </button>
+        </div>
+        } @else {
+        <div class="flex items-center justify-center">
+          Assign chat to you to enable chat
+        </div>
+        }
+      </form>
+    </div>
+  </div>
+
+  <!-- User Information Panel -->
+  <div class="w-80 bg-white border-l border-gray-200 p-4">
+    <div class="flex justify-between items-center mb-6">
+      <div class="relative flex items-center justify-between w-full">
+        <div>Assign to</div>
+        <div class="form-control w-full max-w-32">
+          <select
+            class="select select-bordered w-full"
+            (change)="handleAdminSelection($event)"
+          >
+            <!-- Chatbot option -->
+            <option>
+              <span>Chatbot</span>
+            </option>
+
+            <option>
+              <span>Me</span>
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold justify-center">User Information</h2>
+
+      <div>
+        <img
+          [src]="userInfo.avatar"
+          [alt]="userInfo.name"
+          class="w-20 h-20 rounded-full mx-auto mb-4"
+        />
+      </div>
+      @if(userInfo.name === '' && !userInfo.email && !userInfo.phone){
+      <div class="flex justify-center">This is guest</div>
+      } @else {
+      <div>
+        <label class="text-sm text-gray-500">Name</label>
+        <p class="font-medium">{{ userInfo.name }}</p>
+      </div>
+      <div>
+        <label class="text-sm text-gray-500">Email</label>
+        <p class="font-medium">{{ userInfo.email }}</p>
+      </div>
+      <div>
+        <label class="text-sm text-gray-500">Phone</label>
+        <p class="font-medium">{{ userInfo.phone }}</p>
+      </div>
+      }
+    </div>
+  </div>
+  } @else{
+  <div></div>
+  }
+  <!-- Main Chat Area -->
+</div>
+
+<ng-template #chatMessageTemplate let-chat>
+  <div class="flex items-center">
+    <img [src]="chat.avatar" [alt]="chat.name" class="w-10 h-10 rounded-full" />
+    <div class="ml-3 flex-1">
+      <div class="flex justify-between items-center">
+        <div class="flex flex-col items-start gap-2">
+          <h3 class="font-semibold">{{ chat.name }}</h3>
+          <p
+            class="text-sm text-gray-600 max-w-[160px] truncate hover:whitespace-normal hover:text-clip"
+          >
+            {{ chat.lastMessage }}
+          </p>
+        </div>
+        <div class="flex flex-col items-end gap-2">
+          <!-- Three dot menu -->
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-xs">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a (click)="disconnectChat(chat.id, chat.socket_room_name)"
+                  >Close Conversation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <span class="text-sm text-gray-500 text-end">{{
+            chat.timestamp | date
+          }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<!-- Add modal markup -->
+<input
+  type="checkbox"
+  id="confirm-modal"
+  class="modal-toggle"
+  [(ngModel)]="showConfirmModal"
+/>
+<div class="modal" [class.modal-open]="showConfirmModal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Start Conversation</h3>
+    <p class="py-4">Would you like to start chatting with this user?</p>
+    <div class="modal-action">
+      <button class="btn btn-ghost" (click)="showConfirmModal = false">
+        Cancel
+      </button>
+      <button class="btn btn-primary" (click)="confirmChat()">
+        Start Chat
+      </button>
+    </div>
+  </div>
+</div>

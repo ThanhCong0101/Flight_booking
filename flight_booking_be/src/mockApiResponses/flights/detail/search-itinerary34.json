@@ -1,0 +1,91 @@
+{
+    "data": {
+        "itinerary": {
+            "id": "12071-2502280140--32179-0-12409-2502280820",
+            "legs": [
+                {
+                    "id": "12071-2502280140--32179-0-12409-2502280820",
+                    "origin": {
+                        "id": "HAN",
+                        "name": "Hanoi",
+                        "displayCode": "HAN",
+                        "city": "Hanoi"
+                    },
+                    "destination": {
+                        "id": "ICN",
+                        "name": "Incheon International",
+                        "displayCode": "ICN",
+                        "city": "Seoul"
+                    },
+                    "segments": [
+                        {
+                            "id": "12071-12409-2502280140-2502280820--32179",
+                            "origin": {
+                                "id": "HAN",
+                                "name": "Hanoi",
+                                "displayCode": "HAN",
+                                "city": "Hanoi"
+                            },
+                            "destination": {
+                                "id": "ICN",
+                                "name": "Incheon International",
+                                "displayCode": "ICN",
+                                "city": "Seoul"
+                            },
+                            "duration": 280,
+                            "dayChange": 0,
+                            "flightNumber": "2804",
+                            "departure": "2025-02-28T01:40:00",
+                            "arrival": "2025-02-28T08:20:00",
+                            "marketingCarrier": {
+                                "id": "-32179",
+                                "name": "Jeju Air",
+                                "displayCode": "78",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#f37321",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                                "altId": "78"
+                            },
+                            "operatingCarrier": {
+                                "id": "-32179",
+                                "name": "Jeju Air",
+                                "displayCode": "78",
+                                "displayCodeType": "IATA",
+                                "brandColor": "#f37321",
+                                "logo": "https://logos.skyscnr.com/images/airlines/favicon/78.png",
+                                "altId": "78"
+                            }
+                        }
+                    ],
+                    "duration": 280,
+                    "stopCount": 0,
+                    "departure": "2025-02-28T01:40:00",
+                    "arrival": "2025-02-28T08:20:00",
+                    "dayChange": 0
+                }
+            ],
+            "pricingOptions": [
+                {
+                    "agents": [
+                        {
+                            "id": "cust",
+                            "name": "Jeju Air",
+                            "isCarrier": true,
+                            "price": 262.40,
+                            "updateStatus": "PENDING"
+                        }
+                    ],
+                    "totalPrice": 262.40,
+                    "id": "HP5HttUyQHuK"
+                }
+            ],
+            "isTransferRequired": false,
+            "isProtectedSelfTransfer": false,
+            "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+        },
+        "pollingCompleted": false,
+        "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+}

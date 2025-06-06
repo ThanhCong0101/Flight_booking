@@ -1,0 +1,87 @@
+<div class="space-y-8">
+  <!-- Tabs for Booking Types -->
+  <div class="tabs tabs-boxed">
+    <a
+      class="tab tab-lg"
+      [class.tab-active]="activeTab() === 'upcoming'"
+      (click)="changeActiveTab('upcoming')"
+      >Upcoming Bookings</a
+    >
+    <a
+      class="tab tab-lg"
+      [class.tab-active]="activeTab() === 'past'"
+      (click)="changeActiveTab('past')"
+      >Past Bookings</a
+    >
+  </div>
+
+  <!-- Filters and Search -->
+  <app-booking-search
+    [activeTab]="activeTab()"
+    [currentPageUpcoming]="currentPageUpcoming()"
+    [currentPagePast]="currentPagePast()"
+    [pageSize]="pageSize()"
+    (upcomingBookingsChange)="upcomingBookingsChange($event)"
+    (pastBookingsChange)="pastBookingsChange($event)"
+  ></app-booking-search>
+
+  <!-- Upcoming Bookings Table -->
+  <app-upcomming-booking
+    [isLoading]="isLoading()"
+    [bookings]="upcomingBookings()"
+    [totalBookings]="totalPageUpcomming()"
+    [pageSize]="pageSize()"
+    [currentPage]="currentPageUpcoming()"
+    (bookingsChanged)="deleteBooking($event)"
+    (BookingDetailChange)="bookingDetailChange($event)"
+    (currentPageChange)="changeUpcomingBookingPage($event)"
+    [activeTab]="activeTab()"
+  ></app-upcomming-booking>
+
+  <!-- Past Bookings Table -->
+  <app-past-booking
+    [isLoading]="isLoading()"
+    [activeTab]="activeTab()"
+    [totalBookings]="totalPagePast()"
+    [pageSize]="pageSize()"
+    [currentPage]="currentPageUpcoming()"
+    [bookings]="pastBookings()"
+    (currentPageChange)="changePastBookingPage($event)"
+  ></app-past-booking>
+</div>
+
+  <!-- Add toast messages -->
+  <div class="toast toast-top toast-end">
+    <div *ngFor="let message of successMessages" class="alert alert-success text-white">
+      <span>{{ message }}</span>
+    </div>
+    <div *ngFor="let message of errorMessages" class="alert alert-error">
+      <span>{{ message }}</span>
+    </div>
+  </div>
+
+<dialog id="ticket_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="font-bold text-lg mb-4">E-Ticket #VN456</h3>
+    <!-- For PDF -->
+    <!-- <iframe
+      class="w-full h-[10vh]"
+      src="
+        https://www.shutterstock.com/image-vector/airplane-ticket-flight-boarding-pass-260nw-2278553741.jpg
+      "
+    ></iframe> -->
+    <!-- Or for Image -->
+    <img
+      src="
+        https://www.shutterstock.com/image-vector/airplane-ticket-flight-boarding-pass-260nw-2278553741.jpg
+      "
+      alt="E-Ticket"
+      class="w-full"
+    />
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>

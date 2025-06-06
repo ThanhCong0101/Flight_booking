@@ -1,0 +1,218 @@
+{
+    "data": {
+      "Outbound": "2024-07",
+      "Traces": {
+        "0": "202406261335*I*YUL*ABJ*20240731*arus*PD",
+        "1": "202406231930*I*YUL*ABJ*20240726*cana*AC",
+        "2": "202406251233*I*YUL*ABJ*20240727*cana*AC",
+        "3": "202406262002*I*YUL*ABJ*20240716*cana*AC",
+        "4": "202406261330*I*YUL*ABJ*20240712*cana*AC",
+        "5": "202406260050*I*YUL*ABJ*20240722*cana*AC",
+        "6": "202406261326*I*YUL*ABJ*20240703*cana*AC",
+        "7": "202406262002*I*YUL*ABJ*20240715*cana*AC",
+        "8": "202406261721*I*YUL*ABJ*20240719*cana*AC",
+        "9": "202406261651*I*YUL*ABJ*20240720*cana*AC",
+        "10": "202406250112*I*YUL*ABJ*20240729*cana*AC"
+      },
+      "PriceGrids": {
+        "Grid": [
+          [
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 931
+              },
+              "Indirect": {
+                "Price": 931,
+                "TraceRefs": [
+                  "6"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 722
+              },
+              "Indirect": {
+                "Price": 722,
+                "TraceRefs": [
+                  "4"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 921
+              },
+              "Indirect": {
+                "Price": 921,
+                "TraceRefs": [
+                  "7"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 919
+              },
+              "Indirect": {
+                "Price": 919,
+                "TraceRefs": [
+                  "3"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 921
+              },
+              "Indirect": {
+                "Price": 921,
+                "TraceRefs": [
+                  "8"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 930
+              },
+              "Indirect": {
+                "Price": 930,
+                "TraceRefs": [
+                  "9"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 921
+              },
+              "Indirect": {
+                "Price": 921,
+                "TraceRefs": [
+                  "5"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 921
+              },
+              "Indirect": {
+                "Price": 921,
+                "TraceRefs": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 919
+              },
+              "Indirect": {
+                "Price": 919,
+                "TraceRefs": [
+                  "2"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 924
+              },
+              "Indirect": {
+                "Price": 924,
+                "TraceRefs": [
+                  "10"
+                ]
+              }
+            },
+            {
+              "DirectOutboundAvailable": false
+            },
+            {
+              "DirectOutboundAvailable": false,
+              "IndirectOutbound": {
+                "Price": 789
+              },
+              "Indirect": {
+                "Price": 789,
+                "TraceRefs": [
+                  "0"
+                ]
+              }
+            }
+          ]
+        ]
+      }
+    },
+    "status": true,
+    "message": "Successful"
+  }

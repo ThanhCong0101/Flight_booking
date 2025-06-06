@@ -1,0 +1,79 @@
+<div class="space-y-8">
+  <!-- Tabs for Booking Types -->
+  <div class="tabs tabs-boxed">
+    <a
+      class="tab tab-lg"
+      [class.tab-active]="activeTab === 'upcoming'"
+      (click)="activeTab = 'upcoming'"
+      >Upcoming Bookings</a
+    >
+    <a
+      class="tab tab-lg"
+      [class.tab-active]="activeTab === 'past'"
+      (click)="activeTab = 'past'"
+      >Past Bookings</a
+    >
+  </div>
+
+  <!-- Upcoming Bookings Table -->
+  <app-upcoming-booking
+    [isLoading]="isLoading()"
+    [bookings]="upcomingBookings()"
+    [totalBookings]="totalPageUpcomming()"
+    [pageSize]="pageSize()"
+    [currentPage]="currentPageUpcoming()"
+    (bookingsChanged)="deleteBooking($event)"
+    (BookingDetailChange)="bookingDetailChange($event)"
+    (currentPageChange)="changeUpcomingBookingPage($event)"
+    [activeTab]="activeTab"
+  ></app-upcoming-booking>
+
+  <!-- Past Bookings Table -->
+  <app-past-booking
+    [isLoading]="isLoading()"
+    [activeTab]="activeTab"
+    [totalBookings]="totalPagePast()"
+    [pageSize]="pageSize()"
+    [currentPage]="currentPageUpcoming()"
+    [activeTab]="activeTab"
+    [bookings]="pastBookings()"
+    (currentPageChange)="changePastBookingPage($event)"
+  ></app-past-booking>
+
+  <!-- Flight Status Alert -->
+  <div class="alert alert-info shadow-lg" *ngIf="activeTab === 'upcoming'">
+    <div>
+      <i class="fas fa-info-circle"></i>
+      <span
+        >Flight VN123 is scheduled to depart on time. Please arrive at the
+        airport at least 2 hours before departure.</span
+      >
+    </div>
+  </div>
+</div>
+
+<dialog id="ticket_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="font-bold text-lg mb-4">E-Ticket #VN456</h3>
+    <!-- For PDF -->
+    <!-- <iframe
+      class="w-full h-[10vh]"
+      src="
+        https://www.shutterstock.com/image-vector/airplane-ticket-flight-boarding-pass-260nw-2278553741.jpg
+      "
+    ></iframe> -->
+    <!-- Or for Image -->
+    <img
+      src="
+        https://www.shutterstock.com/image-vector/airplane-ticket-flight-boarding-pass-260nw-2278553741.jpg
+      "
+      alt="E-Ticket"
+      class="w-full"
+    />
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>

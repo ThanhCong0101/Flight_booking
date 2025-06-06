@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "presentation": {
+                "title": "Hanoi",
+                "suggestionTitle": "Hanoi (HAN)",
+                "subtitle": "Vietnam",
+                "id": "eyJlIjoiMTI4NjY4MDc5IiwicyI6IkhBTiIsImgiOiIyNzU0MTk5MiIsInQiOiJBSVJQT1JUIn0=",
+                "skyId": "HAN"
+            },
+            "navigation": {
+                "entityId": "128668079",
+                "entityType": "AIRPORT",
+                "localizedName": "Hanoi",
+                "relevantFlightParams": {
+                    "skyId": "HAN",
+                    "entityId": "128668079",
+                    "flightPlaceType": "AIRPORT",
+                    "localizedName": "Hanoi"
+                },
+                "relevantHotelParams": {
+                    "entityId": "27541992",
+                    "entityType": "CITY",
+                    "localizedName": "Hanoi"
+                }
+            }
+        }
+    ],
+    "status": true,
+    "message": "Successful",
+    "query": "https://sky-scanner3.p.rapidapi.com/flights/auto-complete?query=Ha-Noi"
+}

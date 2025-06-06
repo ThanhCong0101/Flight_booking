@@ -1,0 +1,296 @@
+{
+	"data": {
+		"itinerary": {
+			"id": "12071-2506150140--32179-0-12409-2506150820",
+			"legs": [
+				{
+					"id": "12071-2506150140--32179-0-12409-2506150820",
+					"departure": {
+						"year": 2025,
+						"month": 6,
+						"day": 15,
+						"hour": 1,
+						"minute": 40
+					},
+					"arrival": {
+						"year": 2025,
+						"month": 6,
+						"day": 15,
+						"hour": 8,
+						"minute": 20
+					},
+					"durationMinutes": 280,
+					"stopCount": 0,
+					"origin": {
+						"airport": {
+							"id": "12071",
+							"altId": "HAN",
+							"name": "Hanoi",
+							"displayCode": "HAN"
+						},
+						"city": {
+							"id": "3094",
+							"altId": "HANV",
+							"name": "Hanoi",
+							"displayCode": "HAN"
+						},
+						"country": {
+							"id": "18",
+							"altId": "VN",
+							"name": "Vietnam",
+							"displayCode": "VN"
+						}
+					},
+					"destination": {
+						"airport": {
+							"id": "12409",
+							"altId": "ICN",
+							"name": "Incheon International",
+							"displayCode": "ICN"
+						},
+						"city": {
+							"id": "7001",
+							"altId": "SELA",
+							"name": "Seoul",
+							"displayCode": "SEL"
+						},
+						"country": {
+							"id": "173",
+							"altId": "KR",
+							"name": "South Korea",
+							"displayCode": "KR"
+						}
+					},
+					"segments": [
+						{
+							"id": "12071-12409-2506150140-2506150820--32179",
+							"departure": {
+								"year": 2025,
+								"month": 6,
+								"day": 15,
+								"hour": 1,
+								"minute": 40
+							},
+							"arrival": {
+								"year": 2025,
+								"month": 6,
+								"day": 15,
+								"hour": 8,
+								"minute": 20
+							},
+							"durationMinutes": 280,
+							"flightNumber": "2804",
+							"origin": {
+								"airport": {
+									"id": "12071",
+									"altId": "HAN",
+									"name": "Hanoi",
+									"displayCode": "HAN"
+								},
+								"city": {
+									"id": "3094",
+									"altId": "HANV",
+									"name": "Hanoi",
+									"displayCode": "HAN"
+								},
+								"country": {
+									"id": "18",
+									"altId": "VN",
+									"name": "Vietnam",
+									"displayCode": "VN"
+								}
+							},
+							"destination": {
+								"airport": {
+									"id": "12409",
+									"altId": "ICN",
+									"name": "Incheon International",
+									"displayCode": "ICN"
+								},
+								"city": {
+									"id": "7001",
+									"altId": "SELA",
+									"name": "Seoul",
+									"displayCode": "SEL"
+								},
+								"country": {
+									"id": "173",
+									"altId": "KR",
+									"name": "South Korea",
+									"displayCode": "KR"
+								}
+							},
+							"marketingCarrier": {
+								"id": -32179,
+								"altId": "78",
+								"name": "Jeju Air",
+								"displayCode": "7C"
+							},
+							"operatingCarrier": {
+								"id": -32179,
+								"altId": "78",
+								"name": "Jeju Air",
+								"displayCode": "7C"
+							},
+							"dayChange": 0,
+							"goodToKnowItems": [],
+							"amenityInfo": null
+						}
+					],
+					"layovers": [],
+					"dayChange": 0,
+					"goodToKnowItems": []
+				}
+			],
+			"pricingOptions": [
+				{
+					"id": "SxFI3sonsngf",
+					"price": {
+						"currencyCode": "USD",
+						"amount": "14560",
+						"unit": "UNIT_CENTI"
+					},
+					"fare": {
+						"cabinBaggage": null,
+						"checkedBaggage": null,
+						"legBaggage": [],
+						"brandNames": "Economy class",
+						"addedAttributeLabels": [],
+						"advanceChange": null,
+						"cancellation": null,
+						"seatPreReservation": null,
+						"upgradeEligibility": null
+					},
+					"pricingItems": [
+						{
+							"agent": {
+								"id": "skyp",
+								"name": "Kiwi.com",
+								"carrier": false,
+								"rating": {
+									"value": 2.82,
+									"count": 3394
+								},
+								"partnerMessages": [
+									{
+										"text": "24/7 customer support",
+										"messageType": "PARTNER_MESSAGE_SUPPORT_24H"
+									}
+								]
+							},
+							"uri": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/1/12071.12409.2025-06-15/air/trava/flights?itinerary=flight|-32179|2804|12071|2025-06-15T01:40|12409|2025-06-15T08:20|280|-|-|-&carriers=-32179&operators=-32179&passengers=1&channel=android&cabin_class=economy&fps_session_id=79e8b372-70f1-43a0-b72d-1a3569b4ce6f&ticket_price=145.60&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=650d39b3-ed61-461f-ae46-80cd72e5606c&q_ids=H4sIAAAAAAAA_-OS4mIpzq4sEGLmWB4nxczxM0Gh4WfzPjYjJgVGAOvv6b0cAAAA|3145360218370871293|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-02-06T14:26:12&pqid=true",
+							"price": {
+								"currencyCode": "USD",
+								"amount": "14560",
+								"unit": "UNIT_CENTI"
+							},
+							"updateStatus": "UPDATE_STATUS_CURRENT",
+							"segments": [
+								{
+									"id": "12071-12409-2506150140-2506150820--32179",
+									"departure": {
+										"year": 2025,
+										"month": 6,
+										"day": 15,
+										"hour": 1,
+										"minute": 40
+									},
+									"arrival": {
+										"year": 2025,
+										"month": 6,
+										"day": 15,
+										"hour": 8,
+										"minute": 20
+									},
+									"durationMinutes": 280,
+									"flightNumber": "2804",
+									"origin": {
+										"airport": {
+											"id": "12071",
+											"altId": "HAN",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"city": {
+											"id": "3094",
+											"altId": "HANV",
+											"name": "Hanoi",
+											"displayCode": "HAN"
+										},
+										"country": {
+											"id": "18",
+											"altId": "VN",
+											"name": "Vietnam",
+											"displayCode": "VN"
+										}
+									},
+									"destination": {
+										"airport": {
+											"id": "12409",
+											"altId": "ICN",
+											"name": "Incheon International",
+											"displayCode": "ICN"
+										},
+										"city": {
+											"id": "7001",
+											"altId": "SELA",
+											"name": "Seoul",
+											"displayCode": "SEL"
+										},
+										"country": {
+											"id": "173",
+											"altId": "KR",
+											"name": "South Korea",
+											"displayCode": "KR"
+										}
+									},
+									"marketingCarrier": {
+										"id": -32179,
+										"altId": "78",
+										"name": "Jeju Air",
+										"displayCode": "7C"
+									},
+									"operatingCarrier": {
+										"id": -32179,
+										"altId": "78",
+										"name": "Jeju Air",
+										"displayCode": "7C"
+									},
+									"dayChange": 0,
+									"goodToKnowItems": [],
+									"amenityInfo": null
+								}
+							],
+							"transferProtection": "TRANSFER_PROTECTION_UNSPECIFIED",
+							"dealMessageKey": "",
+							"fareFamily": ""
+						}
+					],
+					"updateStatus": "UPDATE_STATUS_CURRENT",
+					"unpricedType": "UNPRICED_TYPE_UNSPECIFIED",
+					"mashup": false,
+					"upgradeOption": false,
+					"fareType": "FARE_TYPE_BASE_FARE"
+				}
+			],
+			"upgrades": null,
+			"pricingOptionIdsByAttribute": []
+		},
+		"pollingCompleted": false,
+		"bookingSessionId": "79e8b372-70f1-43a0-b72d-1a3569b4ce6f",
+		"frenchMarketData": null,
+		"itineraryLegacyInfo": {
+			"itineraryId": "12071-2506150140--32179-0-12409-2506150820",
+			"transferRequired": false,
+			"transferProtectionDetails": null,
+			"destinationImage": "https://content.skyscnr.com/m/88689d9401443b9a/original/sync_206569853_2023_TB_Seoul_N_Seoul_Tower_206569853_4206.jpg",
+			"carrierLogos": {
+				"-32179": "https://logos.skyscnr.com/images/airlines/favicon/78.png"
+			},
+			"agentBaggagePolicy": {}
+		},
+		"legacyPlaces": []
+	},
+	"status": true,
+	"message": "Successful"
+} 
