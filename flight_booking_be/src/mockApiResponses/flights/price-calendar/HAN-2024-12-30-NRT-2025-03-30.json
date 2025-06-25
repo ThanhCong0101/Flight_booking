@@ -17,67 +17,1707 @@
 				}
 			],
 			"days": [
-				{
-					"day": "2024-12-30",
-					"group": "high",
-					"price": 745.53
-				},
-				{
-					"day": "2025-01-02",
-					"group": "medium",
-					"price": 389.44
-				},
-				{
-					"day": "2025-01-03",
-					"group": "medium",
-					"price": 388.16
-				},
-				{
-					"day": "2025-01-04",
-					"group": "medium",
-					"price": 416.9
-				},
-				{
-					"day": "2025-01-05",
-					"group": "medium",
-					"price": 397.59
-				},
-				{
-					"day": "2025-01-06",
-					"group": "low",
-					"price": 306.18
-				},
-				{
-					"day": "2025-01-07",
-					"group": "low",
-					"price": 304.08
-				},
-				{
-					"day": "2025-01-09",
-					"group": "medium",
-					"price": 365.58
-				},
-				{
-					"day": "2025-01-12",
-					"group": "low",
-					"price": 305.13
-				},
-				{
-					"day": "2025-01-28",
-					"group": "medium",
-					"price": 417.42
-				},
-				{
-					"day": "2025-01-29",
-					"group": "high",
-					"price": 449.43
-				},
-				{
-					"day": "2025-03-24",
-					"group": "high",
-					"price": 834.65
-				}
-			],
+                {
+                    "day": "2024-09-24",
+                    "group": "medium",
+                    "price": 249.98
+                },
+                {
+                    "day": "2024-09-25",
+                    "group": "medium",
+                    "price": 228.95
+                },
+                {
+                    "day": "2024-09-26",
+                    "group": "medium",
+                    "price": 222.47
+                },
+                {
+                    "day": "2024-09-27",
+                    "group": "medium",
+                    "price": 228.79
+                },
+                {
+                    "day": "2024-09-28",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-09-29",
+                    "group": "medium",
+                    "price": 201.98
+                },
+                {
+                    "day": "2024-09-30",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2024-10-01",
+                    "group": "low",
+                    "price": 176.29
+                },
+                {
+                    "day": "2024-10-02",
+                    "group": "low",
+                    "price": 171.98
+                },
+                {
+                    "day": "2024-10-03",
+                    "group": "low",
+                    "price": 143.29
+                },
+                {
+                    "day": "2024-10-04",
+                    "group": "low",
+                    "price": 142.86
+                },
+                {
+                    "day": "2024-10-05",
+                    "group": "low",
+                    "price": 117.98
+                },
+                {
+                    "day": "2024-10-06",
+                    "group": "low",
+                    "price": 137.98
+                },
+                {
+                    "day": "2024-10-07",
+                    "group": "low",
+                    "price": 117.98
+                },
+                {
+                    "day": "2024-10-08",
+                    "group": "low",
+                    "price": 115.97
+                },
+                {
+                    "day": "2024-10-09",
+                    "group": "low",
+                    "price": 140.26
+                },
+                {
+                    "day": "2024-10-10",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-10-11",
+                    "group": "low",
+                    "price": 156.98
+                },
+                {
+                    "day": "2024-10-12",
+                    "group": "low",
+                    "price": 143.29
+                },
+                {
+                    "day": "2024-10-13",
+                    "group": "low",
+                    "price": 117.98
+                },
+                {
+                    "day": "2024-10-14",
+                    "group": "low",
+                    "price": 142.86
+                },
+                {
+                    "day": "2024-10-15",
+                    "group": "low",
+                    "price": 118.98
+                },
+                {
+                    "day": "2024-10-16",
+                    "group": "low",
+                    "price": 137.98
+                },
+                {
+                    "day": "2024-10-17",
+                    "group": "low",
+                    "price": 143.08
+                },
+                {
+                    "day": "2024-10-18",
+                    "group": "low",
+                    "price": 118.96
+                },
+                {
+                    "day": "2024-10-19",
+                    "group": "low",
+                    "price": 143.29
+                },
+                {
+                    "day": "2024-10-20",
+                    "group": "low",
+                    "price": 116.98
+                },
+                {
+                    "day": "2024-10-21",
+                    "group": "low",
+                    "price": 143.29
+                },
+                {
+                    "day": "2024-10-22",
+                    "group": "low",
+                    "price": 120.69
+                },
+                {
+                    "day": "2024-10-23",
+                    "group": "low",
+                    "price": 136.98
+                },
+                {
+                    "day": "2024-10-24",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2024-10-25",
+                    "group": "medium",
+                    "price": 226.98
+                },
+                {
+                    "day": "2024-10-26",
+                    "group": "medium",
+                    "price": 208.29
+                },
+                {
+                    "day": "2024-10-27",
+                    "group": "medium",
+                    "price": 193.29
+                },
+                {
+                    "day": "2024-10-28",
+                    "group": "medium",
+                    "price": 193.29
+                },
+                {
+                    "day": "2024-10-29",
+                    "group": "medium",
+                    "price": 197.79
+                },
+                {
+                    "day": "2024-10-30",
+                    "group": "high",
+                    "price": 275.99
+                },
+                {
+                    "day": "2024-10-31",
+                    "group": "high",
+                    "price": 331.99
+                },
+                {
+                    "day": "2024-11-01",
+                    "group": "high",
+                    "price": 369.56
+                },
+                {
+                    "day": "2024-11-02",
+                    "group": "high",
+                    "price": 272.17
+                },
+                {
+                    "day": "2024-11-03",
+                    "group": "medium",
+                    "price": 213.06
+                },
+                {
+                    "day": "2024-11-04",
+                    "group": "medium",
+                    "price": 206.36
+                },
+                {
+                    "day": "2024-11-05",
+                    "group": "medium",
+                    "price": 197.79
+                },
+                {
+                    "day": "2024-11-06",
+                    "group": "medium",
+                    "price": 206.99
+                },
+                {
+                    "day": "2024-11-07",
+                    "group": "medium",
+                    "price": 243.29
+                },
+                {
+                    "day": "2024-11-08",
+                    "group": "low",
+                    "price": 148.89
+                },
+                {
+                    "day": "2024-11-09",
+                    "group": "medium",
+                    "price": 183.08
+                },
+                {
+                    "day": "2024-11-10",
+                    "group": "low",
+                    "price": 155.98
+                },
+                {
+                    "day": "2024-11-11",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-11-12",
+                    "group": "medium",
+                    "price": 192.7
+                },
+                {
+                    "day": "2024-11-13",
+                    "group": "low",
+                    "price": 146.98
+                },
+                {
+                    "day": "2024-11-14",
+                    "group": "medium",
+                    "price": 243.29
+                },
+                {
+                    "day": "2024-11-15",
+                    "group": "low",
+                    "price": 146.98
+                },
+                {
+                    "day": "2024-11-16",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-11-17",
+                    "group": "low",
+                    "price": 136.98
+                },
+                {
+                    "day": "2024-11-18",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-11-19",
+                    "group": "medium",
+                    "price": 193.29
+                },
+                {
+                    "day": "2024-11-20",
+                    "group": "low",
+                    "price": 158.96
+                },
+                {
+                    "day": "2024-11-21",
+                    "group": "medium",
+                    "price": 248.85
+                },
+                {
+                    "day": "2024-11-22",
+                    "group": "medium",
+                    "price": 226.98
+                },
+                {
+                    "day": "2024-11-23",
+                    "group": "medium",
+                    "price": 206.99
+                },
+                {
+                    "day": "2024-11-24",
+                    "group": "low",
+                    "price": 171.98
+                },
+                {
+                    "day": "2024-11-25",
+                    "group": "medium",
+                    "price": 183.55
+                },
+                {
+                    "day": "2024-11-26",
+                    "group": "low",
+                    "price": 155.99
+                },
+                {
+                    "day": "2024-11-27",
+                    "group": "low",
+                    "price": 156.98
+                },
+                {
+                    "day": "2024-11-28",
+                    "group": "medium",
+                    "price": 229.45
+                },
+                {
+                    "day": "2024-11-29",
+                    "group": "low",
+                    "price": 154.51
+                },
+                {
+                    "day": "2024-11-30",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2024-12-01",
+                    "group": "low",
+                    "price": 148.98
+                },
+                {
+                    "day": "2024-12-02",
+                    "group": "medium",
+                    "price": 197.19
+                },
+                {
+                    "day": "2024-12-03",
+                    "group": "medium",
+                    "price": 193.29
+                },
+                {
+                    "day": "2024-12-04",
+                    "group": "low",
+                    "price": 159.45
+                },
+                {
+                    "day": "2024-12-05",
+                    "group": "medium",
+                    "price": 203.12
+                },
+                {
+                    "day": "2024-12-06",
+                    "group": "low",
+                    "price": 136.98
+                },
+                {
+                    "day": "2024-12-07",
+                    "group": "medium",
+                    "price": 206.99
+                },
+                {
+                    "day": "2024-12-08",
+                    "group": "low",
+                    "price": 171.98
+                },
+                {
+                    "day": "2024-12-09",
+                    "group": "medium",
+                    "price": 193.09
+                },
+                {
+                    "day": "2024-12-10",
+                    "group": "low",
+                    "price": 156.03
+                },
+                {
+                    "day": "2024-12-11",
+                    "group": "low",
+                    "price": 155.98
+                },
+                {
+                    "day": "2024-12-12",
+                    "group": "medium",
+                    "price": 214.98
+                },
+                {
+                    "day": "2024-12-13",
+                    "group": "medium",
+                    "price": 214.98
+                },
+                {
+                    "day": "2024-12-14",
+                    "group": "high",
+                    "price": 293.83
+                },
+                {
+                    "day": "2024-12-15",
+                    "group": "high",
+                    "price": 266.17
+                },
+                {
+                    "day": "2024-12-16",
+                    "group": "high",
+                    "price": 290.97
+                },
+                {
+                    "day": "2024-12-17",
+                    "group": "high",
+                    "price": 326.01
+                },
+                {
+                    "day": "2024-12-18",
+                    "group": "high",
+                    "price": 316.68
+                },
+                {
+                    "day": "2024-12-19",
+                    "group": "high",
+                    "price": 515.79
+                },
+                {
+                    "day": "2024-12-20",
+                    "group": "high",
+                    "price": 340.26
+                },
+                {
+                    "day": "2024-12-21",
+                    "group": "high",
+                    "price": 547.79
+                },
+                {
+                    "day": "2024-12-22",
+                    "group": "high",
+                    "price": 339.51
+                },
+                {
+                    "day": "2024-12-23",
+                    "group": "high",
+                    "price": 389.03
+                },
+                {
+                    "day": "2024-12-24",
+                    "group": "high",
+                    "price": 351.98
+                },
+                {
+                    "day": "2024-12-25",
+                    "group": "high",
+                    "price": 376.95
+                },
+                {
+                    "day": "2024-12-26",
+                    "group": "high",
+                    "price": 363.97
+                },
+                {
+                    "day": "2024-12-27",
+                    "group": "high",
+                    "price": 275.19
+                },
+                {
+                    "day": "2024-12-28",
+                    "group": "high",
+                    "price": 377.17
+                },
+                {
+                    "day": "2024-12-29",
+                    "group": "high",
+                    "price": 256.98
+                },
+                {
+                    "day": "2024-12-30",
+                    "group": "high",
+                    "price": 261.09
+                },
+                {
+                    "day": "2024-12-31",
+                    "group": "low",
+                    "price": 178.43
+                },
+                {
+                    "day": "2025-01-01",
+                    "group": "high",
+                    "price": 324.98
+                },
+                {
+                    "day": "2025-01-02",
+                    "group": "high",
+                    "price": 393.48
+                },
+                {
+                    "day": "2025-01-03",
+                    "group": "high",
+                    "price": 391.83
+                },
+                {
+                    "day": "2025-01-04",
+                    "group": "high",
+                    "price": 317.72
+                },
+                {
+                    "day": "2025-01-05",
+                    "group": "medium",
+                    "price": 231.79
+                },
+                {
+                    "day": "2025-01-06",
+                    "group": "medium",
+                    "price": 197.79
+                },
+                {
+                    "day": "2025-01-07",
+                    "group": "medium",
+                    "price": 193.29
+                },
+                {
+                    "day": "2025-01-08",
+                    "group": "low",
+                    "price": 134.98
+                },
+                {
+                    "day": "2025-01-09",
+                    "group": "medium",
+                    "price": 213.06
+                },
+                {
+                    "day": "2025-01-10",
+                    "group": "low",
+                    "price": 117.98
+                },
+                {
+                    "day": "2025-01-11",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-01-12",
+                    "group": "low",
+                    "price": 141.31
+                },
+                {
+                    "day": "2025-01-13",
+                    "group": "medium",
+                    "price": 182.8
+                },
+                {
+                    "day": "2025-01-14",
+                    "group": "low",
+                    "price": 175.45
+                },
+                {
+                    "day": "2025-01-15",
+                    "group": "low",
+                    "price": 164.47
+                },
+                {
+                    "day": "2025-01-16",
+                    "group": "medium",
+                    "price": 242.55
+                },
+                {
+                    "day": "2025-01-17",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-01-18",
+                    "group": "medium",
+                    "price": 182.8
+                },
+                {
+                    "day": "2025-01-19",
+                    "group": "low",
+                    "price": 167.97
+                },
+                {
+                    "day": "2025-01-20",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-01-21",
+                    "group": "high",
+                    "price": 377.14
+                },
+                {
+                    "day": "2025-01-22",
+                    "group": "low",
+                    "price": 154.82
+                },
+                {
+                    "day": "2025-01-23",
+                    "group": "medium",
+                    "price": 242.57
+                },
+                {
+                    "day": "2025-01-24",
+                    "group": "low",
+                    "price": 181.23
+                },
+                {
+                    "day": "2025-01-25",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-01-26",
+                    "group": "medium",
+                    "price": 192.15
+                },
+                {
+                    "day": "2025-01-27",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-01-28",
+                    "group": "low",
+                    "price": 154.82
+                },
+                {
+                    "day": "2025-01-29",
+                    "group": "low",
+                    "price": 156.83
+                },
+                {
+                    "day": "2025-01-31",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-01",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-02",
+                    "group": "low",
+                    "price": 177.84
+                },
+                {
+                    "day": "2025-02-03",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-04",
+                    "group": "low",
+                    "price": 139.84
+                },
+                {
+                    "day": "2025-02-05",
+                    "group": "low",
+                    "price": 143.22
+                },
+                {
+                    "day": "2025-02-06",
+                    "group": "medium",
+                    "price": 243.29
+                },
+                {
+                    "day": "2025-02-07",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-08",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-09",
+                    "group": "low",
+                    "price": 178.4
+                },
+                {
+                    "day": "2025-02-10",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-11",
+                    "group": "low",
+                    "price": 143.31
+                },
+                {
+                    "day": "2025-02-12",
+                    "group": "medium",
+                    "price": 192.7
+                },
+                {
+                    "day": "2025-02-13",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2025-02-14",
+                    "group": "medium",
+                    "price": 247.23
+                },
+                {
+                    "day": "2025-02-15",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2025-02-16",
+                    "group": "low",
+                    "price": 168.98
+                },
+                {
+                    "day": "2025-02-17",
+                    "group": "medium",
+                    "price": 183.08
+                },
+                {
+                    "day": "2025-02-18",
+                    "group": "low",
+                    "price": 150.23
+                },
+                {
+                    "day": "2025-02-19",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-20",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-21",
+                    "group": "medium",
+                    "price": 193.78
+                },
+                {
+                    "day": "2025-02-22",
+                    "group": "medium",
+                    "price": 193.78
+                },
+                {
+                    "day": "2025-02-23",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-24",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-02-25",
+                    "group": "low",
+                    "price": 142.61
+                },
+                {
+                    "day": "2025-02-26",
+                    "group": "low",
+                    "price": 142.52
+                },
+                {
+                    "day": "2025-02-27",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2025-02-28",
+                    "group": "medium",
+                    "price": 228.79
+                },
+                {
+                    "day": "2025-03-01",
+                    "group": "medium",
+                    "price": 205.98
+                },
+                {
+                    "day": "2025-03-02",
+                    "group": "low",
+                    "price": 131.85
+                },
+                {
+                    "day": "2025-03-03",
+                    "group": "medium",
+                    "price": 182.79
+                },
+                {
+                    "day": "2025-03-04",
+                    "group": "low",
+                    "price": 142.04
+                },
+                {
+                    "day": "2025-03-05",
+                    "group": "low",
+                    "price": 138.56
+                },
+                {
+                    "day": "2025-03-06",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2025-03-07",
+                    "group": "medium",
+                    "price": 211.34
+                },
+                {
+                    "day": "2025-03-08",
+                    "group": "medium",
+                    "price": 211.78
+                },
+                {
+                    "day": "2025-03-09",
+                    "group": "low",
+                    "price": 169.88
+                },
+                {
+                    "day": "2025-03-10",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-11",
+                    "group": "low",
+                    "price": 156.5
+                },
+                {
+                    "day": "2025-03-12",
+                    "group": "low",
+                    "price": 133.41
+                },
+                {
+                    "day": "2025-03-13",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-14",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-15",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-16",
+                    "group": "low",
+                    "price": 170.09
+                },
+                {
+                    "day": "2025-03-17",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-18",
+                    "group": "high",
+                    "price": 343.24
+                },
+                {
+                    "day": "2025-03-19",
+                    "group": "low",
+                    "price": 146.12
+                },
+                {
+                    "day": "2025-03-20",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-21",
+                    "group": "medium",
+                    "price": 183.42
+                },
+                {
+                    "day": "2025-03-22",
+                    "group": "medium",
+                    "price": 202.79
+                },
+                {
+                    "day": "2025-03-23",
+                    "group": "low",
+                    "price": 162.92
+                },
+                {
+                    "day": "2025-03-24",
+                    "group": "medium",
+                    "price": 202.18
+                },
+                {
+                    "day": "2025-03-25",
+                    "group": "low",
+                    "price": 150.79
+                },
+                {
+                    "day": "2025-03-26",
+                    "group": "high",
+                    "price": 294.89
+                },
+                {
+                    "day": "2025-03-27",
+                    "group": "high",
+                    "price": 294.89
+                },
+                {
+                    "day": "2025-03-28",
+                    "group": "medium",
+                    "price": 198.37
+                },
+                {
+                    "day": "2025-03-29",
+                    "group": "medium",
+                    "price": 243.16
+                },
+                {
+                    "day": "2025-03-30",
+                    "group": "medium",
+                    "price": 198.64
+                },
+                {
+                    "day": "2025-03-31",
+                    "group": "medium",
+                    "price": 194.19
+                },
+                {
+                    "day": "2025-04-01",
+                    "group": "low",
+                    "price": 151.97
+                },
+                {
+                    "day": "2025-04-02",
+                    "group": "medium",
+                    "price": 199.25
+                },
+                {
+                    "day": "2025-04-03",
+                    "group": "low",
+                    "price": 140.9
+                },
+                {
+                    "day": "2025-04-04",
+                    "group": "medium",
+                    "price": 204.97
+                },
+                {
+                    "day": "2025-04-05",
+                    "group": "low",
+                    "price": 140.9
+                },
+                {
+                    "day": "2025-04-06",
+                    "group": "medium",
+                    "price": 198.64
+                },
+                {
+                    "day": "2025-04-07",
+                    "group": "low",
+                    "price": 140.9
+                },
+                {
+                    "day": "2025-04-08",
+                    "group": "high",
+                    "price": 295.5
+                },
+                {
+                    "day": "2025-04-09",
+                    "group": "medium",
+                    "price": 194.65
+                },
+                {
+                    "day": "2025-04-10",
+                    "group": "medium",
+                    "price": 232.96
+                },
+                {
+                    "day": "2025-04-11",
+                    "group": "high",
+                    "price": 328.79
+                },
+                {
+                    "day": "2025-04-12",
+                    "group": "high",
+                    "price": 329.79
+                },
+                {
+                    "day": "2025-04-13",
+                    "group": "high",
+                    "price": 289.72
+                },
+                {
+                    "day": "2025-04-14",
+                    "group": "high",
+                    "price": 290.46
+                },
+                {
+                    "day": "2025-04-15",
+                    "group": "high",
+                    "price": 295.49
+                },
+                {
+                    "day": "2025-04-16",
+                    "group": "medium",
+                    "price": 235.19
+                },
+                {
+                    "day": "2025-04-17",
+                    "group": "high",
+                    "price": 251.29
+                },
+                {
+                    "day": "2025-04-18",
+                    "group": "high",
+                    "price": 302.7
+                },
+                {
+                    "day": "2025-04-19",
+                    "group": "medium",
+                    "price": 243.06
+                },
+                {
+                    "day": "2025-04-20",
+                    "group": "high",
+                    "price": 295.5
+                },
+                {
+                    "day": "2025-04-21",
+                    "group": "medium",
+                    "price": 186.98
+                },
+                {
+                    "day": "2025-04-22",
+                    "group": "high",
+                    "price": 447.98
+                },
+                {
+                    "day": "2025-04-23",
+                    "group": "medium",
+                    "price": 198.99
+                },
+                {
+                    "day": "2025-04-24",
+                    "group": "low",
+                    "price": 116.98
+                },
+                {
+                    "day": "2025-04-25",
+                    "group": "medium",
+                    "price": 201.05
+                },
+                {
+                    "day": "2025-04-26",
+                    "group": "medium",
+                    "price": 188.78
+                },
+                {
+                    "day": "2025-04-27",
+                    "group": "medium",
+                    "price": 187.8
+                },
+                {
+                    "day": "2025-04-28",
+                    "group": "low",
+                    "price": 138.54
+                },
+                {
+                    "day": "2025-04-29",
+                    "group": "high",
+                    "price": 299.93
+                },
+                {
+                    "day": "2025-04-30",
+                    "group": "medium",
+                    "price": 194.8
+                },
+                {
+                    "day": "2025-05-01",
+                    "group": "low",
+                    "price": 173.96
+                },
+                {
+                    "day": "2025-05-02",
+                    "group": "medium",
+                    "price": 248.74
+                },
+                {
+                    "day": "2025-05-03",
+                    "group": "low",
+                    "price": 138.54
+                },
+                {
+                    "day": "2025-05-04",
+                    "group": "medium",
+                    "price": 191.41
+                },
+                {
+                    "day": "2025-05-05",
+                    "group": "low",
+                    "price": 138.54
+                },
+                {
+                    "day": "2025-05-07",
+                    "group": "medium",
+                    "price": 194.81
+                },
+                {
+                    "day": "2025-05-08",
+                    "group": "medium",
+                    "price": 190.83
+                },
+                {
+                    "day": "2025-05-09",
+                    "group": "medium",
+                    "price": 194.73
+                },
+                {
+                    "day": "2025-05-10",
+                    "group": "medium",
+                    "price": 194.64
+                },
+                {
+                    "day": "2025-05-11",
+                    "group": "high",
+                    "price": 251.64
+                },
+                {
+                    "day": "2025-05-12",
+                    "group": "medium",
+                    "price": 192.98
+                },
+                {
+                    "day": "2025-05-13",
+                    "group": "medium",
+                    "price": 240.75
+                },
+                {
+                    "day": "2025-05-14",
+                    "group": "medium",
+                    "price": 240.26
+                },
+                {
+                    "day": "2025-05-15",
+                    "group": "medium",
+                    "price": 186.98
+                },
+                {
+                    "day": "2025-05-16",
+                    "group": "medium",
+                    "price": 239.26
+                },
+                {
+                    "day": "2025-05-17",
+                    "group": "low",
+                    "price": 170.8
+                },
+                {
+                    "day": "2025-05-18",
+                    "group": "high",
+                    "price": 255.38
+                },
+                {
+                    "day": "2025-05-19",
+                    "group": "medium",
+                    "price": 183.98
+                },
+                {
+                    "day": "2025-05-20",
+                    "group": "medium",
+                    "price": 244.99
+                },
+                {
+                    "day": "2025-05-21",
+                    "group": "medium",
+                    "price": 186.79
+                },
+                {
+                    "day": "2025-05-22",
+                    "group": "medium",
+                    "price": 188.39
+                },
+                {
+                    "day": "2025-05-23",
+                    "group": "medium",
+                    "price": 188.4
+                },
+                {
+                    "day": "2025-05-24",
+                    "group": "high",
+                    "price": 638.86
+                },
+                {
+                    "day": "2025-05-25",
+                    "group": "medium",
+                    "price": 182.98
+                },
+                {
+                    "day": "2025-05-26",
+                    "group": "medium",
+                    "price": 186.98
+                },
+                {
+                    "day": "2025-05-27",
+                    "group": "medium",
+                    "price": 186.98
+                },
+                {
+                    "day": "2025-05-28",
+                    "group": "high",
+                    "price": 271.61
+                },
+                {
+                    "day": "2025-05-29",
+                    "group": "medium",
+                    "price": 183.98
+                },
+                {
+                    "day": "2025-05-30",
+                    "group": "medium",
+                    "price": 182.98
+                },
+                {
+                    "day": "2025-05-31",
+                    "group": "medium",
+                    "price": 188.78
+                },
+                {
+                    "day": "2025-06-01",
+                    "group": "medium",
+                    "price": 229.98
+                },
+                {
+                    "day": "2025-06-02",
+                    "group": "medium",
+                    "price": 240.6
+                },
+                {
+                    "day": "2025-06-03",
+                    "group": "medium",
+                    "price": 240.56
+                },
+                {
+                    "day": "2025-06-04",
+                    "group": "medium",
+                    "price": 237.25
+                },
+                {
+                    "day": "2025-06-05",
+                    "group": "medium",
+                    "price": 237.72
+                },
+                {
+                    "day": "2025-06-06",
+                    "group": "medium",
+                    "price": 240.6
+                },
+                {
+                    "day": "2025-06-07",
+                    "group": "medium",
+                    "price": 240.6
+                },
+                {
+                    "day": "2025-06-08",
+                    "group": "medium",
+                    "price": 237.25
+                },
+                {
+                    "day": "2025-06-09",
+                    "group": "medium",
+                    "price": 237.25
+                },
+                {
+                    "day": "2025-06-10",
+                    "group": "high",
+                    "price": 255.53
+                },
+                {
+                    "day": "2025-06-11",
+                    "group": "medium",
+                    "price": 234.27
+                },
+                {
+                    "day": "2025-06-12",
+                    "group": "medium",
+                    "price": 237.24
+                },
+                {
+                    "day": "2025-06-13",
+                    "group": "medium",
+                    "price": 229.98
+                },
+                {
+                    "day": "2025-06-14",
+                    "group": "medium",
+                    "price": 240.6
+                },
+                {
+                    "day": "2025-06-15",
+                    "group": "medium",
+                    "price": 240.64
+                },
+                {
+                    "day": "2025-06-16",
+                    "group": "medium",
+                    "price": 245.98
+                },
+                {
+                    "day": "2025-06-17",
+                    "group": "medium",
+                    "price": 245.23
+                },
+                {
+                    "day": "2025-06-18",
+                    "group": "high",
+                    "price": 255.56
+                },
+                {
+                    "day": "2025-06-19",
+                    "group": "high",
+                    "price": 250.98
+                },
+                {
+                    "day": "2025-06-20",
+                    "group": "high",
+                    "price": 300.42
+                },
+                {
+                    "day": "2025-06-21",
+                    "group": "high",
+                    "price": 358.42
+                },
+                {
+                    "day": "2025-06-22",
+                    "group": "high",
+                    "price": 285.46
+                },
+                {
+                    "day": "2025-06-23",
+                    "group": "high",
+                    "price": 255.56
+                },
+                {
+                    "day": "2025-06-24",
+                    "group": "high",
+                    "price": 252.19
+                },
+                {
+                    "day": "2025-06-25",
+                    "group": "high",
+                    "price": 252.19
+                },
+                {
+                    "day": "2025-06-26",
+                    "group": "high",
+                    "price": 270.53
+                },
+                {
+                    "day": "2025-06-27",
+                    "group": "high",
+                    "price": 651.24
+                },
+                {
+                    "day": "2025-06-28",
+                    "group": "high",
+                    "price": 327.98
+                },
+                {
+                    "day": "2025-06-29",
+                    "group": "high",
+                    "price": 282.68
+                },
+                {
+                    "day": "2025-06-30",
+                    "group": "high",
+                    "price": 256.37
+                },
+                {
+                    "day": "2025-07-01",
+                    "group": "high",
+                    "price": 270.47
+                },
+                {
+                    "day": "2025-07-02",
+                    "group": "high",
+                    "price": 285.46
+                },
+                {
+                    "day": "2025-07-03",
+                    "group": "high",
+                    "price": 270.47
+                },
+                {
+                    "day": "2025-07-04",
+                    "group": "high",
+                    "price": 297.7
+                },
+                {
+                    "day": "2025-07-05",
+                    "group": "high",
+                    "price": 300.42
+                },
+                {
+                    "day": "2025-07-06",
+                    "group": "high",
+                    "price": 301.91
+                },
+                {
+                    "day": "2025-07-08",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-09",
+                    "group": "medium",
+                    "price": 213.79
+                },
+                {
+                    "day": "2025-07-10",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-11",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-12",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-13",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-14",
+                    "group": "medium",
+                    "price": 213.12
+                },
+                {
+                    "day": "2025-07-15",
+                    "group": "medium",
+                    "price": 213.97
+                },
+                {
+                    "day": "2025-07-16",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-17",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-18",
+                    "group": "medium",
+                    "price": 231.09
+                },
+                {
+                    "day": "2025-07-19",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-20",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-21",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-22",
+                    "group": "medium",
+                    "price": 248.04
+                },
+                {
+                    "day": "2025-07-23",
+                    "group": "medium",
+                    "price": 248.04
+                },
+                {
+                    "day": "2025-07-24",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-25",
+                    "group": "high",
+                    "price": 294.89
+                },
+                {
+                    "day": "2025-07-26",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-27",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-28",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-29",
+                    "group": "medium",
+                    "price": 213.14
+                },
+                {
+                    "day": "2025-07-30",
+                    "group": "medium",
+                    "price": 214.24
+                },
+                {
+                    "day": "2025-07-31",
+                    "group": "medium",
+                    "price": 214.24
+                },
+                {
+                    "day": "2025-08-01",
+                    "group": "high",
+                    "price": 294.89
+                },
+                {
+                    "day": "2025-08-02",
+                    "group": "medium",
+                    "price": 231.09
+                },
+                {
+                    "day": "2025-08-04",
+                    "group": "medium",
+                    "price": 214.24
+                },
+                {
+                    "day": "2025-08-05",
+                    "group": "medium",
+                    "price": 250.29
+                },
+                {
+                    "day": "2025-08-06",
+                    "group": "high",
+                    "price": 270.53
+                },
+                {
+                    "day": "2025-08-07",
+                    "group": "medium",
+                    "price": 248.04
+                },
+                {
+                    "day": "2025-08-08",
+                    "group": "high",
+                    "price": 294.89
+                },
+                {
+                    "day": "2025-08-09",
+                    "group": "medium",
+                    "price": 248.04
+                },
+                {
+                    "day": "2025-08-10",
+                    "group": "high",
+                    "price": 270.96
+                },
+                {
+                    "day": "2025-08-11",
+                    "group": "medium",
+                    "price": 231.09
+                },
+                {
+                    "day": "2025-08-12",
+                    "group": "high",
+                    "price": 270.53
+                },
+                {
+                    "day": "2025-08-13",
+                    "group": "high",
+                    "price": 328.79
+                },
+                {
+                    "day": "2025-08-14",
+                    "group": "medium",
+                    "price": 246.25
+                },
+                {
+                    "day": "2025-08-15",
+                    "group": "high",
+                    "price": 340.32
+                },
+                {
+                    "day": "2025-08-16",
+                    "group": "medium",
+                    "price": 250.29
+                },
+                {
+                    "day": "2025-08-17",
+                    "group": "high",
+                    "price": 300.42
+                },
+                {
+                    "day": "2025-08-18",
+                    "group": "high",
+                    "price": 274.25
+                },
+                {
+                    "day": "2025-08-19",
+                    "group": "medium",
+                    "price": 244.24
+                },
+                {
+                    "day": "2025-08-20",
+                    "group": "high",
+                    "price": 251.03
+                },
+                {
+                    "day": "2025-08-21",
+                    "group": "high",
+                    "price": 251.03
+                },
+                {
+                    "day": "2025-08-25",
+                    "group": "medium",
+                    "price": 248.05
+                },
+                {
+                    "day": "2025-08-26",
+                    "group": "medium",
+                    "price": 250.78
+                },
+                {
+                    "day": "2025-08-28",
+                    "group": "high",
+                    "price": 270.55
+                },
+                {
+                    "day": "2025-08-30",
+                    "group": "medium",
+                    "price": 247.58
+                },
+                {
+                    "day": "2025-08-31",
+                    "group": "high",
+                    "price": 254.62
+                },
+                {
+                    "day": "2025-09-02",
+                    "group": "high",
+                    "price": 385.67
+                },
+                {
+                    "day": "2025-09-04",
+                    "group": "high",
+                    "price": 350.12
+                },
+                {
+                    "day": "2025-09-08",
+                    "group": "high",
+                    "price": 416.17
+                },
+                {
+                    "day": "2025-09-10",
+                    "group": "high",
+                    "price": 349.54
+                },
+                {
+                    "day": "2025-09-11",
+                    "group": "high",
+                    "price": 498.32
+                },
+                {
+                    "day": "2025-09-13",
+                    "group": "high",
+                    "price": 330.01
+                },
+                {
+                    "day": "2025-09-20",
+                    "group": "high",
+                    "price": 942.63
+                }
+            ],
 			"currency": "USD"
 		}
 	},
