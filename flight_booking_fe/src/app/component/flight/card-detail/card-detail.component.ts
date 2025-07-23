@@ -51,13 +51,12 @@ export class CardDetailComponent {
         console.log('res search detail', res);
         if (res.status) {
           this.legInfo = res.data.itinerary.legs.map((leg: any) => {
-            const fullDurationSegment = leg.durationMinutes;
+            const fullDurationSegment = leg.duration;
             const headerDate = transformDate(leg.departure);
-
+           
             const { flightSegmentInfo, layoverInfo } = createFlightSegment(
-              leg.segments, res.data.itineraryLegacyInfo.carrierLogos[leg.segments[0].marketingCarrier.id],
+              leg.segments, res.data.itinerary.legs[0].segments[0].marketingCarrier.logo,
             );
-
             const isDetailSegmentAmenities = new Array(
               this.flightSegmentInfo.length
             ).fill(false);

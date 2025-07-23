@@ -25,9 +25,6 @@ export class FlightItinerary extends BaseEntity {
   formatted_price: string;
 
   @Column({ type: "boolean", default: false })
-  is_self_transfer: boolean;
-
-  @Column({ type: "boolean", default: false })
   is_protected_self_transfer: boolean;
 
   @Column({ type: "boolean", default: false })

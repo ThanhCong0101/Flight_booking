@@ -135,6 +135,8 @@ export class CardFilterComponent {
         isActive: event.target.checked,
       },
     });
+
+    console.log('stopData', this.stopData());
   }
 
   onAirlinesSelect(event: any) {

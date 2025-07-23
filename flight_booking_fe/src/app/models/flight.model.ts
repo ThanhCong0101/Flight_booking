@@ -4,10 +4,6 @@ export interface FlightItineraryModel {
   itinerary_id: string;
   raw_price: number;
   formatted_price: string;
-  is_self_transfer: boolean;
-  is_protected_self_transfer: boolean;
-  is_change_allowed: boolean;
-  is_cancellation_allowed: boolean;
   score: number;
   legs: FlightLegModel[];
   bookings: BookingModel[];

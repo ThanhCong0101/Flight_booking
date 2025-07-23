@@ -37,8 +37,8 @@
                         "durationInMinutes": 280,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-07-15T01:40:00",
-                        "arrival": "2025-07-15T08:20:00",
+                        "departure": "2025-08-15T01:40:00",
+                        "arrival": "2025-08-15T08:20:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -79,8 +79,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-07-15T01:40:00",
-                                "arrival": "2025-07-15T08:20:00",
+                                "departure": "2025-08-15T01:40:00",
+                                "arrival": "2025-08-15T08:20:00",
                                 "durationInMinutes": 280,
                                 "flightNumber": "2804",
                                 "marketingCarrier": {
@@ -123,8 +123,8 @@
                         "durationInMinutes": 310,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-07-16T21:20:00",
-                        "arrival": "2025-07-22T00:30:00",
+                        "departure": "2025-08-16T21:20:00",
+                        "arrival": "2025-08-22T00:30:00",
                         "timeDeltaInDays": 1,
                         "carriers": {
                             "marketing": [
@@ -165,8 +165,8 @@
                                     "type": "Airport",
                                     "country": "Vietnam"
                                 },
-                                "departure": "2025-07-16T21:20:00",
-                                "arrival": "2025-07-22T00:30:00",
+                                "departure": "2025-08-16T21:20:00",
+                                "arrival": "2025-08-22T00:30:00",
                                 "durationInMinutes": 310,
                                 "flightNumber": "2803",
                                 "marketingCarrier": {
@@ -235,8 +235,8 @@
                         "durationInMinutes": 810,
                         "stopCount": 1,
                         "isSmallestStops": false,
-                        "departure": "2025-07-15T14:50:00",
-                        "arrival": "2025-07-16T06:20:00",
+                        "departure": "2025-08-15T14:50:00",
+                        "arrival": "2025-08-16T06:20:00",
                         "timeDeltaInDays": 1,
                         "carriers": {
                             "marketing": [
@@ -282,8 +282,8 @@
                                     "type": "Airport",
                                     "country": "Malaysia"
                                 },
-                                "departure": "2025-07-15T14:50:00",
-                                "arrival": "2025-07-15T19:05:00",
+                                "departure": "2025-08-15T14:50:00",
+                                "arrival": "2025-08-15T19:05:00",
                                 "durationInMinutes": 195,
                                 "flightNumber": "513",
                                 "marketingCarrier": {
@@ -329,8 +329,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-07-15T22:50:00",
-                                "arrival": "2025-07-16T06:20:00",
+                                "departure": "2025-08-15T22:50:00",
+                                "arrival": "2025-08-16T06:20:00",
                                 "durationInMinutes": 390,
                                 "flightNumber": "504",
                                 "marketingCarrier": {
@@ -373,8 +373,8 @@
                         "durationInMinutes": 840,
                         "stopCount": 1,
                         "isSmallestStops": false,
-                        "departure": "2025-07-16T20:45:00",
-                        "arrival": "2025-07-22T08:45:00",
+                        "departure": "2025-08-16T20:45:00",
+                        "arrival": "2025-08-22T08:45:00",
                         "timeDeltaInDays": 1,
                         "carriers": {
                             "marketing": [
@@ -415,8 +415,8 @@
                                     "type": "Airport",
                                     "country": "Singapore"
                                 },
-                                "departure": "2025-07-16T20:45:00",
-                                "arrival": "2025-07-22T02:25:00",
+                                "departure": "2025-08-16T20:45:00",
+                                "arrival": "2025-08-22T02:25:00",
                                 "durationInMinutes": 400,
                                 "flightNumber": "841",
                                 "marketingCarrier": {
@@ -462,8 +462,8 @@
                                     "type": "Airport",
                                     "country": "Vietnam"
                                 },
-                                "departure": "2025-07-22T06:15:00",
-                                "arrival": "2025-07-22T08:45:00",
+                                "departure": "2025-08-22T06:15:00",
+                                "arrival": "2025-08-22T08:45:00",
                                 "durationInMinutes": 210,
                                 "flightNumber": "300",
                                 "marketingCarrier": {

@@ -1,0 +1,130 @@
+{
+    "data": {
+      "itinerary": {
+        "id": "12071-2508150935--32228-1-12409-2508152105",
+        "legs": [
+          {
+            "id": "12071-2508150935--32228-1-12409-2508152105",
+            "origin": {
+              "id": "HAN",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi"
+            },
+            "destination": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "displayCode": "ICN",
+              "city": "Seoul"
+            },
+            "segments": [
+              {
+                "id": "12071-12191-2508150935-2508151240--32228",
+                "origin": {
+                  "id": "HAN",
+                  "name": "Hanoi",
+                  "displayCode": "HAN",
+                  "city": "Hanoi"
+                },
+                "destination": {
+                  "id": "HKG",
+                  "name": "Hong Kong Intl",
+                  "displayCode": "HKG",
+                  "city": "Hong Kong"
+                },
+                "duration": 125,
+                "dayChange": 0,
+                "flightNumber": "541",
+                "departure": "2025-08-15T09:35:00",
+                "arrival": "2025-08-15T12:40:00",
+                "marketingCarrier": {
+                  "id": "-32228",
+                  "name": "HK Express",
+                  "displayCode": "UO",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#7d2c91",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
+                  "altId": "UO"
+                },
+                "operatingCarrier": {
+                  "id": "-32228",
+                  "name": "HK Express",
+                  "displayCode": "UO",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#7d2c91",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
+                  "altId": "UO"
+                }
+              },
+              {
+                "id": "12191-12409-2508151635-2508152105--32228",
+                "origin": {
+                  "id": "HKG",
+                  "name": "Hong Kong Intl",
+                  "displayCode": "HKG",
+                  "city": "Hong Kong"
+                },
+                "destination": {
+                  "id": "ICN",
+                  "name": "Incheon International Airport",
+                  "displayCode": "ICN",
+                  "city": "Seoul"
+                },
+                "duration": 210,
+                "dayChange": 0,
+                "flightNumber": "626",
+                "departure": "2025-08-15T16:35:00",
+                "arrival": "2025-08-15T21:05:00",
+                "marketingCarrier": {
+                  "id": "-32228",
+                  "name": "HK Express",
+                  "displayCode": "UO",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#7d2c91",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
+                  "altId": "UO"
+                },
+                "operatingCarrier": {
+                  "id": "-32228",
+                  "name": "HK Express",
+                  "displayCode": "UO",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#7d2c91",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/UO.png",
+                  "altId": "UO"
+                }
+              }
+            ],
+            "duration": 570,
+            "stopCount": 1,
+            "departure": "2025-08-15T09:35:00",
+            "arrival": "2025-08-15T21:05:00",
+            "dayChange": 0
+          }
+        ],
+        "pricingOptions": [
+          {
+            "agents": [
+              {
+                "id": "hkexpress",
+                "name": "HK Express",
+                "isCarrier": true,
+                "price": 163.46,
+                "updateStatus": "PENDING"
+              }
+            ],
+            "totalPrice": 163.46,
+            "id": "eSPuuoacm0_0"
+          }
+        ],
+        "isTransferRequired": true,
+        "isProtectedSelfTransfer": true,
+        "destinationImage": "https://content.skyscnr.com/m/262388ccebf3d73a/original/Seoul-ICN.png"
+      },
+      "pollingCompleted": true,
+      "bookingSessionId": "mock-session-id"
+    },
+    "status": true,
+    "message": "Successful"
+  }
+  

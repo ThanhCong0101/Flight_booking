@@ -9,18 +9,18 @@ export const createFlightSegment = (segments: any, logourl: any) => {
     (segment: any, index: number, array: any[]) => {
       const departureTime = convertToUserTimezone(segment.departure);
       const arrivalTime = convertToUserTimezone(segment.arrival);
-      const duration = segment.durationMinutes;
+      const duration = segment.duration;
       const flightLogoBrand = logourl;
       const flightLogoBrandName = segment.marketingCarrier.name;
       const departureAirport =
-        segment.origin.airport.name +
+        segment.origin.name +
         ' (' +
-        segment.origin.airport.displayCode +
+        segment.origin.displayCode +
         ')';
       const arrivalAirport =
-        segment.destination.airport.name +
+        segment.destination.name +
         ' (' +
-        segment.destination.airport.displayCode +
+        segment.destination.displayCode +
         ')';
 
       if (index < array.length - 1) {

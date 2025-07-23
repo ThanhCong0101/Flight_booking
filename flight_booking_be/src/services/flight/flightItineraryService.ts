@@ -82,11 +82,6 @@ const createFlightItineraryWithDetails = async (itineraryData) => {
       itinerary_id: itineraryData.itinerary_id,
       raw_price: itineraryData.raw_price,
       formatted_price: itineraryData.formatted_price,
-      is_self_transfer: itineraryData.is_self_transfer,
-      is_protected_self_transfer: itineraryData.is_protected_self_transfer,
-      is_change_allowed: itineraryData.is_change_allowed,
-      
-      is_cancellation_allowed: itineraryData.is_cancellation_allowed,
       score: itineraryData.score,
       token: itineraryData.token,
       // Add other itinerary fields

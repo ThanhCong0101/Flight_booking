@@ -1,0 +1,127 @@
+{
+    "data": {
+      "itinerary": {
+        "id": "14355-2410010900--32171,-30667-1-10413-2410021335",
+        "legs": [
+          {
+            "id": "14355-2410010900--32171,-30667-1-10413-2410021335",
+            "origin": {
+              "id": "MSY",
+              "name": "New Orleans Louis Armstrong",
+              "displayCode": "MSY",
+              "city": "New Orleans"
+            },
+            "destination": {
+              "id": "CDG",
+              "name": "Paris Charles de Gaulle",
+              "displayCode": "CDG",
+              "city": "Paris"
+            },
+            "segments": [
+              {
+                "id": "14355-12712-2410010900-2410011259--32171",
+                "origin": {
+                  "id": "HCM",
+                  "name": "Ho Chi Minh City",
+                  "displayCode": "HCM",
+                  "city": "Ho Chi Minh City"
+                },
+                "destination": {
+                  "id": "ICN",
+                  "name": "Incheon",
+                  "displayCode": "ICN",
+                  "city": "Incheon"
+                },          
+                "duration": 179,
+                "dayChange": 0,
+                "flightNumber": "176",
+                "departure": "2024-10-01T09:00:00",
+                "arrival": "2024-10-01T12:59:00",
+                "marketingCarrier": {
+                  "id": "-32171",
+                  "name": "Vietnam Airlines",
+                  "displayCode": "VN",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#000000",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "altId": "VN"
+                },
+                "operatingCarrier": {
+                  "id": "-32171",
+                  "name": "Vietnam Airlines",
+                  "displayCode": "VN",
+                  "displayCodeType": "IATA",
+                  "altId": "VN"
+                }
+              },
+              {
+                "id": "12712-10413-2410020030-2410021335--30667",
+                "origin": {
+                  "id": "ICN",
+                  "name": "Incheon",
+                  "displayCode": "ICN",
+                  "city": "Incheon"
+                },
+                "destination": {
+                  "id": "CDG",
+                  "name": "Paris Charles de Gaulle",
+                  "displayCode": "CDG",
+                  "city": "Paris"
+                },
+                "duration": 425,
+                "dayChange": 0,
+                "flightNumber": "302", 
+                "departure": "2024-10-02T00:30:00",
+                "arrival": "2024-10-02T13:35:00",
+                "marketingCarrier": {
+                  "id": "-30667",
+                  "name": "Vietnam Airlines",
+                  "displayCode": "VN",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#000000",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "altId": "VN"
+                },
+                "operatingCarrier": {
+                  "id": "-30667",
+                  "name": "Vietnam Airlines",
+                  "displayCode": "VN",
+                  "displayCodeType": "IATA",
+                  "brandColor": "#000000",
+                  "logo": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "altId": "VN"
+                }
+              }
+            ],
+            "duration": 1295,
+            "stopCount": 1,
+            "departure": "2024-10-01T09:00:00",
+            "arrival": "2024-10-02T13:35:00",
+            "dayChange": 1
+          }
+        ],
+        "pricingOptions": [
+          {
+            "agents": [
+              {
+                "id": "agent_id",
+                "name": "jetBlue, Norse Atlantic Airways",
+                "isCarrier": true,
+                "price": 383.9,
+                "updateStatus": "PENDING"
+              }
+            ],
+            "totalPrice": 383.9,
+            "id": "6NAqnvXn_RGD"
+          }
+        ],
+        "isTransferRequired": false,
+        "isProtectedSelfTransfer": true,
+        "destinationImage": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg"
+      },
+      "pollingCompleted": false,
+      "bookingSessionId": "e56e85c1-0363-460f-8b84-765f1d94d22d"
+    },
+    "status": true,
+    "message": "Successful"
+  }
