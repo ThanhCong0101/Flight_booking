@@ -4,7 +4,7 @@ import { Connection } from '../types/connection.type';
 import { Observable } from 'rxjs';
 import { TokenService } from './token.service';
 // const backendUrl = 'http://3.27.183.125';
-const backendUrl = 'http://localhost:8081';
+const backendUrl = 'http://localhost:8082';
 
 @Injectable({
   providedIn: 'root',

@@ -198,7 +198,7 @@ const sendEmail = async (user: User, subject: string, message) => {
     };
     await transporter.sendMail(mailOptions);
   } catch (error) {
-    console.log(`Error in sendPasswordResetEmail: ${error}`);
+    console.log(`Error in sendMail: ${error}`);
     return null;
   }
 };

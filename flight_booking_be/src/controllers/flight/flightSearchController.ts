@@ -148,7 +148,7 @@ const searchDetail = async (req, res) => {
     if (trip.data) {
       const flightData = sanitizeFlightData(trip.data, token);
 
-      console.log("flightData", flightData);
+      console.log("flightDataID", flightData.itinerary_id, "segments", flightData.legs[0].segments);
 
       let flightItinerary =
         await flightItineraryService.createFlightItineraryWithDetails(

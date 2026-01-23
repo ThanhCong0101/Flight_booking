@@ -37,8 +37,8 @@
                         "durationInMinutes": 275,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T22:50:00",
-                        "arrival": "2025-03-01T05:25:00",
+                        "departure": "2026-02-28T22:50:00",
+                        "arrival": "2026-03-01T05:25:00",
                         "timeDeltaInDays": 1,
                         "carriers": {
                             "marketing": [
@@ -80,8 +80,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T22:50:00",
-                                "arrival": "2025-03-01T05:25:00",
+                                "departure": "2026-02-28T22:50:00",
+                                "arrival": "2026-03-01T05:25:00",
                                 "durationInMinutes": 275,
                                 "flightNumber": "962",
                                 "marketingCarrier": {
@@ -149,8 +149,8 @@
                         "durationInMinutes": 230,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T10:40:00",
-                        "arrival": "2025-02-28T16:30:00",
+                        "departure": "2026-02-28T10:40:00",
+                        "arrival": "2026-02-28T16:30:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -192,8 +192,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T10:40:00",
-                                "arrival": "2025-02-28T16:30:00",
+                                "departure": "2026-02-28T10:40:00",
+                                "arrival": "2026-02-28T16:30:00",
                                 "durationInMinutes": 230,
                                 "flightNumber": "414",
                                 "marketingCarrier": {
@@ -264,8 +264,8 @@
                         "durationInMinutes": 250,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T01:45:00",
-                        "arrival": "2025-02-28T07:55:00",
+                        "departure": "2026-02-28T01:45:00",
+                        "arrival": "2026-02-28T07:55:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -307,8 +307,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T01:45:00",
-                                "arrival": "2025-02-28T07:55:00",
+                                "departure": "2026-02-28T01:45:00",
+                                "arrival": "2026-02-28T07:55:00",
                                 "durationInMinutes": 250,
                                 "flightNumber": "960",
                                 "marketingCarrier": {
@@ -379,8 +379,8 @@
                         "durationInMinutes": 230,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T23:40:00",
-                        "arrival": "2025-03-01T05:30:00",
+                        "departure": "2026-02-28T23:40:00",
+                        "arrival": "2026-03-01T05:30:00",
                         "timeDeltaInDays": 1,
                         "carriers": {
                             "marketing": [
@@ -422,8 +422,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T23:40:00",
-                                "arrival": "2025-03-01T05:30:00",
+                                "departure": "2026-02-28T23:40:00",
+                                "arrival": "2026-03-01T05:30:00",
                                 "durationInMinutes": 230,
                                 "flightNumber": "416",
                                 "marketingCarrier": {
@@ -494,8 +494,8 @@
                         "durationInMinutes": 675,
                         "stopCount": 2,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T02:35:00",
-                        "arrival": "2025-02-28T15:50:00",
+                        "departure": "2026-02-28T02:35:00",
+                        "arrival": "2026-02-28T15:50:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -537,8 +537,8 @@
                                     "type": "Airport",
                                     "country": "China"
                                 },
-                                "departure": "2025-02-28T02:35:00",
-                                "arrival": "2025-02-28T06:05:00",
+                                "departure": "2026-02-28T02:35:00",
+                                "arrival": "2026-02-28T06:05:00",
                                 "durationInMinutes": 150,
                                 "flightNumber": "2574",
                                 "marketingCarrier": {
@@ -584,8 +584,8 @@
                                     "type": "Airport",
                                     "country": "China"
                                 },
-                                "departure": "2025-02-28T08:10:00",
-                                "arrival": "2025-02-28T10:10:00",
+                                "departure": "2026-02-28T08:10:00",
+                                "arrival": "2026-02-28T10:10:00",
                                 "durationInMinutes": 120,
                                 "flightNumber": "2517",
                                 "marketingCarrier": {
@@ -631,8 +631,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T13:15:00",
-                                "arrival": "2025-02-28T15:50:00",
+                                "departure": "2026-02-28T13:15:00",
+                                "arrival": "2026-02-28T15:50:00",
                                 "durationInMinutes": 95,
                                 "flightNumber": "559",
                                 "marketingCarrier": {
@@ -700,8 +700,8 @@
                         "durationInMinutes": 280,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T01:40:00",
-                        "arrival": "2025-02-28T08:20:00",
+                        "departure": "2026-02-28T01:40:00",
+                        "arrival": "2026-02-28T08:20:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -743,8 +743,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T01:40:00",
-                                "arrival": "2025-02-28T08:20:00",
+                                "departure": "2026-02-28T01:40:00",
+                                "arrival": "2026-02-28T08:20:00",
                                 "durationInMinutes": 280,
                                 "flightNumber": "2804",
                                 "marketingCarrier": {
@@ -809,8 +809,8 @@
                         "durationInMinutes": 485,
                         "stopCount": 1,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T11:45:00",
-                        "arrival": "2025-02-28T21:50:00",
+                        "departure": "2026-02-28T11:45:00",
+                        "arrival": "2026-02-28T21:50:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -852,8 +852,8 @@
                                     "type": "Airport",
                                     "country": "China"
                                 },
-                                "departure": "2025-02-28T11:45:00",
-                                "arrival": "2025-02-28T14:20:00",
+                                "departure": "2026-02-28T11:45:00",
+                                "arrival": "2026-02-28T14:20:00",
                                 "durationInMinutes": 95,
                                 "flightNumber": "3050",
                                 "marketingCarrier": {
@@ -899,8 +899,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T17:45:00",
-                                "arrival": "2025-02-28T21:50:00",
+                                "departure": "2026-02-28T17:45:00",
+                                "arrival": "2026-02-28T21:50:00",
                                 "durationInMinutes": 185,
                                 "flightNumber": "339",
                                 "marketingCarrier": {
@@ -968,8 +968,8 @@
                         "durationInMinutes": 245,
                         "stopCount": 0,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T13:30:00",
-                        "arrival": "2025-02-28T19:35:00",
+                        "departure": "2026-02-28T13:30:00",
+                        "arrival": "2026-02-28T19:35:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -1011,8 +1011,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T13:30:00",
-                                "arrival": "2025-02-28T19:35:00",
+                                "departure": "2026-02-28T13:30:00",
+                                "arrival": "2026-02-28T19:35:00",
                                 "durationInMinutes": 245,
                                 "flightNumber": "730",
                                 "marketingCarrier": {
@@ -1080,8 +1080,8 @@
                         "durationInMinutes": 420,
                         "stopCount": 1,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T09:35:00",
-                        "arrival": "2025-02-28T18:35:00",
+                        "departure": "2026-02-28T09:35:00",
+                        "arrival": "2026-02-28T18:35:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -1131,8 +1131,8 @@
                                     "type": "Airport",
                                     "country": "Hong Kong"
                                 },
-                                "departure": "2025-02-28T09:35:00",
-                                "arrival": "2025-02-28T12:40:00",
+                                "departure": "2026-02-28T09:35:00",
+                                "arrival": "2026-02-28T12:40:00",
                                 "durationInMinutes": 125,
                                 "flightNumber": "5541",
                                 "marketingCarrier": {
@@ -1178,8 +1178,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T14:05:00",
-                                "arrival": "2025-02-28T18:35:00",
+                                "departure": "2026-02-28T14:05:00",
+                                "arrival": "2026-02-28T18:35:00",
                                 "durationInMinutes": 210,
                                 "flightNumber": "418",
                                 "marketingCarrier": {
@@ -1244,8 +1244,8 @@
                         "durationInMinutes": 555,
                         "stopCount": 1,
                         "isSmallestStops": false,
-                        "departure": "2025-02-28T03:25:00",
-                        "arrival": "2025-02-28T14:40:00",
+                        "departure": "2026-02-28T03:25:00",
+                        "arrival": "2026-02-28T14:40:00",
                         "timeDeltaInDays": 0,
                         "carriers": {
                             "marketing": [
@@ -1287,8 +1287,8 @@
                                     "type": "Airport",
                                     "country": "China"
                                 },
-                                "departure": "2025-02-28T03:25:00",
-                                "arrival": "2025-02-28T08:20:00",
+                                "departure": "2026-02-28T03:25:00",
+                                "arrival": "2026-02-28T08:20:00",
                                 "durationInMinutes": 235,
                                 "flightNumber": "896",
                                 "marketingCarrier": {
@@ -1334,8 +1334,8 @@
                                     "type": "Airport",
                                     "country": "South Korea"
                                 },
-                                "departure": "2025-02-28T11:40:00",
-                                "arrival": "2025-02-28T14:40:00",
+                                "departure": "2026-02-28T11:40:00",
+                                "arrival": "2026-02-28T14:40:00",
                                 "durationInMinutes": 120,
                                 "flightNumber": "2073",
                                 "marketingCarrier": {

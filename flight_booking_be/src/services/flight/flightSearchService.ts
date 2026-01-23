@@ -24,20 +24,20 @@ const itineraryIdMap = new Map([
   //   "12071-2410300140--32179-0-12409-2410300820|12409-2410312120--32179-0-12071-2411010030",
   //   "itinerary1",
   // ],
-  // ["12071-2502282250--31705-0-12409-2503010525", "itinerary29"],
-  // ["12071-2502281040--31703-0-12409-2502281630", "itinerary30"],
-  // ["12071-2502280145--31705-0-12409-2502280755", "itinerary31"],
-  // ["12071-2502282340--31703-0-12409-2503010530", "itinerary32"],
-  // ["12071-2502280235--32442-2-12409-2502281550", "itinerary33"],
+  ["12071-2502282250--31705-0-12409-2503010525", "itinerary29"],
+  ["12071-2502281040--31703-0-12409-2502281630", "itinerary30"],
+  ["12071-2502280145--31705-0-12409-2502280755", "itinerary31"],
+  ["12071-2502282340--31703-0-12409-2503010530", "itinerary32"],
+  ["12071-2502280235--32442-2-12409-2502281550", "itinerary33"],
   // ["12071-2502280140--32179-0-12409-2502280820", "itinerary34"],
   // ["12071-2502281145--32439-1-12409-2502282150", "itinerary35"],
   // ["12071-2502281330--32558-0-12409-2502281935", "itinerary36"],
   // ["12071-2502280935--32456-1-12409-2502281835", "itinerary37"],
   // ["12071-2502280325--32442-1-12409-2502281440", "itinerary38"],
-  ["12071-2411300140--32179-0-12409-2411300820", "itinerary1"],
-  ["14355-2410010900--32171,-30667-1-10413-2410021335", "itinerary2"],
-  ["12071-2410300140--32179-0-12409-2410300820|12409-2410312120--32179-0-12071-2411010030", "itinerary3"],
-  ["12071-2411300935--32228-1-12409-2411302105", "itinerary4"],
+  // ["12071-2411300140--32179-0-12409-2411300820", "itinerary1"],
+  // ["14355-2410010900--32171,-30667-1-10413-2410021335", "itinerary2"],
+  // ["12071-2410300140--32179-0-12409-2410300820|12409-2410312120--32179-0-12071-2411010030", "itinerary3"],
+  // ["12071-2411300935--32228-1-12409-2411302105", "itinerary4"],
 ]);
 
 const autoComplete = async (keyword: string) => {
@@ -78,6 +78,8 @@ const searchOneWay = async (
   cabinClass: string = "economy",
   travellerType: string = "Adult"
 ) => {
+
+  console.log("fromEntityId in searchOneWay service", fromEntityId, toEntityId, departDate);
   try {
     await delay(100);
     const filePath = path.join(
@@ -89,13 +91,18 @@ const searchOneWay = async (
 
     const jsonData = JSON.parse(data);
 
-    if (jsonData.data.context.status === "incomplete") {
-      const sessionId = jsonData.data.context.sessionId;
-      const completeData = await searchIncomplete(sessionId);
-      return completeData;
-    } else {
-      return jsonData;
-    }
+    console.log("jsonData in searchOneWay service", jsonData);
+
+    return jsonData;
+
+
+    // if (jsonData.data.context.status === "incomplete") {
+    //   const sessionId = jsonData.data.context.sessionId;
+    //   const completeData = await searchIncomplete(sessionId);
+    //   return completeData;
+    // } else {
+    //   return jsonData;
+    // }
   } catch (error) {
     console.error("Error reading mock data:", error);
   }
@@ -118,13 +125,16 @@ const searchRoundTrip = async (
     );
     const data = fs.readFileSync(filePath, "utf8");
     const jsonData = JSON.parse(data);
-    if (jsonData.data.context.status === "incomplete") {
-      const sessionId = jsonData.data.context.sessionId;
-      const completeData = await searchIncomplete(sessionId);
-      return completeData;
-    } else {
-      return jsonData;
-    }
+
+    return jsonData;
+
+    // if (jsonData.data.context.status === "incomplete") {
+    //   const sessionId = jsonData.data.context.sessionId;
+    //   const completeData = await searchIncomplete(sessionId);
+    //   return completeData;
+    // } else {
+    //   return jsonData;
+    // }
   } catch (error) {
     console.error("Error reading mock data:", error);
   }
